@@ -65,7 +65,7 @@
 # Repos
 !code
 !code/install.sh
-!code/zsh-autocomplete
-!code/yabai-master-stack-plugin
+code/zsh-autocomplete
+code/yabai-master-stack-plugin
 
 .DS_Store
