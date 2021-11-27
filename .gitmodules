@@ -1,0 +1,6 @@
+[submodule "code/zsh-autocomplete"]
+	path = code/zsh-autocomplete
+	url = git@github.com:leonzalion/zsh-autocomplete
+[submodule "code/yabai-master-stack-plugin"]
+	path = code/yabai-master-stack-plugin
+	url = git@github.com:leonzalion/yabai-master-stack-plugin

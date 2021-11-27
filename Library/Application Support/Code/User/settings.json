@@ -1,0 +1,147 @@
+{
+	"editor.fontSize": 18,
+	"editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"K"
+			],
+			"after": [
+				"g",
+				"h"
+			]
+		},
+		{
+			"before": [
+				"<C-@>"
+			],
+			"commands": [
+				":s#\\C\\(\\<\\u[a-z0-9]\\+\\|[a-z0-9]\\+\\)\\(\\u\\)#\\l\\1_\\l\\2#g"
+			]
+		}
+	],
+	"vim.vimrc.enable": true,
+	"vim.otherModesKeyBindings": [
+		{
+			"before": [
+				"u"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "undo"
+				}
+			]
+		},
+		{
+			"before": [
+				"<C-r>"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "redo"
+				}
+			]
+		}
+	],
+	"elixir.projectPath": "microservices/room_server",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[vue]": {
+		"editor.useTabStops": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"eslint.workingDirectories": [
+		"frontend"
+	],
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"emmet.extensionsPath": [
+		""
+	],
+	"emmet.showExpandedAbbreviation": "never",
+	"emmet.includeLanguages": {
+		"html": "pug"
+	},
+	"editor.lineNumbers": "on",
+	"emmet.excludeLanguages": [
+		"markdown"
+	],
+	"editor.tabSize": 2,
+	"workbench.iconTheme": "vscode-icons",
+	"vs-kubernetes": {
+		"vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"vsicons.dontShowNewVersionMessage": true,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cSpell.userWords": [
+		"Subroom",
+		"Tabulo"
+	],
+	"rust.wait_to_build": 1,
+	"[sql]": {
+		"editor.defaultFormatter": "bradymholt.pgformatter"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"pgFormatter.tabs": true,
+	"pgFormatter.keywordCase": "lowercase",
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"files.autoSave": "afterDelay",
+	"[yaml]": {
+		"editor.insertSpaces": true,
+		"editor.autoIndent": "keep",
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+	},
+	"[python]": {
+		"editor.useTabStops": true,
+		"editor.tabSize": 2,
+		"gitlens.codeLens.symbolScopes": [
+			"!Module"
+		]
+	},
+	"rust-analyzer.lruCapacity": 2048,
+	"rust-analyzer.runnableEnv": null,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.cursorStyle": "line",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"files.eol": "\n",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"security.workspace.trust.untrustedFiles": "open",
+	"files.trimTrailingWhitespace": true,
+	"editor.renderWhitespace": "all",
+	"editor.insertSpaces": false,
+	"editor.useTabStops": true,
+	"editor.detectIndentation": false,
+	"prettier.useTabs": true,
+	"[postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.editor.showTabs": false,
+}

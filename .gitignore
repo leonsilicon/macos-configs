@@ -1,0 +1,71 @@
+*
+
+!.gitignore
+!.gitmodules
+!.vimrc
+!.zshrc
+!.zsh_aliases
+!.tmux.conf
+
+# Config files
+!.config
+.config/*
+
+# Qutebrowser
+!.config/qutebrowser
+.config/qutebrowser
+!.config/qutebrowser/config.py
+
+# Alacritty
+!.config/alacritty
+!.config/alacritty/alacritty.yml
+
+# Yabai
+!.config/yabai
+!.config/yabai/*
+
+# Neovim
+!.config/nvim
+!.config/nvim/*
+
+# Karabiner + Goku
+!.config/karabiner
+!.config/karabiner/karabiner.json
+!.config/goku
+!.config/goku/*
+
+# VSCode
+!Library
+!Library/Application Support
+!Library/Application Support/Code
+!Library/Application Support/Code/User
+!Library/Application Support/Code/User/keybindings.json
+!Library/Application Support/Code/User/settings.json
+
+# launchctl
+!Library/LaunchAgents
+!Library/LaunchAgents/leonzalion.yabai.plist
+!Library/LaunchAgents/com.federicoterzi.espanso.plist
+
+# brew
+!.config/brewfile
+!.config/brewfile/*
+
+# Keyboard layout
+!Library/Keyboard Layouts
+!Library/Keyboard Layouts/Programmer Dvorak.keylayout
+!Library/Preferences
+!Library/Preferences/espanso
+!Library/Preferences/espanso/*
+
+# Hackintosh Configs
+!.config/hackintosh
+!.config/hackintosh/**/*
+
+# Repos
+!code
+!code/install.sh
+!code/zsh-autocomplete
+!code/yabai-master-stack-plugin
+
+.DS_Store

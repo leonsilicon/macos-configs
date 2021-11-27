@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.federicoterzi.espanso</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/leonzalion/Library/pnpm:/Users/leonzalion/.nvm/versions/node/v14.17.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/leonzalion/.nvm/versions/node/v14.17.6/bin:/Users/leonzalion/.cargo/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin</string>
+    </dict>
+    <key>ProgramArguments</key>
+    <array>
+	<string>/usr/local/bin/espanso</string>
+        <string>daemon</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/tmp/espanso.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/espanso.out</string>
+</dict>
+</plist>
