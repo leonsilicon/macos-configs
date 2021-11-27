@@ -65,7 +65,11 @@
 # Repos
 !code
 !code/install.sh
-code/zsh-autocomplete
-code/yabai-master-stack-plugin
+!code/zsh-autocomplete
+code/zsh-autocomplete/*
+!code/zsh-autocomplete/.gitrepo
+!code/yabai-master-stack-plugin
+code/yabai-master-stack-plugin/*
+!code/yabai-master-stack-plugin/.gitrepo
 
 .DS_Store
