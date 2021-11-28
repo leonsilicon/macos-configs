@@ -33,3 +33,6 @@ fi
 export PATH="$(pnpm bin -g):$PATH"
 export PATH="/Users/leonzalion/code/bin:$PATH"
 source ~/code/git-subrepo/.rc
+
+export PNPM_HOME="/Users/leonzalion/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
