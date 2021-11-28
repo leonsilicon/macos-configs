@@ -207,6 +207,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/services'
 
 tap 'homebrew/cask'
+cask 'activitywatch'
 cask 'alacritty'
 cask 'alfred'
 cask 'android-platform-tools'
