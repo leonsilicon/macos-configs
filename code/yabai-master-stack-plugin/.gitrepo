@@ -6,6 +6,7 @@
 [subrepo]
 	remote = git@github.com:leonzalion/yabai-master-stack-plugin
 	branch = main
-	commit = 
+	commit = 97a38a9c5bd99f153a333f95da61b2179d6f978e
 	method = merge
 	cmdver = 0.4.3
+	parent = dd868bd83555ba8426c2daad994ed62b219a7b0b
