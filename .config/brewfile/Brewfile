@@ -278,5 +278,3 @@ brew 'brew-file'
 tap 'yqrashawn/goku'
 brew 'goku'
 
-# App Store applications
-mas 'Xcode (13.1)', id: 497799835
