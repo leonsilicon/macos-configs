@@ -25,10 +25,13 @@ fi
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit -i
 fi
+
+zstyle ':completion:*' list-prompt ''
+zstyle ':completion:*' select-prompt ''
+
+autoload -Uz compinit
+compinit -i
 
 export PATH="$(pnpm bin -g):$PATH"
 export PATH="/Users/leonzalion/code/bin:$PATH"
