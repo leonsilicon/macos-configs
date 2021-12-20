@@ -110,6 +110,12 @@ matches:
   - trigger: "\\@mtheta"
     replace: "Θ"
 
+  - trigger: "\\@mpm"
+    replace: "±"
+
+  - trigger: "\\@mdelta"
+    replace: "Δ"
+
   # Superscript Numbers
   - trigger: "\\@sp0"
     replace: "⁰"
