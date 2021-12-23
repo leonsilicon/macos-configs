@@ -1,4 +1,6 @@
 import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { execaCommandSync as exec } from 'execa';
 import { outdent } from 'outdent';
 import open from 'open';
@@ -9,7 +11,7 @@ exec(`ssh-keygen -t ed25519 -C 'contact@leonzalion.com'`, {
 
 exec(`eval "$(ssh-agent -s)"`, { shell: true });
 
-fs.writeFileSync('/Users/leonzalion/.ssh/config', outdent`
+fs.writeFileSync(path.join(os.homedir(), '.ssh/config'), outdent`
   Host *
     AddKeysToAgent yes
     UseKeychain yes
