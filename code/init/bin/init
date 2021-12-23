@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $(dirname "$0")
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 source ~/.zshrc
 pnpm i
