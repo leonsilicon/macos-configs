@@ -72,5 +72,6 @@ code/zsh-autocomplete/*
 code/yabai-master-stack-plugin/*
 !code/yabai-master-stack-plugin/.gitrepo
 !code/init
+!code/init/*
 
 .DS_Store
