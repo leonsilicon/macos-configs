@@ -45,6 +45,7 @@
 # launchctl
 !Library/LaunchAgents
 !Library/LaunchAgents/leonzalion.yabai.plist
+!Library/LaunchAgents/deepwork.yabai.plist
 !Library/LaunchAgents/com.federicoterzi.espanso.plist
 
 # brew

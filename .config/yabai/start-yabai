@@ -1,2 +1,2 @@
-/bin/launchctl enable gui/$(id -u)/leonzalion.yabai.plist
-/bin/launchctl bootstrap gui/$(id -u) /Users/deepwork/Library/LaunchAgents/leonzalion.yabai.plist
+/bin/launchctl enable gui/$(id -u)/$(id -un).yabai.plist
+/bin/launchctl bootstrap gui/$(id -u) /Users/$(id -un)/Library/LaunchAgents/$(id -un).yabai.plist
