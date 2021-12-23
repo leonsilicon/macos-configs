@@ -129,10 +129,10 @@
 			;; mod + b: open firefox (browser)
 			[:!CT#QWn "open -na /Applications/Firefox.app"]
 			[:!QW#CTn "open -na /Applications/Firefox.app"]
-												;; mod + q: open qutebrowser
-			[:!CT#QWx "open -na /Applications/qutebrowser.app"]
-			[:!QW#CTx "open -na /Applications/qutebrowser.app"]
-												;; mod + f: open finder
+											  ;; mod + c: open calendar
+			[:!CT#QWi "open /System/Applications/Calendar.app"]
+			[:!QW#CTi "open /System/Applications/Calendar.app"]
+											  ;; mod + f: open finder
 			[:!CT#QWy "open /Users/leonzalion"]
 			[:!QW#CTy "open /Users/leonzalion"]
 			;; mod + n: open notion
