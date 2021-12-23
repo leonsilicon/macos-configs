@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+source ~/.zshrc
+pnpm i
+pnpm start
