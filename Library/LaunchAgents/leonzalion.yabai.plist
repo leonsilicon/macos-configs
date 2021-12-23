@@ -18,9 +18,9 @@
   <key>KeepAlive</key>
   <true/>
   <key>StandardOutPath</key>
-  <string>/Users/leonzalion/.cache/yabai/yabai.out.log</string>
+  <string>/Users/deepwork/.cache/yabai/yabai.out.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/leonzalion/.cache/yabai/yabai.err.log</string>
+  <string>/Users/deepwork/.cache/yabai/yabai.err.log</string>
   <key>ProcessType</key>
   <string>Interactive</string>
   <key>Nice</key>
