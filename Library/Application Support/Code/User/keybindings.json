@@ -542,11 +542,7 @@
     "key": "shift+alt+s",
     "command": "stylelint.executeAutofix"
   },
-  {
-    "key": "shift+alt+e",
-    "command": "eslint.executeAutofix"
-  },
-  {
+	{
     "key": "shift+alt+f",
     "command": "actions.find",
     "when": "editorFocus || editorIsOpen"
@@ -625,5 +621,9 @@
     "key": "ctrl+shift+tab",
     "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
-  }
+	},
+	{
+		"key": "shift+alt+e",
+		"command": "eslint.executeAutofix"
+	}
 ]
