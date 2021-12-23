@@ -144,4 +144,7 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"workbench.editor.showTabs": false,
+	"editor.accessibilitySupport": "off",
+	"eslint.packageManager": "pnpm",
+	"eslint.runtime": "node"
 }

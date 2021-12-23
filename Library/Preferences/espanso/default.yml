@@ -116,6 +116,9 @@ matches:
   - trigger: "\\@mdelta"
     replace: "Δ"
 
+  - trigger: "\\@mdeg"
+    replace: "°"
+
   # Superscript Numbers
   - trigger: "\\@sp0"
     replace: "⁰"
