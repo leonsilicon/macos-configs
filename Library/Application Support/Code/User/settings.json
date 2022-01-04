@@ -47,7 +47,7 @@
 	],
 	"elixir.projectPath": "microservices/room_server",
 	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[vue]": {
 		"editor.useTabStops": true,
@@ -145,5 +145,6 @@
 	},
 	"editor.accessibilitySupport": "off",
 	"eslint.packageManager": "pnpm",
-	"eslint.runtime": "node"
+	"eslint.runtime": "node",
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }
