@@ -1,4 +1,5 @@
 {
+	"html.autoCreateQuotes": false,
 	"editor.fontSize": 18,
 	"editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
 	"vim.normalModeKeyBindingsNonRecursive": [
