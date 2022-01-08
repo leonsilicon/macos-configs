@@ -250,6 +250,7 @@ cask 'ukelele'
 cask 'unclutter'
 cask 'virtualbox'
 cask 'visual-studio-code'
+cask 'vlc'
 cask 'zoom'
 
 tap 'candid82/brew'
