@@ -103,7 +103,8 @@
 	"pgFormatter.tabs": true,
 	"pgFormatter.keywordCase": "lowercase",
 	"[markdown]": {
-		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"editor.insertSpaces": true
 	},
 	"files.autoSave": "afterDelay",
 	"[yaml]": {
@@ -147,5 +148,10 @@
 	"editor.accessibilitySupport": "off",
 	"eslint.packageManager": "pnpm",
 	"eslint.runtime": "node",
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"window.zoomLevel": -1,
+	"[rust]": {
+		"editor.defaultFormatter": "matklad.rust-analyzer"
+	},
+	"workbench.colorTheme": "Visual Studio Dark - C++"
 }
