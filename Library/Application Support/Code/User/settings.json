@@ -149,9 +149,7 @@
 	"eslint.packageManager": "pnpm",
 	"eslint.runtime": "node",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"window.zoomLevel": -1,
 	"[rust]": {
 		"editor.defaultFormatter": "matklad.rust-analyzer"
-	},
-	"workbench.colorTheme": "Visual Studio Dark - C++"
+	}
 }
