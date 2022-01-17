@@ -267,7 +267,6 @@ tap 'dopplerhq/cli'
 brew 'doppler'
 
 tap 'federico-terzi/espanso'
-brew 'espanso'
 
 tap 'heroku/brew'
 brew 'heroku'
