@@ -59,6 +59,7 @@
 !Library/Preferences/espanso
 !Library/Preferences/espanso/*
 !Library/Preferences/espanso/match
+!Library/Preferences/espanso/match/*
 
 # Hackintosh Configs
 !.config/hackintosh
