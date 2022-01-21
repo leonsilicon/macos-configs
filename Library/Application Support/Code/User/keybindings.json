@@ -641,5 +641,17 @@
 	{
 		"key": "ctrl+j",
 		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "cmd+t",
+		"command": "-workbench.action.showAllSymbols"
+	},
+	{
+		"key": "shift+alt+,",
+		"command": "searchEverywhere.search"
+	},
+	{
+		"key": "alt+cmd+p",
+		"command": "-searchEverywhere.search"
 	}
 ]
