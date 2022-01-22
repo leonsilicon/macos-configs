@@ -156,5 +156,9 @@
 		"editor.defaultFormatter": "Prisma.prisma"
 	},
 	"rojo.pluginManagement": true,
-	"rojo.releaseBranch": "7.x"
+	"rojo.releaseBranch": "7.x",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifierEnding": "js"
 }
