@@ -154,5 +154,7 @@
 	},
 	"[prisma]": {
 		"editor.defaultFormatter": "Prisma.prisma"
-	}
+	},
+	"rojo.pluginManagement": true,
+	"rojo.releaseBranch": "7.x"
 }
