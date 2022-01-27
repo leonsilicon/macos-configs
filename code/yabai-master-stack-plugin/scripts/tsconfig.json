@@ -1,0 +1,14 @@
+{
+	"extends": "@leonzalion/configs/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"~monke/*": [
+				"test"
+			]
+		}
+	},
+	"include": [
+		"./"
+	]
+}

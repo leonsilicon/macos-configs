@@ -1,17 +1,23 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "strict": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": [
-      "esnext"
-    ]
-  },
-  "include": [
-    "src/**/*.ts"
-  ]
+	"extends": "@leonzalion/configs/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"target": "esnext",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noUncheckedIndexedAccess": false,
+		"esModuleInterop": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": [
+				"./src/*"
+			]
+		},
+		"lib": [
+			"esnext"
+		]
+	},
+	"include": [
+		"src/**/*.ts"
+	]
 }
-

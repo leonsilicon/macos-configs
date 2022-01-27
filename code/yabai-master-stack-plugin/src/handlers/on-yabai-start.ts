@@ -1,6 +1,8 @@
-import { createInitializedWindowsManager } from '../utils';
-import { releaseHandlerLock } from '../utils/handler';
-import { main } from '../utils/main';
+import {
+	createInitializedWindowsManager,
+	releaseHandlerLock,
+	main,
+} from '../utils/index.js';
 
 releaseHandlerLock({ force: true });
 main(async () => {

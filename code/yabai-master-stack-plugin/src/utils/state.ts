@@ -1,11 +1,11 @@
-import fs from 'fs';
-import path from 'path';
-import pkgDir from 'pkg-dir';
+import fs from 'node:fs';
+import path from 'node:path';
+import { packageDirectorySync } from 'pkg-dir';
 
-import type { State } from './types';
-import { getSpaces } from './utils/space';
+import type { State } from '../types.js';
+import { getSpaces } from './space.js';
 
-const stateFilePath = path.join(pkgDir.sync(__dirname)!, 'state.json');
+const stateFilePath = path.join(packageDirectorySync(), 'state.json');
 
 export function writeState(state: State) {
 	fs.writeFileSync(stateFilePath, JSON.stringify(state));
@@ -20,6 +20,7 @@ export async function readState(): Promise<State> {
 				data[space.id] = { numMasterWindows: 1 };
 			}
 		}
+
 		return data;
 	} else {
 		const defaultState: State = {};

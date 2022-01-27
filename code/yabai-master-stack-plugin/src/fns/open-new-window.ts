@@ -1,15 +1,18 @@
-import execa from 'execa';
+import process from 'node:process';
+import { execaCommandSync } from 'execa';
 
-import { createInitializedWindowsManager } from '../utils';
-import { focusDisplay } from '../utils/display';
-import { main } from '../utils/main';
+import {
+	createInitializedWindowsManager,
+	focusDisplay,
+	main,
+} from '../utils/index.js';
 
 const openArguments = process.argv[2];
 
 main(async () => {
 	const { wm, display: focusedDisplay } =
 		await createInitializedWindowsManager();
-	execa.commandSync(`open ${openArguments}`);
+	execaCommandSync(`open ${openArguments}`);
 	await wm.executeYabaiCommand(`-m window --display ${focusedDisplay.index}`);
 	await focusDisplay(focusedDisplay.index);
 });

@@ -1,10 +1,13 @@
-import { createInitializedWindowsManager } from '../utils';
-import { logDebug } from '../utils/log';
-import { main } from '../utils/main';
+import {
+	createInitializedWindowsManager,
+	logDebug,
+	main,
+} from '../utils/index.js';
 
 main(async () => {
 	const { wm } = await createInitializedWindowsManager();
 	const focusedWindow = wm.getFocusedWindow();
+	// eslint-disable-next-line no-negated-condition
 	if (focusedWindow !== undefined) {
 		// If the focused window is the lowest master window
 		if (

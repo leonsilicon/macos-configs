@@ -1,7 +1,9 @@
-import { writeState } from '../state';
-import { createInitializedWindowsManager } from '../utils';
-import { logDebug } from '../utils/log';
-import { main } from '../utils/main';
+import {
+	writeState,
+	createInitializedWindowsManager,
+	logDebug,
+	main,
+} from '../utils/index.js';
 
 main(async () => {
 	const { wm, state, space } = await createInitializedWindowsManager();

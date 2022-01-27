@@ -3,6 +3,8 @@ import getStream from 'get-stream';
 
 export async function getYabaiOutput(yabaiProcess: ExecaChildProcess) {
 	return new Promise<string>((resolve) => {
-		void getStream(yabaiProcess.stdout!).then((output) => resolve(output));
+		void getStream(yabaiProcess.stdout!).then((output) => {
+			resolve(output);
+		});
 	});
 }

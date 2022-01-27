@@ -1,9 +1,12 @@
 {
 	"extends": "./tsconfig.json",
 	"include": [
+		"scripts",
+		"test",
 		"src",
-		".eslintrc.js",
-		"**/*.ts",
-		"**/*.js",
+		".eslintrc.cjs",
+		"sync-index.config.cjs",
+		"plugin-config.cjs",
+		"plugin-config.example.cjs",
 	]
 }

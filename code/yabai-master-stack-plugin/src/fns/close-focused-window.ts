@@ -1,6 +1,5 @@
-import type { Window } from '../types';
-import { createInitializedWindowsManager } from '../utils';
-import { main } from '../utils/main';
+import type { Window } from '../types.js';
+import { createInitializedWindowsManager, main } from '../utils/index.js';
 
 main(async () => {
 	const { wm } = await createInitializedWindowsManager();

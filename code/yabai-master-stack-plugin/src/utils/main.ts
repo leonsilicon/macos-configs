@@ -1,7 +1,7 @@
 import onExit from 'signal-exit';
 
-import { acquireHandlerLock, releaseHandlerLock } from './handler';
-import { logDebug } from './log';
+import { acquireHandlerLock, releaseHandlerLock } from './handler.js';
+import { logDebug } from './log.js';
 
 export function handleMasterError(error: Error & { code?: string }) {
 	if (error.code === 'ELOCKED') {
