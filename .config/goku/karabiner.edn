@@ -68,11 +68,11 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
-			[:!CT#QWc "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/focus-down-window.js > /dev/null"]
-			[:!QW#CTc "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/focus-down-window.js > /dev/null"]
+			[:!CT#QWc "PATH=/usr/local/bin /Users/leonzalion/Library/pnpm/ymsp focus-down-window"]
+			[:!QW#CTc "PATH=/usr/local/bin /Users/leonzalion/Library/pnpm/ymsp focus-down-window"]
 			;; mod + k: focus up
-			[:!CT#QWv "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/focus-up-window.js > /dev/null"]
-			[:!QW#CTv "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/focus-up-window.js > /dev/null"]
+			[:!CT#QWv "/Users/leonzalion/Library/pnpm/ymsp focus-up-window"]
+			[:!QW#CTv "ymsp focus-up-window"]
 			;; mod + m: focus on master
 			[:!CT#QWm "/usr/local/bin/yabai -m window --focus east"]
 			[:!QW#CTm "/usr/local/bin/yabai -m window --focus east"]
@@ -80,11 +80,11 @@
 			[:!CTS#QWRm "/usr/local/bin/yabai -m window --swap east"]
 			[:!QWR#CTSm "/usr/local/bin/yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
-			[:!CTS#QWRg "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/increase-master-window-count.js > /dev/null"]
-			[:!QWR#CTSg "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/increase-master-window-count.js > /dev/null"]
+			[:!CTS#QWRg "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count"]
+			[:!QWR#CTSg "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count"]
 			;; mod + shift + d: decrease number of master windows
-			[:!CTS#QWRh "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/decrease-master-window-count.js > /dev/null"]
-			[:!QWR#CTSh "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/decrease-master-window-count.js > /dev/null"]
+			[:!CTS#QWRh "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count"]
+			[:!QWR#CTSh "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count"]
 			;; mod + shift + j: move window down
 			[:!CTS#QWRc "/usr/local/bin/yabai -m window --swap next || /usr/local/bin/yabai -m window --swap first"]
 			[:!QWR#CTSc "/usr/local/bin/yabai -m window --swap next || /usr/local/bin/yabai -m window --swap first"]
@@ -104,8 +104,8 @@
 			[:!CTS#QWRj "/usr/local/bin/yabai -m window --resize bottom:0:50; /usr/local/bin/yabai -m window --resize top:0:50"]
 			[:!QWR#CTSj "/usr/local/bin/yabai -m window --resize bottom:0:50; /usr/local/bin/yabai -m window --resize top:0:50"]
 			;; mod + shift + q: close focused window
-			[:!CTS#QWRx "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/close-focused-window.js > /dev/null"]
-			[:!QWR#CTSx "/usr/local/bin/node ~/code/yabai-master-stack-plugin/dist/fns/close-focused-window.js > /dev/null"]
+			[:!CTS#QWRx "/Users/leonzalion/Library/pnpm/ymsp close-focused-window"]
+			[:!QWR#CTSx "/Users/leonzalion/Library/pnpm/ymsp close-focused-window"]
 			;; mod + period: switch to next display
 			[:!CT#QWe "/usr/local/bin/yabai -m display --focus next || /usr/local/bin/yabai -m display --focus first"]
 			[:!QW#CTe "/usr/local/bin/yabai -m display --focus next || /usr/local/bin/yabai -m display --focus first"]

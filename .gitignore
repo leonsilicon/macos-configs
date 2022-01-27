@@ -23,6 +23,8 @@
 # Yabai
 !.config/yabai
 !.config/yabai/*
+!.config/ymsp
+!.config/ymsp/ymsp.config.json
 
 # Neovim
 !.config/nvim

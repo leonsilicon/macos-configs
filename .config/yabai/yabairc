@@ -3,10 +3,10 @@ yabai -m config window_placement first_child
 yabai -m config window_topmost on
 yabai -m config mouse_modifier cmd
 
-yabai -m signal --add event=window_created action='node ~/code/yabai-master-stack-plugin/dist/handlers/window-created.js'
+yabai -m signal --add event=window_created action='ymsp window-created'
 
-yabai -m signal --add event=application_launched action='node ~/code/yabai-master-stack-plugin/dist/handlers/window-created.js'
+yabai -m signal --add event=application_launched action='ymsp window-created'
 
-yabai -m signal --add event=window_moved action='node ~/code/yabai-master-stack-plugin/dist/handlers/window-moved.js'
+yabai -m signal --add event=window_moved action='ymsp window-moved'
 
-node ~/code/yabai-master-stack-plugin/dist/handlers/on-yabai-start.js
+ymsp on-yabai-start
