@@ -28,3 +28,6 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+
+search_trigger: off
+search_shortcut: ALT+SHIFT+SPACE
