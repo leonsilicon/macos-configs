@@ -68,11 +68,11 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
-			[:!CT#QWc "ymsp focus-down-window"]
-			[:!QW#CTc "ymsp focus-down-window"]
+			[:!CT#QWc "ymsp focus-down-window > /dev/null"]
+			[:!QW#CTc "ymsp focus-down-window > /dev/null"]
 			;; mod + k: focus up
-			[:!CT#QWv "ymsp focus-up-window"]
-			[:!QW#CTv "ymsp focus-up-window"]
+			[:!CT#QWv "ymsp focus-up-window > /dev/null"]
+			[:!QW#CTv "ymsp focus-up-window > /dev/null"]
 			;; mod + m: focus on master
 			[:!CT#QWm "yabai -m window --focus east"]
 			[:!QW#CTm "yabai -m window --focus east"]
@@ -80,11 +80,11 @@
 			[:!CTS#QWRm "yabai -m window --swap east"]
 			[:!QWR#CTSm "yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
-			[:!CTS#QWRg "ymsp increase-master-window-count"]
-			[:!QWR#CTSg "ymsp increase-master-window-count"]
+			[:!CTS#QWRg "ymsp increase-master-window-count > /dev/null"]
+			[:!QWR#CTSg "ymsp increase-master-window-count > /dev/null"]
 			;; mod + shift + d: decrease number of master windows
-			[:!CTS#QWRh "ymsp decrease-master-window-count"]
-			[:!QWR#CTSh "ymsp decrease-master-window-count"]
+			[:!CTS#QWRh "ymsp decrease-master-window-count > /dev/null"]
+			[:!QWR#CTSh "ymsp decrease-master-window-count > /dev/null"]
 			;; mod + shift + j: move window down
 			[:!CTS#QWRc "yabai -m window --swap next || yabai -m window --swap first"]
 			[:!QWR#CTSc "yabai -m window --swap next || yabai -m window --swap first"]
@@ -104,8 +104,8 @@
 			[:!CTS#QWRj "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"]
 			[:!QWR#CTSj "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"]
 			;; mod + shift + q: close focused window
-			[:!CTS#QWRx "ymsp close-focused-window"]
-			[:!QWR#CTSx "ymsp close-focused-window"]
+			[:!CTS#QWRx "ymsp close-focused-window > /dev/null"]
+			[:!QWR#CTSx "ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
 			[:!CT#QWe "yabai -m display --focus next || yabai -m display --focus first"]
 			[:!QW#CTe "yabai -m display --focus next || yabai -m display --focus first"]
