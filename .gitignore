@@ -73,7 +73,7 @@
 !code/zsh-autocomplete
 code/zsh-autocomplete/*
 !code/zsh-autocomplete/.gitrepo
-!code/init
-!code/init/**
+!code/bootstrap-macos
+!code/bootstrap-macos/**
 
 .DS_Store
