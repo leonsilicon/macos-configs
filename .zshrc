@@ -53,3 +53,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.poetry/bin:$PATH"
 
 source ~/code/git-subrepo/.rc
+
+RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/"
+RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
+
