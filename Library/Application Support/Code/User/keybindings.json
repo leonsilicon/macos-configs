@@ -653,5 +653,28 @@
 	{
 		"key": "alt+cmd+p",
 		"command": "-searchEverywhere.search"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-jupyter.refreshDataViewer",
+		"when": "isWorkspaceTrusted && jupyter.dataViewerActive"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-python.refreshTensorBoard",
+		"when": "python.hasActiveTensorBoardSession"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-extension.CompileRun"
+	},
+	{
+		"key": "cmd+r",
+		"command": "workbench.action.reloadWindow"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-workbench.action.reloadWindow",
+		"when": "isDevelopment"
 	}
 ]
