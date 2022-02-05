@@ -47,13 +47,12 @@ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 # For pkg-config to find zlib you may need to set:
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
 export PATH="$HOME/.poetry/bin:$PATH"
 
 source ~/code/git-subrepo/.rc
 
 RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/"
 RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
-
+export PYTHONPATH="$PYTHONPATH:$HOME/.pyenv/versions/3.6.15"
+export PATH="$PATH:$HOME/.pyenv/versions/3.6.15/bin"
+eval "$(pyenv init -)"
