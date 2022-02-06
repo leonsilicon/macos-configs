@@ -33,11 +33,12 @@ zstyle ':completion:*' select-prompt ''
 autoload -Uz compinit
 compinit -i
 
+export PNPM_HOME="/Users/leonzalion/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 export PATH="$(pnpm bin -g):$PATH"
 export PATH="/Users/leonzalion/code/bin:$PATH"
 
-export PNPM_HOME="/Users/leonzalion/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
 
 # For Python & Tkinter
 # For compilers to find zlib you may need to set:
