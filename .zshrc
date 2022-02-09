@@ -2,6 +2,9 @@ export PATH="/Users/leonzalion/code/homebrew/bin:$PATH"
 
 source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
+zstyle ':completion:*' list-prompt   ''
+zstyle ':completion:*' select-prompt ''
+
 eval "$(starship init zsh)"
 set -o vi
 
