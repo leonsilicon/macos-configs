@@ -110,11 +110,12 @@
 		"editor.defaultFormatter": "redhat.vscode-yaml",
 	},
 	"[python]": {
-		"editor.useTabStops": true,
+		"editor.useTabStops": false,
 		"editor.tabSize": 2,
 		"gitlens.codeLens.symbolScopes": [
 			"!Module"
-		]
+		],
+		"editor.defaultFormatter": "ms-python.python"
 	},
 	"rust-analyzer.lruCapacity": 2048,
 	"rust-analyzer.runnableEnv": null,
