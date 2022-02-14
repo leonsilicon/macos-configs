@@ -1,3 +1,8 @@
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(wakatime)
+
+source $ZSH/oh-my-zsh.sh
+
 export PATH="/Users/leonzalion/code/homebrew/bin:$PATH"
 
 source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -66,3 +71,7 @@ PERL5LIB="/Users/leonzalion/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PE
 PERL_LOCAL_LIB_ROOT="/Users/leonzalion/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/leonzalion/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
+
+eval "$(dircolors)"
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
