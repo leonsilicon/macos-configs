@@ -76,6 +76,8 @@ matches:
     replace: Θ
   - trigger: "\\@mpm"
     replace: ±
+  - trigger: "\\@mmult"
+    replace: ×
   - trigger: "\\@mdelta"
     replace: Δ
   - trigger: "\\@mdeg"

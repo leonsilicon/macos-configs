@@ -60,3 +60,9 @@ RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/L
 export PYTHONPATH="$PYTHONPATH:$HOME/.pyenv/versions/3.6.15"
 export PATH="$PATH:$HOME/.pyenv/versions/3.6.15/bin"
 eval "$(pyenv init -)"
+
+PATH="/Users/leonzalion/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/leonzalion/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/leonzalion/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/leonzalion/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
