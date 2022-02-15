@@ -163,15 +163,29 @@
 	"[latex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	},
+	"latex-workshop.latex.outDir": "./out/",
 	"latex-workshop.latex.recipes": [
 		{
-			"name": "pdflatex",
+			"name": "latexmk",
 			"tools": [
-				"pdflatex"
+				"latexmk"
 			]
 		}
 	],
 	"latex-workshop.latex.tools": [
+		{
+			"name": "latexmk",
+			"command": "latexmk",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"-pdf",
+				"-aux-directory=out",
+				"-output-directory=out",
+				"%DOC%"
+			]
+		},
 		{
 			"name": "pdflatex",
 			"command": "pdflatex",
@@ -180,6 +194,8 @@
 				"-synctex=1",
 				"-interaction=nonstopmode",
 				"-file-line-error",
+				"-aux-directory=out",
+				"-output-directory=out",
 				"%DOC%.tex"
 			]
 		}
