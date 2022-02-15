@@ -72,6 +72,5 @@ PERL_LOCAL_LIB_ROOT="/Users/leonzalion/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL
 PERL_MB_OPT="--install_base \"/Users/leonzalion/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
 
-eval "$(dircolors)"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
