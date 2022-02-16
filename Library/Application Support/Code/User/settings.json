@@ -166,9 +166,9 @@
 	"latex-workshop.latex.outDir": "./out/",
 	"latex-workshop.latex.recipes": [
 		{
-			"name": "latexmk",
+			"name": "lualatex",
 			"tools": [
-				"latexmk"
+				"lualatex"
 			]
 		}
 	],
@@ -187,14 +187,13 @@
 			]
 		},
 		{
-			"name": "pdflatex",
-			"command": "pdflatex",
+			"name": "lualatex",
+			"command": "lualatex",
 			"args": [
 				"--shell-escape",
 				"-synctex=1",
 				"-interaction=nonstopmode",
 				"-file-line-error",
-				"-aux-directory=out",
 				"-output-directory=out",
 				"%DOC%.tex"
 			]
