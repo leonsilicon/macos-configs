@@ -198,5 +198,8 @@
 				"%DOC%.tex"
 			]
 		}
-	]
+	],
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	}
 }
