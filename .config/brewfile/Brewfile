@@ -158,6 +158,7 @@ brew 'openjpeg'
 brew 'openssl@1.1'
 brew 'opus'
 brew 'p11-kit'
+brew 'p7zip'
 brew 'pango'
 brew 'pcre'
 brew 'pcre2'
@@ -251,7 +252,6 @@ cask 'gimp'
 cask 'github'
 cask 'google-drive'
 cask 'hackintool'
-cask 'inkscape'
 cask 'karabiner-elements'
 cask 'keycastr'
 cask 'kindle'
@@ -279,7 +279,7 @@ tap 'candid82/brew'
 brew 'joker'
 
 tap 'colindean/fonts-nonfree'
-:cask 'font-microsoft-office'
+cask 'font-microsoft-office'
 
 tap 'dopplerhq/cli'
 brew 'doppler'
@@ -308,3 +308,6 @@ mas 'Gifski (2.20.1)', id: 1351639930
 mas 'Plash (2.7.1)', id: 1494023538
 mas 'Recordia (2.2.0)', id: 1529006487
 mas 'Xcode (13.2)', id: 497799835
+
+# Other commands
+#:cask 'font-microsoft-office'
