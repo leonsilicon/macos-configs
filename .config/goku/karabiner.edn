@@ -126,9 +126,9 @@
 
 			;; applications
 
-			;; mod + b: open firefox (browser)
-			[:!CT#QWn "open -na /Applications/Firefox.app"]
-			[:!QW#CTn "open -na /Applications/Firefox.app"]
+			;; mod + b: open chrome (browser)
+			[:!CT#QWn "open -na /Applications/Google\\ Chrome.app"]
+			[:!QW#CTn "open -na /Applications/Google\\ Chrome.app"]
 											  ;; mod + c: open calendar
 			[:!CT#QWi "open /System/Applications/Calendar.app"]
 			[:!QW#CTi "open /System/Applications/Calendar.app"]

@@ -824,7 +824,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Firefox.app"
+            "shell_command" : "open -na /Applications/Google\\ Chrome.app"
           } ],
           "type" : "basic"
         }, {
@@ -836,7 +836,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Firefox.app"
+            "shell_command" : "open -na /Applications/Google\\ Chrome.app"
           } ],
           "type" : "basic"
         }, {
