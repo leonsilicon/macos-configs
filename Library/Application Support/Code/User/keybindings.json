@@ -676,5 +676,117 @@
 		"key": "cmd+r",
 		"command": "-workbench.action.reloadWindow",
 		"when": "isDevelopment"
+	},
+	{
+		"key": "shift+cmd+8",
+		"command": "workbench.action.focusSecondEditorGroup"
+	},
+	{
+		"key": "cmd+2",
+		"command": "-workbench.action.focusSecondEditorGroup"
+	},
+	{
+		"key": "cmd+k left",
+		"command": "workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "cmd+k cmd+left",
+		"command": "-workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "cmd+k right",
+		"command": "workbench.action.focusRightGroup"
+	},
+	{
+		"key": "cmd+k cmd+right",
+		"command": "-workbench.action.focusRightGroup"
+	},
+	{
+		"key": "cmd+k shift+left",
+		"command": "workbench.action.moveActiveEditorGroupLeft"
+	},
+	{
+		"key": "cmd+k left",
+		"command": "-workbench.action.moveActiveEditorGroupLeft"
+	},
+	{
+		"key": "cmd+k shift+right",
+		"command": "workbench.action.moveActiveEditorGroupRight"
+	},
+	{
+		"key": "cmd+k right",
+		"command": "-workbench.action.moveActiveEditorGroupRight"
+	},
+	{
+		"key": "cmd+k shift+up",
+		"command": "workbench.action.moveActiveEditorGroupUp"
+	},
+	{
+		"key": "cmd+k up",
+		"command": "-workbench.action.moveActiveEditorGroupUp"
+	},
+	{
+		"key": "cmd+k shift+down",
+		"command": "workbench.action.moveActiveEditorGroupDown"
+	},
+	{
+		"key": "cmd+k down",
+		"command": "-workbench.action.moveActiveEditorGroupDown"
+	},
+	{
+		"key": "shift+cmd+4",
+		"command": "workbench.action.focusThirdEditorGroup"
+	},
+	{
+		"key": "cmd+3",
+		"command": "-workbench.action.focusThirdEditorGroup"
+	},
+	{
+		"key": "shift+cmd+0",
+		"command": "workbench.action.focusSixthEditorGroup"
+	},
+	{
+		"key": "cmd+6",
+		"command": "-workbench.action.focusSixthEditorGroup"
+	},
+	{
+		"key": "shift+cmd+2",
+		"command": "workbench.action.focusSeventhEditorGroup"
+	},
+	{
+		"key": "cmd+7",
+		"command": "-workbench.action.focusSeventhEditorGroup"
+	},
+	{
+		"key": "shift+cmd+9",
+		"command": "workbench.action.focusFourthEditorGroup"
+	},
+	{
+		"key": "cmd+4",
+		"command": "-workbench.action.focusFourthEditorGroup"
+	},
+	{
+		"key": "shift+cmd+3",
+		"command": "workbench.action.focusFifthEditorGroup"
+	},
+	{
+		"key": "cmd+5",
+		"command": "-workbench.action.focusFifthEditorGroup"
+	},
+	{
+		"key": "shift+cmd+[Minus]",
+		"command": "workbench.action.focusEighthEditorGroup"
+	},
+	{
+		"key": "cmd+8",
+		"command": "-workbench.action.focusEighthEditorGroup"
+	},
+	{
+		"key": "shift+cmd+5",
+		"command": "workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "cmd+1",
+		"command": "-workbench.action.focusFirstEditorGroup"
 	}
 ]

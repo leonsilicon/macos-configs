@@ -64,7 +64,6 @@
 	"emmet.includeLanguages": {
 		"html": "pug"
 	},
-	"editor.lineNumbers": "on",
 	"emmet.excludeLanguages": [
 		"markdown"
 	],
@@ -82,7 +81,8 @@
 	},
 	"cSpell.userWords": [
 		"Subroom",
-		"Tabulo"
+		"Tabulo",
+		"Timeblocking"
 	],
 	"rust.wait_to_build": 1,
 	"[sql]": {
@@ -191,6 +191,7 @@
 			"command": "lualatex",
 			"args": [
 				"--shell-escape",
+				"--enable-write18",
 				"-synctex=1",
 				"-interaction=nonstopmode",
 				"-file-line-error",
