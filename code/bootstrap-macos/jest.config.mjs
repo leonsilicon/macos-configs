@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 
@@ -6,6 +6,7 @@ const __dirname = new URL('.', import.meta.url).pathname;
  * @type import('ts-jest/dist/types').InitialOptionsTsJest
  */
 const config = {
+	modulePathIgnorePatterns: ['<rootDir>/dist'],
 	setupFiles: ['./test/jest.setup.ts'],
 	extensionsToTreatAsEsm: ['.ts'],
 	globals: {
@@ -15,6 +16,7 @@ const config = {
 		},
 	},
 	transform: {},
+	resolver: 'ts-jest-resolver',
 	preset: 'ts-jest',
 	testEnvironment: 'node',
 	moduleNameMapper: {
@@ -23,5 +25,4 @@ const config = {
 	},
 };
 
-// eslint-disable-next-line import/no-default-export
 export default config;

@@ -1,1 +1,1 @@
-init
+bootstrap-macos

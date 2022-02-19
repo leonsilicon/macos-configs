@@ -1,10 +1,8 @@
-/* eslint-disable unicorn/no-abusive-eslint-disable */
-/* eslint-disable */
-
-const createAliases = require('@leonzalion/eslint-config/alias');
+const path = require('path');
+const createAliases = require('@leonzalion/configs/eslint/alias');
 
 module.exports = {
-	extends: ['@leonzalion/eslint-config'],
-	parserOptions: { tsconfigRootDir: __dirname },
+	extends: [require.resolve('@leonzalion/configs/eslint')],
+	parserOptions: { project: [path.resolve(__dirname, 'tsconfig.eslint.json')] },
 	settings: createAliases({ '~': './src', '~test': './test' }),
 };

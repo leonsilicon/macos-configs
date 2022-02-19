@@ -1,1 +1,1 @@
-module.exports = require('@leonzalion/markdownlint-config');
+module.exports = require('@leonzalion/configs/markdownlint');

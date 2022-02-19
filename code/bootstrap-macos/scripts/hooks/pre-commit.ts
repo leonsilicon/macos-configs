@@ -1,3 +1,8 @@
-import { execaCommandSync } from 'execa';
+import process from 'node:process';
+import { execaCommandSync as exec } from 'execa';
 
-execaCommandSync('pnpm exec lint-staged', { stdio: 'inherit' });
+try {
+	exec('pnpm exec lint-staged', { stdio: 'inherit' });
+} catch {
+	process.exit(1);
+}

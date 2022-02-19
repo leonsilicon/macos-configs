@@ -1,5 +1,5 @@
 {
-	"extends": "@leonzalion/tsconfig/tsconfig.json",
+	"extends": "@leonzalion/configs/tsconfig/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
 		"baseUrl": ".",
@@ -7,5 +7,5 @@
 			"~/*": ["./src/*"]
 		}
 	},
-	"include": ["./src"]
+	"include": ["./src", "./typings"]
 }
