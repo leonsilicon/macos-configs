@@ -824,7 +824,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Brave\\ Browser.app"
+            "shell_command" : "open -na /Applications/Safari.app"
           } ],
           "type" : "basic"
         }, {
@@ -836,7 +836,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Brave\\ Browser.app"
+            "shell_command" : "open -na /Applications/Safari.app"
           } ],
           "type" : "basic"
         }, {
