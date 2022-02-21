@@ -299,6 +299,9 @@ brew 'yabai'
 tap 'rcmdnk/file'
 brew 'brew-file'
 
+tap 'robotsandpencils/made'
+brew 'xcodes'
+
 tap 'yqrashawn/goku'
 brew 'goku'
 
@@ -307,4 +310,5 @@ mas 'Color Picker (1.9.4)', id: 1545870783
 mas 'Gifski (2.20.1)', id: 1351639930
 mas 'Plash (2.7.1)', id: 1494023538
 mas 'Recordia (2.2.0)', id: 1529006487
+mas 'Vimari (2.1.1)', id: 1480933944
 mas 'Xcode (13.2)', id: 497799835
