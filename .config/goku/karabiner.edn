@@ -127,8 +127,8 @@
 			;; applications
 
 			;; mod + b: open brave (browser)
-			[:!CT#QWn "open -na /Applications/Brave.app"]
-			[:!QW#CTn "open -na /Applications/Brave.app"]
+			[:!CT#QWn "open -na /Applications/Brave\\ Browser.app"]
+			[:!QW#CTn "open -na /Applications/Brave\\ Browser.app"]
 											  ;; mod + c: open calendar
 			[:!CT#QWi "open /System/Applications/Calendar.app"]
 			[:!QW#CTi "open /System/Applications/Calendar.app"]
