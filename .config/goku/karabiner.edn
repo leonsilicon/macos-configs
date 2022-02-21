@@ -127,8 +127,8 @@
 			;; applications
 
 			;; mod + b: open safari (browser)
-			[:!CT#QWn "open -na /Applications/Safari.app"]
-			[:!QW#CTn "open -na /Applications/Safari.app"]
+			[:!CT#QWn "open -a /Applications/Safari.app"]
+			[:!QW#CTn "open -a /Applications/Safari.app"]
 											  ;; mod + c: open calendar
 			[:!CT#QWi "open /System/Applications/Calendar.app"]
 			[:!QW#CTi "open /System/Applications/Calendar.app"]
