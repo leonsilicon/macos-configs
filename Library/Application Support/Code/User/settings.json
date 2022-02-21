@@ -22,31 +22,6 @@
 		}
 	],
 	"vim.vimrc.enable": true,
-	"vim.otherModesKeyBindings": [
-		{
-			"before": [
-				"u"
-			],
-			"after": [],
-			"commands": [
-				{
-					"command": "undo"
-				}
-			]
-		},
-		{
-			"before": [
-				"<C-r>"
-			],
-			"after": [],
-			"commands": [
-				{
-					"command": "redo"
-				}
-			]
-		}
-	],
-	"elixir.projectPath": "microservices/room_server",
 	"[vue]": {
 		"editor.useTabStops": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
