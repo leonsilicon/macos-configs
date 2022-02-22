@@ -143,6 +143,7 @@
 		{
 			"name": "lualatex",
 			"tools": [
+				"clean-pythontex",
 				"lualatex",
 				"cp-tex",
 				"pythontex",
@@ -151,19 +152,6 @@
 		}
 	],
 	"latex-workshop.latex.tools": [
-		{
-			"name": "latexmk",
-			"command": "latexmk",
-			"args": [
-				"-synctex=1",
-				"-interaction=nonstopmode",
-				"-file-line-error",
-				"-pdf",
-				"-aux-directory=out",
-				"-output-directory=out",
-				"%DOC%"
-			]
-		},
 		{
 			"name": "lualatex",
 			"command": "lualatex",
@@ -178,18 +166,27 @@
 			]
 		},
 		{
-			"name": "cp-tex",
-			"command": "cp",
+			"name": "clean-pythontex",
+			"command": "rm",
 			"args": [
-				"%DOC%.tex",
-				"%OUTDIR%"
+				"-rf",
+				"%DIR%/%OUTDIR%/pythontex-files-%DOCFILE%",
+				"%DIR%/%OUTDIR%/%DOCFILE%.pytxcode"
 			]
 		},
 		{
 			"name": "pythontex",
 			"command": "pythontex",
 			"args": [
-				"%OUTDIR%/%DOCFILE%.tex"
+				"%DIR%/%OUTDIR%/%DOCFILE%.tex"
+			]
+		},
+		{
+			"name": "cp-tex",
+			"command": "cp",
+			"args": [
+				"%DOC%.tex",
+				"%DIR%/%OUTDIR%/%DOCFILE%.tex"
 			]
 		},
 		{
@@ -202,10 +199,11 @@
 				"-interaction=nonstopmode",
 				"-file-line-error",
 				"-output-directory=out",
-				"%OUTDIR%/%DOCFILE%.tex"
+				"%OUTDIR%%DOCFILE%.tex"
 			]
 		}
 	],
+	"latex-workshop.latex.autoBuild.run": "never",
 	"[cpp]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	}

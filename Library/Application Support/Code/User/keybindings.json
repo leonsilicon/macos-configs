@@ -788,5 +788,15 @@
 	{
 		"key": "cmd+1",
 		"command": "-workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "cmd+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "cmd+l cmd+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus && editorLangId =~ /latex|rsweave|jlweave/"
 	}
 ]
