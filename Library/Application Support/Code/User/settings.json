@@ -141,67 +141,21 @@
 	"latex-workshop.latex.outDir": "./out/",
 	"latex-workshop.latex.recipes": [
 		{
-			"name": "lualatex",
+			"name": "lualatex-py",
 			"tools": [
-				"clean-pythontex",
-				"lualatex",
-				"cp-tex",
-				"pythontex",
-				"lualatex-post"
+				"lualatex-py"
 			]
 		}
 	],
 	"latex-workshop.latex.tools": [
 		{
-			"name": "lualatex",
-			"command": "lualatex",
+			"name": "lualatex-py",
+			"command": "lualatex-py",
 			"args": [
-				"--shell-escape",
-				"--enable-write18",
-				"-synctex=1",
-				"-interaction=nonstopmode",
-				"-file-line-error",
-				"-output-directory=out",
+				"--output-directory=out",
 				"%DOC%.tex"
 			]
 		},
-		{
-			"name": "clean-pythontex",
-			"command": "rm",
-			"args": [
-				"-rf",
-				"%DIR%/%OUTDIR%/pythontex-files-%DOCFILE%",
-				"%DIR%/%OUTDIR%/%DOCFILE%.pytxcode"
-			]
-		},
-		{
-			"name": "pythontex",
-			"command": "pythontex",
-			"args": [
-				"%DIR%/%OUTDIR%/%DOCFILE%.tex"
-			]
-		},
-		{
-			"name": "cp-tex",
-			"command": "cp",
-			"args": [
-				"%DOC%.tex",
-				"%DIR%/%OUTDIR%/%DOCFILE%.tex"
-			]
-		},
-		{
-			"name": "lualatex-post",
-			"command": "lualatex",
-			"args": [
-				"--shell-escape",
-				"--enable-write18",
-				"-synctex=1",
-				"-interaction=nonstopmode",
-				"-file-line-error",
-				"-output-directory=out",
-				"%OUTDIR%%DOCFILE%.tex"
-			]
-		}
 	],
 	"latex-workshop.latex.autoBuild.run": "never",
 	"[cpp]": {
