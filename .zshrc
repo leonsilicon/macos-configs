@@ -64,6 +64,7 @@ RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resol
 RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
 export PYTHONPATH="$PYTHONPATH:$HOME/.pyenv/versions/3.6.15"
 export PATH="$PATH:$HOME/.pyenv/versions/3.6.15/bin"
+export PATH="$(pyenv root)/shims:$PATH"
 eval "$(pyenv init -)"
 
 PATH="/Users/leonzalion/perl5/bin${PATH:+:${PATH}}"; export PATH;
