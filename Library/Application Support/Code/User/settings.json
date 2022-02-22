@@ -143,7 +143,10 @@
 		{
 			"name": "lualatex",
 			"tools": [
-				"lualatex"
+				"lualatex",
+				"cp-tex",
+				"pythontex",
+				"lualatex-post"
 			]
 		}
 	],
@@ -172,6 +175,34 @@
 				"-file-line-error",
 				"-output-directory=out",
 				"%DOC%.tex"
+			]
+		},
+		{
+			"name": "cp-tex",
+			"command": "cp",
+			"args": [
+				"%DOC%.tex",
+				"%OUTDIR%"
+			]
+		},
+		{
+			"name": "pythontex",
+			"command": "pythontex",
+			"args": [
+				"%OUTDIR%/%DOCFILE%.tex"
+			]
+		},
+		{
+			"name": "lualatex-post",
+			"command": "lualatex",
+			"args": [
+				"--shell-escape",
+				"--enable-write18",
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"-output-directory=out",
+				"%OUTDIR%/%DOCFILE%.tex"
 			]
 		}
 	],
