@@ -58,10 +58,12 @@
 !Library/Keyboard Layouts
 !Library/Keyboard Layouts/Programmer Dvorak.keylayout
 !Library/Preferences
-!Library/Preferences/espanso
-!Library/Preferences/espanso/*
-!Library/Preferences/espanso/match
-!Library/Preferences/espanso/match/*
+!Library/Application Support/espanso
+Library/Application Support/espanso/*
+!Library/Application Support/espanso/match
+!Library/Application Support/espanso/match/*
+!Library/Application Support/espanso/configs
+!Library/Application Support/espanso/configs/*
 
 # Hackintosh Configs
 !.config/hackintosh
