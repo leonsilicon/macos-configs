@@ -160,5 +160,8 @@
 	"latex-workshop.latex.autoBuild.run": "never",
 	"[cpp]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[bibtex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	}
 }
