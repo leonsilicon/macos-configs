@@ -76,3 +76,5 @@ PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 export PATH="$PATH:/Users/leonzalion/.local/bin"
+
+alias clear="printf '\33c\e[3J'"
