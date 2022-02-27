@@ -141,16 +141,16 @@
 	"latex-workshop.latex.outDir": "./out/",
 	"latex-workshop.latex.recipes": [
 		{
-			"name": "lualatex-py",
+			"name": "latex-workflow",
 			"tools": [
-				"lualatex-py"
+				"latex-workflow"
 			]
 		}
 	],
 	"latex-workshop.latex.tools": [
 		{
-			"name": "lualatex-py",
-			"command": "lualatex-py",
+			"name": "latex-workflow",
+			"command": "latex-workflow",
 			"args": [
 				"--output-directory=out",
 				"%DOC%.tex"
