@@ -97,7 +97,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"editor.cursorStyle": "line",
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-	"editor.wordWrap": "off",
+	"editor.wordWrap": "on",
 	"files.eol": "\n",
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
