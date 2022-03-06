@@ -295,7 +295,7 @@ tap 'jsontypedef/jsontypedef'
 brew 'jtd-codegen'
 
 tap 'koekeishiya/formulae'
-brew 'yabai'
+brew 'yabai', args: ['HEAD']
 
 tap 'rcmdnk/file'
 brew 'brew-file'
@@ -307,6 +307,7 @@ tap 'yqrashawn/goku'
 brew 'goku'
 
 # App Store applications
+mas 'AdBlock Pro (10.1.0)', id: 1018301773
 mas 'Color Picker (1.9.4)', id: 1545870783
 mas 'Gifski (2.20.1)', id: 1351639930
 mas 'Plash (2.7.1)', id: 1494023538

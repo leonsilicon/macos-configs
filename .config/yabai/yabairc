@@ -1,3 +1,6 @@
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
 yabai -m config layout bsp
 yabai -m config window_placement first_child
 yabai -m config window_topmost on
@@ -10,3 +13,4 @@ yabai -m signal --add event=application_launched action='ymsp window-created'
 yabai -m signal --add event=window_moved action='ymsp window-moved'
 
 ymsp on-yabai-start
+
