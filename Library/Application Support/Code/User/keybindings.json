@@ -803,5 +803,9 @@
 		"key": "cmd+l alt+v",
 		"command": "-latex-workshop.view",
 		"when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "cmd+alt+shift+i",
+		"command": "editor.action.inspectTMScopes"
 	}
 ]
