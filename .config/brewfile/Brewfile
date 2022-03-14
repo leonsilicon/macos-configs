@@ -180,6 +180,7 @@ brew 'ripgrep'
 brew 'rm-improved'
 brew 'rubberband'
 brew 'ruby'
+brew 'rust'
 brew 'screenresolution'
 brew 'sdl2'
 brew 'shared-mime-info'
@@ -247,7 +248,6 @@ cask 'fanny'
 cask 'firefox'
 cask 'freedom'
 cask 'genymotion'
-cask 'get-backup-pro'
 cask 'gimp'
 cask 'github'
 cask 'google-drive'
@@ -257,6 +257,7 @@ cask 'karabiner-elements'
 cask 'keycastr'
 cask 'kindle'
 cask 'libreoffice'
+cask 'mactex'
 cask 'microsoft-auto-update'
 cask 'microsoft-excel'
 cask 'microsoft-word'
@@ -295,7 +296,7 @@ tap 'jsontypedef/jsontypedef'
 brew 'jtd-codegen'
 
 tap 'koekeishiya/formulae'
-brew 'yabai', args: ['HEAD']
+brew 'yabai'
 
 tap 'rcmdnk/file'
 brew 'brew-file'
@@ -307,10 +308,4 @@ tap 'yqrashawn/goku'
 brew 'goku'
 
 # App Store applications
-mas 'AdBlock Pro (10.1.0)', id: 1018301773
-mas 'Color Picker (1.9.4)', id: 1545870783
-mas 'Gifski (2.20.1)', id: 1351639930
-mas 'Plash (2.7.1)', id: 1494023538
-mas 'Recordia (2.2.0)', id: 1529006487
-mas 'Vimari (2.1.1)', id: 1480933944
 mas 'Xcode (13.2.1)', id: 497799835
