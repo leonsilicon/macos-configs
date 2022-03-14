@@ -1,11 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(wakatime)
+plugins=(wakatime zsh-autocomplete zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/Users/leonzalion/code/homebrew/bin:$PATH"
-
-source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
@@ -57,8 +55,6 @@ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 export PATH="$HOME/.poetry/bin:$PATH"
-
-source ~/code/git-subrepo/.rc
 
 RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/"
 RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"

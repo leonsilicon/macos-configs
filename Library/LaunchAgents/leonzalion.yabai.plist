@@ -11,7 +11,7 @@
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key>
-    <string>/Users/leonzalion/code/git-subrepo/lib:/Users/leonzalion/.poetry/bin:/Users/leonzalion/.nvm/versions/node/v16.13.2/bin:/Users/leonzalion/Library/pnpm:/Users/leonzalion/code/bin:/usr/local/bin:/Users/leonzalion/code/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/leonzalion/code/homebrew/bin:/Users/leonzalion/.cargo/bin</string>
+    <string>/Users/leonzalion/Library/pnpm:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/leonzalion/code/homebrew/bin</string>
   </dict>
   <key>RunAtLoad</key>
   <true/>
