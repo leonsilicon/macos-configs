@@ -164,5 +164,6 @@
 	"[bibtex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	},
-	"window.zoomLevel": -1
+	"workbench.editor.showTabs": false,
+	"window.zoomLevel": 1
 }

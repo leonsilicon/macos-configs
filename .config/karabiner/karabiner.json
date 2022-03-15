@@ -987,6 +987,20 @@
           } ],
           "type" : "basic"
         } ]
+      }, {
+        "description" : "F22 to Fn key",
+        "manipulators" : [ {
+          "from" : {
+            "key_code" : "f22",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "fn"
+          } ],
+          "type" : "basic"
+        } ]
       } ]
     },
     "devices" : [ {
