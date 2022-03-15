@@ -149,5 +149,8 @@
 			[:##f23, :!Tleft_command]
 			[:##f24, :!Wright_command]
 		]}
+		{:des "F22 to Fn key", :rules [
+			[:##f22, :fn]
+		]}
 	]
 }

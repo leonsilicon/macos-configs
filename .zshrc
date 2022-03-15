@@ -1,11 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(wakatime)
+plugins=(wakatime zsh-autocomplete zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/Users/leonzalion/code/homebrew/bin:$PATH"
-
-source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
@@ -58,8 +56,6 @@ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
-source ~/code/git-subrepo/.rc
-
 RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/"
 RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
 export PYTHONPATH="$PYTHONPATH:$HOME/.pyenv/versions/3.6.15"
@@ -67,11 +63,11 @@ export PATH="$PATH:$HOME/.pyenv/versions/3.6.15/bin"
 export PATH="$(pyenv root)/shims:$PATH"
 eval "$(pyenv init -)"
 
-PATH="/Users/leonzalion/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/leonzalion/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/leonzalion/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/leonzalion/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
+# PATH="/Users/leonzalion/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/Users/leonzalion/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/Users/leonzalion/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/Users/leonzalion/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/Users/leonzalion/perl5"; export PERL_MM_OPT;
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
