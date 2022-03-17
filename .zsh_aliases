@@ -9,3 +9,4 @@ alias git-largest-files="git rev-list --objects --all |
   $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest"
 alias gimp='/Applications/GIMP-2.10.app/Contents/MacOS/gimp'
 alias g='g++ -std=c++17'
+alias gitpullall='ls | xargs -P10 -I{} git -C {} pull'
