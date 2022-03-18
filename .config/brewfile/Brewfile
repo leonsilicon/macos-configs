@@ -288,7 +288,8 @@ cask 'font-microsoft-office'
 tap 'dopplerhq/cli'
 brew 'doppler'
 
-tap 'federico-terzi/espanso'
+tap 'espanso/espanso'
+cask 'espanso'
 
 tap 'heroku/brew'
 brew 'heroku'
