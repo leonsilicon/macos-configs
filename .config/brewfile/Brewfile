@@ -289,7 +289,6 @@ tap 'dopplerhq/cli'
 brew 'doppler'
 
 tap 'espanso/espanso'
-cask 'espanso'
 
 tap 'heroku/brew'
 brew 'heroku'
