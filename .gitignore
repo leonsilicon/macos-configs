@@ -62,8 +62,6 @@
 Library/Application Support/espanso/*
 !Library/Application Support/espanso/match
 !Library/Application Support/espanso/match/*
-!Library/Application Support/espanso/configs
-!Library/Application Support/espanso/configs/*
 
 # Hackintosh Configs
 !.config/hackintosh
