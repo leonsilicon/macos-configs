@@ -1,3 +1,4 @@
 {
-	"yabaiPath": "/usr/local/bin/yabai"
+	"yabaiPath": "/usr/local/bin/yabai",
+	"debug": true
 }
