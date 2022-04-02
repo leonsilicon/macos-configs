@@ -36,6 +36,9 @@
 !.config/goku
 !.config/goku/*
 
+!.config/git
+!.config/git/gitignore
+
 # VSCode
 !Library
 !Library/Application Support
