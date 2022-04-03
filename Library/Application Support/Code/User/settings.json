@@ -163,6 +163,5 @@
 	},
 	"[bibtex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
-	},
-	"workbench.editor.showTabs": false
+	}
 }
