@@ -155,7 +155,7 @@
 				"--output-directory=out",
 				"%DOC%.tex"
 			]
-		},
+		}
 	],
 	"latex-workshop.latex.autoBuild.run": "never",
 	"[cpp]": {
@@ -163,5 +163,8 @@
 	},
 	"[bibtex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
-	}
+	},
+	"workbench.editor.showTabs": false,
+	"prettier.requireConfig": true,
+	"prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs"
 }
