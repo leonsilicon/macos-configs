@@ -48,7 +48,7 @@
 		"vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
 	},
 	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"vsicons.dontShowNewVersionMessage": true,
 	"[json]": {
