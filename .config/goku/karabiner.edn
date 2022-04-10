@@ -136,8 +136,8 @@
 			[:!CT#QWy "open /Users/leonzalion"]
 			[:!QW#CTy "open /Users/leonzalion"]
 			;; mod + n: open notion
-			[:!CT#QWl "open ~/Applications/Notion.app"]
-			[:!QW#CTl "open ~/Applications/Notion.app"]
+			[:!CT#QWl "open /Applications/Notion.app"]
+			[:!QW#CTl "open /Applications/Notion.app"]
 			;; mod + p open bitwarden (password manager)
 			[:!CT#QWr "open -na /Applications/Bitwarden.app"]
 			[:!QW#CTr "open -na /Applications/Bitwarden.app"]

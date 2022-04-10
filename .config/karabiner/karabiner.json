@@ -896,7 +896,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open ~/Applications/Notion.app"
+            "shell_command" : "open /Applications/Notion.app"
           } ],
           "type" : "basic"
         }, {
@@ -908,7 +908,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open ~/Applications/Notion.app"
+            "shell_command" : "open /Applications/Notion.app"
           } ],
           "type" : "basic"
         }, {
