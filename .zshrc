@@ -76,3 +76,4 @@ export PATH="$PATH:/Users/leonzalion/.cargo/bin"
 
 alias clear="printf '\33c\e[3J'"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+export PATH="$PATH:/Users/leonzalion/.mint/bin"

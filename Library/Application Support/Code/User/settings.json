@@ -166,5 +166,8 @@
 	},
 	"workbench.editor.showTabs": false,
 	"prettier.requireConfig": true,
-	"prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs"
+	"prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs",
+	"[swift]": {
+		"editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+	}
 }

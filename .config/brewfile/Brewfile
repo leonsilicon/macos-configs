@@ -48,6 +48,7 @@ brew 'giflib'
 brew 'git'
 brew 'git-filter-repo'
 brew 'git-lfs'
+brew 'git-subrepo'
 brew 'glib'
 brew 'gmp'
 brew 'gnu-getopt'
@@ -136,6 +137,7 @@ brew 'macos-term-size'
 brew 'mas'
 brew 'mbedtls'
 brew 'meson'
+brew 'mint'
 brew 'mpdecimal'
 brew 'mpfr'
 brew 'mpv'
@@ -311,4 +313,6 @@ tap 'yqrashawn/goku'
 brew 'goku'
 
 # App Store applications
+mas 'Gifski (2.20.2)', id: 1351639930
+mas 'Recordia (2.3.0)', id: 1529006487
 mas 'Xcode (13.2.1)', id: 497799835
