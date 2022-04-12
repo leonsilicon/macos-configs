@@ -167,7 +167,9 @@
 	"workbench.editor.showTabs": false,
 	"prettier.requireConfig": true,
 	"prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs",
+	"lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
 	"[swift]": {
 		"editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
-	}
+	},
+	"apple-swift-format.path": "/Users/leonzalion/.mint/bin/swift-format"
 }
