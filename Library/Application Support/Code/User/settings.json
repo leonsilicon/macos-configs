@@ -171,5 +171,4 @@
 	"[swift]": {
 		"editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
 	},
-	"apple-swift-format.path": "/Users/leonzalion/.mint/bin/swift-format"
 }
