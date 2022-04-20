@@ -75,7 +75,7 @@
 	"pgFormatter.tabs": true,
 	"pgFormatter.keywordCase": "lowercase",
 	"[markdown]": {
-		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": true
 	},
 	"files.autoSave": "afterDelay",
