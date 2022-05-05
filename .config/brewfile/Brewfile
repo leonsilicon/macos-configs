@@ -239,6 +239,7 @@ cask 'alacritty'
 cask 'alfred'
 cask 'android-platform-tools'
 cask 'android-studio'
+cask 'anki'
 cask 'audacity'
 cask 'authy'
 cask 'balenaetcher'
@@ -276,6 +277,7 @@ cask 'rescuetime'
 cask 'send-anywhere'
 cask 'slack'
 cask 'time-out'
+cask 'toggl-track'
 cask 'ukelele'
 cask 'unclutter'
 cask 'virtualbox'
@@ -316,4 +318,8 @@ brew 'goku'
 # App Store applications
 mas 'Gifski (2.20.2)', id: 1351639930
 mas 'Recordia (2.3.0)', id: 1529006487
+mas 'Bitwarden (1.31.3)', id: 1352778147
+mas 'Grammarly for Safari (9.53)', id: 1462114288
+mas 'Microsoft PowerPoint (16.59)', id: 462062816
+mas 'Vimari (2.1.1)', id: 1480933944
 mas 'Xcode (13.2.1)', id: 497799835
