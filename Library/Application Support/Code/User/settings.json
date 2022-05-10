@@ -134,5 +134,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.requireConfig": true,
-  "prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs"
+  "prettier.configPath": "./node_modules/@leonzalion/configs/prettier.cjs",
+	"markdownlint.config": {
+		"extends": "./projects/configs/src/markdownlint.json"
+	}
 }
