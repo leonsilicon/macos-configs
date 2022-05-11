@@ -22,9 +22,10 @@ eval "$(zoxide init zsh)"
 
 . ~/.zsh_aliases
 
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
+# TODO: fix this (no idea why it's running with Python 3.6)
+# if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  # source $(brew --prefix)/etc/brew-wrap
+# fi
 
 
 # add brew bash autocompletion
