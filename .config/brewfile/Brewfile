@@ -154,7 +154,6 @@ brew 'netpbm'
 brew 'nettle'
 brew 'nghttp2'
 brew 'ninja'
-brew 'node@14'
 brew 'npth'
 brew 'nvm'
 brew 'oniguruma'
@@ -298,15 +297,8 @@ brew 'doppler'
 
 tap 'espanso/espanso'
 
-tap 'heroku/brew'
-brew 'heroku'
-brew 'heroku-node'
-
 tap 'jsontypedef/jsontypedef'
 brew 'jtd-codegen'
-
-tap 'koekeishiya/formulae'
-brew 'yabai'
 
 tap 'rcmdnk/file'
 brew 'brew-file'
