@@ -16,6 +16,10 @@
 .config/qutebrowser
 !.config/qutebrowser/config.py
 
+# Refined GitHub
+!.config/refined-github
+!.config/refined-github/*
+
 # Alacritty
 !.config/alacritty
 !.config/alacritty/alacritty.yml

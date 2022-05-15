@@ -1,0 +1,7 @@
+aside[aria-label="Account"] {
+	visibility: hidden;
+}
+
+aside[aria-label="Account"] + div {
+	visibility: hidden;
+}
