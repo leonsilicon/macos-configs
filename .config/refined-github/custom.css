@@ -1,3 +1,5 @@
+a[href$="stargazers"] { display: none }
+
 aside[aria-label="Account"] {
 	visibility: hidden;
 }
