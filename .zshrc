@@ -80,4 +80,5 @@ export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="$PATH:/Users/leonzalion/.mint/bin"
 export FLYCTL_INSTALL="/Users/leonzalion/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="/Users/leonzalion/bin:$PATH"
 
