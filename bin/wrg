@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+seenReplace=''
+
+for arg in "$@"; do
+  if test "$arg" == '--replace'; then
+    seenReplace='true'
+    break
+  fi
+done
+
+if test -z "$seenReplace"; then
+  echo 'You must specify the --replace argument!'
+  exit 1
+fi
+
+currentFile=''
+didChange=''
+
+(
+  e \
+    --context 999999 \
+    --with-filename --heading --null \
+    --color=never --no-line-number \
+    "$@"
+  echo -e '\0'
+) |
+{
+  while IFS= read -r -d '' part; do
+    if test -n "$currentFile"; then
+      echo "$currentFile"
+      head -n -1 <<< "$part" > "$currentFile"
+      didChange='true'
+    fi
+    currentFile="$(tail -n 1 <<< "$part")"
+  done
+
+  if test -z "$didChange"; then
+    echo "No files were changed."
+    exit 1
+  fi
+}
