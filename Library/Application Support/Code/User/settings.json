@@ -133,9 +133,11 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.requireConfig": true,
-  "prettier.configPath": "./node_modules/lionconfig/prettier.cjs",
+	"prettier.requireConfig": true,
 	"markdownlint.config": {
 		"extends": "./projects/configs/src/markdownlint.json"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }
