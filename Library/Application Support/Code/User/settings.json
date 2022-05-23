@@ -19,7 +19,6 @@
   "[vue]": {
     "editor.useTabStops": true
   },
-  "eslint.workingDirectories": ["frontend"],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
@@ -55,7 +54,7 @@
   "[yaml]": {
     "editor.insertSpaces": true,
     "editor.autoIndent": "keep",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.useTabStops": false,
@@ -132,12 +131,5 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-	"prettier.requireConfig": true,
-	"markdownlint.config": {
-		"extends": "./projects/configs/src/markdownlint.json"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+  }
 }
