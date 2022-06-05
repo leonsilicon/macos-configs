@@ -61,8 +61,7 @@
     "editor.tabSize": 2,
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.defaultFormatter": "ms-python.python"
-  },
-  "rust-analyzer.lruCapacity": 2048,
+	},
   "rust-analyzer.runnableEnv": null,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorStyle": "line",
@@ -131,5 +130,6 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+	},
+	"rust-analyzer.lru.capacity": 2048
 }

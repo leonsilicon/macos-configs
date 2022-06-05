@@ -81,4 +81,5 @@ export PATH="$PATH:/Users/leonzalion/.mint/bin"
 export FLYCTL_INSTALL="/Users/leonzalion/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/Users/leonzalion/bin:$PATH"
-
+export GEM_HOME=$HOME/.gem
+export PATH="$PATH:/Users/leonzalion/.gem/bin"
