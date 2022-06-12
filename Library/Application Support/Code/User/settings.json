@@ -87,7 +87,7 @@
   "eslint.packageManager": "pnpm",
   "eslint.runtime": "node",
   "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
