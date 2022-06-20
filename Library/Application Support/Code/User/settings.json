@@ -130,6 +130,7 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"rust-analyzer.lru.capacity": 2048
+  },
+  "rust-analyzer.lru.capacity": 2048,
+  "editor.inlineSuggest.enabled": true
 }
