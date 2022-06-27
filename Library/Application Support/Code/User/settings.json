@@ -31,8 +31,9 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
+		"vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+		"vscode-kubernetes.minikube-path.mac": "/Users/leonzalion/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+	},
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
