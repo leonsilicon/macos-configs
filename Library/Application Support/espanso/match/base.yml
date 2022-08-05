@@ -1,4 +1,6 @@
 matches:
+   - trigger: ":espanso"
+     replace: "Hello, world!"
    # French accents
    - trigger: "\\@e"
      replace: "é"

@@ -119,7 +119,7 @@
   ],
   "latex-workshop.latex.autoBuild.run": "never",
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[bibtex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
