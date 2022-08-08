@@ -83,3 +83,6 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/Users/leonzalion/bin:$PATH"
 export GEM_HOME=$HOME/.gem
 export PATH="$PATH:/Users/leonzalion/.gem/bin"
+
+export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
+export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
