@@ -19,10 +19,13 @@
   "[vue]": {
     "editor.useTabStops": true
   },
+  "eslint.workingDirectories": ["frontend"],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
-  "emmet.extensionsPath": [""],
+  "emmet.extensionsPath": [
+		""
+	],
   "emmet.showExpandedAbbreviation": "never",
   "emmet.includeLanguages": {
     "html": "pug"
@@ -31,9 +34,8 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
-		"vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-		"vscode-kubernetes.minikube-path.mac": "/Users/leonzalion/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-	},
+    "vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -55,14 +57,15 @@
   "[yaml]": {
     "editor.insertSpaces": true,
     "editor.autoIndent": "keep",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[python]": {
     "editor.useTabStops": false,
     "editor.tabSize": 2,
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.defaultFormatter": "ms-python.python"
-	},
+  },
+  "rust-analyzer.lruCapacity": 2048,
   "rust-analyzer.runnableEnv": null,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorStyle": "line",
@@ -88,7 +91,7 @@
   "eslint.packageManager": "pnpm",
   "eslint.runtime": "node",
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "matklad.rust-analyzer"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -119,7 +122,7 @@
   ],
   "latex-workshop.latex.autoBuild.run": "never",
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[bibtex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -132,9 +135,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "rust-analyzer.lru.capacity": 2048,
-  "editor.inlineSuggest.enabled": true,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+  "prettier.requireConfig": true,
+  "prettier.configPath": "./node_modules/lionconfig/prettier.cjs",
+	"markdownlint.config": {
+		"extends": "./projects/configs/src/markdownlint.json"
 	}
 }
