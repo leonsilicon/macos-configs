@@ -1,5 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(wakatime zsh-autocomplete zsh-syntax-highlighting)
+plugins=(wakatime zsh-syntax-highlighting)
+
+source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 source $ZSH/oh-my-zsh.sh
 

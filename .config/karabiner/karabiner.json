@@ -368,7 +368,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp focus-down-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -380,7 +380,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp focus-down-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -392,7 +392,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp focus-up-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -404,7 +404,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp focus-up-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -416,7 +416,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
           } ],
           "type" : "basic"
         }, {
@@ -428,7 +428,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
           } ],
           "type" : "basic"
         }, {
@@ -440,7 +440,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
           } ],
           "type" : "basic"
         }, {
@@ -452,7 +452,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
           } ],
           "type" : "basic"
         }, {
@@ -464,7 +464,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -476,7 +476,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -488,7 +488,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -500,7 +500,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -512,7 +512,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap next || yabai -m window --swap first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"
           } ],
           "type" : "basic"
         }, {
@@ -524,7 +524,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap next || yabai -m window --swap first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"
           } ],
           "type" : "basic"
         }, {
@@ -536,7 +536,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap prev || yabai -m window --swap last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"
           } ],
           "type" : "basic"
         }, {
@@ -548,7 +548,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap prev || yabai -m window --swap last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"
           } ],
           "type" : "basic"
         }, {
@@ -560,7 +560,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"
           } ],
           "type" : "basic"
         }, {
@@ -572,7 +572,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"
           } ],
           "type" : "basic"
         }, {
@@ -584,7 +584,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"
           } ],
           "type" : "basic"
         }, {
@@ -596,7 +596,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"
           } ],
           "type" : "basic"
         }, {
@@ -608,7 +608,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"
           } ],
           "type" : "basic"
         }, {
@@ -620,7 +620,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"
           } ],
           "type" : "basic"
         }, {
@@ -632,7 +632,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"
           } ],
           "type" : "basic"
         }, {
@@ -644,7 +644,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"
           } ],
           "type" : "basic"
         }, {
@@ -656,7 +656,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp close-focused-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -668,7 +668,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "ymsp close-focused-window > /dev/null"
+            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -680,7 +680,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -692,7 +692,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -704,7 +704,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display next || yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -716,7 +716,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display next || yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -728,7 +728,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -740,7 +740,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -752,7 +752,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
@@ -764,7 +764,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
@@ -776,7 +776,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus next"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus next"
           } ],
           "type" : "basic"
         }, {
@@ -788,7 +788,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus next"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus next"
           } ],
           "type" : "basic"
         }, {
@@ -800,7 +800,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus prev"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus prev"
           } ],
           "type" : "basic"
         }, {
@@ -812,7 +812,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus prev"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus prev"
           } ],
           "type" : "basic"
         }, {

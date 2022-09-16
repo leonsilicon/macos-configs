@@ -68,61 +68,61 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
-			[:!CT#QWc "ymsp focus-down-window > /dev/null"]
-			[:!QW#CTc "ymsp focus-down-window > /dev/null"]
+			[:!CT#QWc "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"]
+			[:!QW#CTc "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"]
 			;; mod + k: focus up
-			[:!CT#QWv "ymsp focus-up-window > /dev/null"]
-			[:!QW#CTv "ymsp focus-up-window > /dev/null"]
+			[:!CT#QWv "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"]
+			[:!QW#CTv "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			;; mod + m: focus on master
-			[:!CT#QWm "yabai -m window --focus east"]
-			[:!QW#CTm "yabai -m window --focus east"]
+			[:!CT#QWm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!QW#CTm "/opt/homebrew/bin/yabai -m window --focus east"]
 			;; mod + shift + m: move window to master
-			[:!CTS#QWRm "yabai -m window --swap east"]
-			[:!QWR#CTSm "yabai -m window --swap east"]
+			[:!CTS#QWRm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!QWR#CTSm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
-			[:!CTS#QWRg "ymsp increase-master-window-count > /dev/null"]
-			[:!QWR#CTSg "ymsp increase-master-window-count > /dev/null"]
+			[:!CTS#QWRg "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
+			[:!QWR#CTSg "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
 			;; mod + shift + d: decrease number of master windows
-			[:!CTS#QWRh "ymsp decrease-master-window-count > /dev/null"]
-			[:!QWR#CTSh "ymsp decrease-master-window-count > /dev/null"]
+			[:!CTS#QWRh "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
+			[:!QWR#CTSh "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
 			;; mod + shift + j: move window down
-			[:!CTS#QWRc "yabai -m window --swap next || yabai -m window --swap first"]
-			[:!QWR#CTSc "yabai -m window --swap next || yabai -m window --swap first"]
+			[:!CTS#QWRc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
+			[:!QWR#CTSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
 			;; mod + shift + k: move window up
-			[:!CTS#QWRv "yabai -m window --swap prev || yabai -m window --swap last"]
-			[:!QWR#CTSv "yabai -m window --swap prev || yabai -m window --swap last"]
+			[:!CTS#QWRv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!QWR#CTSv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
 			;; mod + h: resize window left
-			[:!CT#QWj "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"]
-			[:!QW#CTj "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"]
+			[:!CT#QWj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!QW#CTj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
 			;; mod + l: resize window right
-			[:!CT#QWp "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"]
-			[:!QW#CTp "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"]
+			[:!CT#QWp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			[:!QW#CTp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
 			;; mod + alt + k: resize window top
-			[:!CTS#QWRp "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"]
-			[:!QWR#CTSp "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"]
+			[:!CTS#QWRp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			[:!QWR#CTSp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
 			;; mod + alt + j: resize window bottom
-			[:!CTS#QWRj "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"]
-			[:!QWR#CTSj "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"]
+			[:!CTS#QWRj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!QWR#CTSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			;; mod + shift + q: close focused window
-			[:!CTS#QWRx "ymsp close-focused-window > /dev/null"]
-			[:!QWR#CTSx "ymsp close-focused-window > /dev/null"]
+			[:!CTS#QWRx "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"]
+			[:!QWR#CTSx "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
-			[:!CT#QWe "yabai -m display --focus next || yabai -m display --focus first"]
-			[:!QW#CTe "yabai -m display --focus next || yabai -m display --focus first"]
+			[:!CT#QWe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
+			[:!QW#CTe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
 			;; mod + shift + period: move window to next display
-			[:!CTS#QWRe "yabai -m window --display next || yabai -m window --display first"]
-			[:!QWR#CTSe "yabai -m window --display next || yabai -m window --display first"]
+			[:!CTS#QWRe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
+			[:!QWR#CTSe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
 			;; mod + comma: switch to previous display
-			[:!CT#QWw "yabai -m display --focus prev || yabai -m display --focus last"]
-			[:!QW#CTw "yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!CT#QWw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!QW#CTw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
 			;; mod + shift + comma: move window to previous display
-			[:!CTS#QWRw "yabai -m window --display prev || yabai -m window --display last"]
-			[:!QWR#CTSw "yabai -m window --display prev || yabai -m window --display last"]
+			[:!CTS#QWRw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
+			[:!QWR#CTSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
 			;; mod + <number>: switch to space number <number>
-			[:!CT#QW9 "yabai -m space --focus next"]
-			[:!QW#CT9 "yabai -m space --focus next"]
-			[:!CT#QWquote "yabai -m space --focus prev"]
-			[:!QW#CTquote "yabai -m space --focus prev"]
+			[:!CT#QW9 "/opt/homebrew/bin/yabai -m space --focus next"]
+			[:!QW#CT9 "/opt/homebrew/bin/yabai -m space --focus next"]
+			[:!CT#QWquote "/opt/homebrew/bin/yabai -m space --focus prev"]
+			[:!QW#CTquote "/opt/homebrew/bin/yabai -m space --focus prev"]
 
 			;; applications
 
