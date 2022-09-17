@@ -98,8 +98,7 @@
   },
   "rojo.pluginManagement": true,
   "rojo.releaseBranch": "7.x",
-  "javascript.preferences.importModuleSpecifier": "non-relative",
-  "javascript.preferences.importModuleSpecifierEnding": "js",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifierEnding": "js",
   "latex-workshop.view.pdf.viewer": "tab",
@@ -139,5 +138,11 @@
   "prettier.configPath": "./node_modules/lionconfig/prettier.cjs",
 	"markdownlint.config": {
 		"extends": "./projects/configs/src/markdownlint.json"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	}
 }
