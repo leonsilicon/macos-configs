@@ -368,7 +368,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -380,7 +380,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-down-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -392,7 +392,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -404,7 +404,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp focus-up-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -464,7 +464,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -476,7 +476,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -488,7 +488,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -500,7 +500,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp decrease-master-window-count > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -656,7 +656,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -668,7 +668,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leonzalion/Library/pnpm/ymsp close-focused-window > /dev/null"
+            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
@@ -872,7 +872,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open /Users/leonzalion"
+            "shell_command" : "open /Users/leondreamed"
           } ],
           "type" : "basic"
         }, {
@@ -884,7 +884,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open /Users/leonzalion"
+            "shell_command" : "open /Users/leondreamed"
           } ],
           "type" : "basic"
         }, {
