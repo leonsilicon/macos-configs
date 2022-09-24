@@ -53,7 +53,7 @@
 
 # launchctl
 !Library/LaunchAgents
-!Library/LaunchAgents/leonzalion.yabai.plist
+!Library/LaunchAgents/leondreamed.yabai.plist
 !Library/LaunchAgents/deepwork.yabai.plist
 !Library/LaunchAgents/com.federicoterzi.espanso.plist
 
