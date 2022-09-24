@@ -872,7 +872,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open /Users/leonzalion"
+            "shell_command" : "open /Users/leondreamed"
           } ],
           "type" : "basic"
         }, {
@@ -884,7 +884,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open /Users/leonzalion"
+            "shell_command" : "open /Users/leondreamed"
           } ],
           "type" : "basic"
         }, {

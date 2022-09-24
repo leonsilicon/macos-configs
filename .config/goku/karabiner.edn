@@ -133,8 +133,8 @@
 			[:!CT#QWi "open /System/Applications/Calendar.app"]
 			[:!QW#CTi "open /System/Applications/Calendar.app"]
 											  ;; mod + f: open finder
-			[:!CT#QWy "open /Users/leonzalion"]
-			[:!QW#CTy "open /Users/leonzalion"]
+			[:!CT#QWy "open /Users/leondreamed"]
+			[:!QW#CTy "open /Users/leondreamed"]
 			;; mod + n: open notion
 			[:!CT#QWl "open /Applications/Notion.app"]
 			[:!QW#CTl "open /Applications/Notion.app"]
