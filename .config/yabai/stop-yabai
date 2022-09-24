@@ -1,1 +1,1 @@
-/bin/launchctl bootout gui/$(id -u)/leonzalion.yabai.plist
+/bin/launchctl bootout gui/$(id -u)/leondreamed.yabai.plist
