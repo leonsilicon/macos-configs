@@ -1,4 +1,4 @@
-Export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 plugins=(wakatime zsh-autocomplete zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -86,3 +86,8 @@ export PATH="$PATH:/Users/leondreamed/.gem/bin"
 
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
 export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
+
+# pnpm
+export PNPM_HOME="/Users/leondreamed/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
