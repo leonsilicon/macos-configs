@@ -35,7 +35,7 @@
 		"vscode-kubernetes.minikube-path.mac": "/Users/leonzalion/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vsicons.dontShowNewVersionMessage": true,
   "cSpell.userWords": ["Subroom", "Tabulo", "Timeblocking"],
@@ -136,5 +136,8 @@
   "editor.inlineSuggest.enabled": true,
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	}
 }
