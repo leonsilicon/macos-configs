@@ -138,5 +138,6 @@
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
-	}
+	},
+	"eslint.quiet": true
 }
