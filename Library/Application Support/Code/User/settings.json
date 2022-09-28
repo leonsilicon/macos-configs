@@ -48,7 +48,8 @@
   "pgFormatter.tabs": true,
   "pgFormatter.keywordCase": "lowercase",
   "[markdown]": {
-    "editor.insertSpaces": true
+		"editor.insertSpaces": true,
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "files.autoSave": "afterDelay",
   "[yaml]": {
