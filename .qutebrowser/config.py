@@ -86,6 +86,8 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+c.fonts.default_size = '20pt'
+
 # Allow websites to show notifications.
 # Type: BoolAsk
 # Valid values:
