@@ -13,7 +13,7 @@
 
 # Qutebrowser
 !.qutebrowser
-!.qutebrowser/*
+!.qutebrowser/config.py
 
 # Refined GitHub
 !.config/refined-github
