@@ -12,8 +12,8 @@
 .config/*
 
 # Qutebrowser
-!.config/qutebrowser
-!.config/qutebrowser/*
+!.qutebrowser
+!.qutebrowser/*
 
 # Refined GitHub
 !.config/refined-github
