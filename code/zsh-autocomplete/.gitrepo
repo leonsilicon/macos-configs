@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/marlonrichert/zsh-autocomplete
 	branch = main
-	commit = 7ab87cb20ba6f155eb38e6199c970fefef49fb75
-	parent = 2e7800952b21239e7c81c5fe89dc2f97470d02f9
+	commit = aed8e17de6d16dca940a344117894f3e57022ed5
+	parent = df25a7c0e9a3d5c6495e7defb433ea1c13ca8207
 	method = merge
 	cmdver = 0.4.3
