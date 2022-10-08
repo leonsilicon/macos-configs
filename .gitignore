@@ -12,9 +12,8 @@
 .config/*
 
 # Qutebrowser
-!.config/qutebrowser
-.config/qutebrowser
-!.config/qutebrowser/config.py
+!.qutebrowser
+!.qutebrowser/config.py
 
 # Refined GitHub
 !.config/refined-github
@@ -53,7 +52,7 @@
 
 # launchctl
 !Library/LaunchAgents
-!Library/LaunchAgents/leonzalion.yabai.plist
+!Library/LaunchAgents/leondreamed.yabai.plist
 !Library/LaunchAgents/deepwork.yabai.plist
 !Library/LaunchAgents/com.federicoterzi.espanso.plist
 

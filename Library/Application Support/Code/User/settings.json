@@ -34,8 +34,13 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
+<<<<<<< HEAD
     "vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
+=======
+		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+	},
+>>>>>>> main
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -51,7 +56,8 @@
   "pgFormatter.tabs": true,
   "pgFormatter.keywordCase": "lowercase",
   "[markdown]": {
-    "editor.insertSpaces": true
+		"editor.insertSpaces": true,
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "files.autoSave": "afterDelay",
   "[yaml]": {
@@ -133,13 +139,10 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.requireConfig": true,
-  "prettier.configPath": "./node_modules/lionconfig/prettier.cjs",
-	"markdownlint.config": {
-		"extends": "./projects/configs/src/markdownlint.json"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+  "rust-analyzer.lru.capacity": 2048,
+  "editor.inlineSuggest.enabled": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
