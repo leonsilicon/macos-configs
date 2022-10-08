@@ -77,8 +77,7 @@ Library/Application Support/espanso/*
 !code
 !code/install.sh
 !code/zsh-autocomplete
-code/zsh-autocomplete/*
-!code/zsh-autocomplete/.gitrepo
+!code/zsh-autocomplete/*
 
 # Bin Scripts
 !bin
