@@ -1,6 +1,5 @@
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-source ~/.vimrc
+set backspace=indent,eol,start 
+set iskeyword-=_
 
 function! DeleteInnerNumber()
 python3 << EOF
