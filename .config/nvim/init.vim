@@ -12,7 +12,7 @@ cursor_pos = int(vim.eval("col('.')"))
 
 def is_hex(s):
     try:
-        int(s, 16)
+        int(s, 10)
         return True
     except ValueError:
         return False
