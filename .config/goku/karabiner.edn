@@ -107,17 +107,17 @@
 			[:!CTS#QWRx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			[:!QWR#CTSx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
-			[:!CT#QWe "yabai -m display --focus next || yabai -m display --focus first"]
-			[:!QW#CTe "yabai -m display --focus next || yabai -m display --focus first"]
+			[:!CT#QWw "yabai -m display --focus next || yabai -m display --focus first"]
+			[:!QW#CTw "yabai -m display --focus next || yabai -m display --focus first"]
 			;; mod + shift + period: move window to next display
-			[:!CTS#QWRe "yabai -m window --display next || yabai -m window --display first"]
-			[:!QWR#CTSe "yabai -m window --display next || yabai -m window --display first"]
+			[:!CTS#QWRw "yabai -m window --display next || yabai -m window --display first"]
+			[:!QWR#CTSw "yabai -m window --display next || yabai -m window --display first"]
 			;; mod + comma: switch to previous display
-			[:!CT#QWw "yabai -m display --focus prev || yabai -m display --focus last"]
-			[:!QW#CTw "yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!CT#QWe "yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!QW#CTe "yabai -m display --focus prev || yabai -m display --focus last"]
 			;; mod + shift + comma: move window to previous display
-			[:!CTS#QWRw "yabai -m window --display prev || yabai -m window --display last"]
-			[:!QWR#CTSw "yabai -m window --display prev || yabai -m window --display last"]
+			[:!CTS#QWRe "yabai -m window --display prev || yabai -m window --display last"]
+			[:!QWR#CTSe "yabai -m window --display prev || yabai -m window --display last"]
 			;; mod + <number>: switch to space number <number>
 			[:!CT#QW9 "yabai -m space --focus next"]
 			[:!QW#CT9 "yabai -m space --focus next"]
