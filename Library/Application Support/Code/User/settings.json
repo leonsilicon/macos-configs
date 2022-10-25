@@ -140,5 +140,8 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
-	"eslint.quiet": true
+	"eslint.quiet": true,
+	"files.associations": {
+		"*.ts": "typescript"
+	}
 }
