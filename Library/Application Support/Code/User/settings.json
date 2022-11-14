@@ -31,7 +31,8 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
-		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+		"vs-kubernetes.minikube-show-information-expiration": "2023-05-13T17:48:02.569Z"
 	},
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
