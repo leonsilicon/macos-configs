@@ -139,7 +139,7 @@
     "editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"eslint.quiet": true,
 	"files.associations": {
