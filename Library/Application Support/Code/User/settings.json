@@ -144,5 +144,6 @@
 	"eslint.quiet": true,
 	"files.associations": {
 		"*.ts": "typescript"
-	}
+	},
+	"explorer.confirmDelete": false
 }
