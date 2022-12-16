@@ -34,13 +34,8 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
-<<<<<<< HEAD
-    "vscode-kubernetes.minikube-path.linux": "/home/leonzalion/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
-=======
 		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
->>>>>>> main
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -147,5 +142,6 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
-	"eslint.quiet": true
+	"eslint.quiet": true,
+	"explorer.confirmDelete": false
 }
