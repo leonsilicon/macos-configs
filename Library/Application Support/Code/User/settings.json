@@ -35,7 +35,7 @@
 		"vs-kubernetes.minikube-show-information-expiration": "2023-05-13T17:48:02.569Z"
 	},
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vsicons.dontShowNewVersionMessage": true,
   "cSpell.userWords": ["Subroom", "Tabulo", "Timeblocking"],
