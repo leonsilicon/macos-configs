@@ -142,6 +142,6 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
-	"eslint.quiet": true,
-	"explorer.confirmDelete": false
+	"explorer.confirmDelete": false,
+	"redhat.telemetry.enabled": false
 }
