@@ -145,5 +145,6 @@
 	"files.associations": {
 		"*.ts": "typescript"
 	},
-	"explorer.confirmDelete": false
+	"explorer.confirmDelete": false,
+	"typescript.tsserver.log": "off"
 }
