@@ -143,5 +143,6 @@
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"explorer.confirmDelete": false,
-	"redhat.telemetry.enabled": false
+	"redhat.telemetry.enabled": false,
+	"typescript.tsserver.log": "off"
 }
