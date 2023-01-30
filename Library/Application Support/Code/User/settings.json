@@ -146,5 +146,6 @@
 		"*.ts": "typescript"
 	},
 	"explorer.confirmDelete": false,
-	"typescript.tsserver.log": "off"
+	"typescript.tsserver.log": "off",
+	"window.zoomLevel": -1
 }
