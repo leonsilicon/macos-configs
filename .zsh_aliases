@@ -8,7 +8,7 @@ alias git-largest-files="git rev-list --objects --all |
   cut -c 1-12,41- |
   $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest"
 alias gimp='/Applications/GIMP-2.10.app/Contents/MacOS/gimp'
-alias g='g++ -std=c++17'
+alias g='gcc-12 -std=c++17 -lstdc++'
 alias gitpullall='ls | xargs -P10 -I{} git -C {} pull'
 alias p='pnpm'
 alias dup='docker compose up'
