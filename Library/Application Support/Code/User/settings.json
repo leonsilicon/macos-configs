@@ -54,7 +54,7 @@
 		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "[yaml]": {
     "editor.insertSpaces": true,
     "editor.autoIndent": "keep",
