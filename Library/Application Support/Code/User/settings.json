@@ -145,5 +145,8 @@
 	"explorer.confirmDelete": false,
 	"redhat.telemetry.enabled": false,
 	"typescript.tsserver.log": "off",
-	"C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-12"
+	"C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-12",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": []
+	}
 }
