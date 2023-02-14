@@ -147,13 +147,6 @@
 	"typescript.tsserver.log": "off",
 	"C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-12",
 	"editor.tokenColorCustomizations": {
-		"textMateRules": [
-			{
-				"scope": "keyword.other.dotenv",
-				"settings": {
-					"foreground": "#FF000000"
-				}
-			}
-		]
+		"textMateRules": []
 	}
 }
