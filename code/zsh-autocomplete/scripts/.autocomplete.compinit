@@ -1,7 +1,6 @@
 #!/bin/zsh
 zmodload -Fa zsh/files b:zf_rm
 zmodload -F zsh/parameter p:funcstack p:functions
-builtin autoload -RUz is-at-least
 
 typeset -gHa _autocomplete__compdef=()
 compdef() {
@@ -9,13 +8,13 @@ compdef() {
 }
 
 [[ -v functions[_bash_complete] ]] ||
-  _bash_complete compgen complete () {
-    unfunction _bash_complete compgen complete
-    builtin autoload +X -Uz bashcompinit
-    bashcompinit
-    bashcompinit() { : }
-    ${(%):-%N} "$@"
-  }
+    _bash_complete compgen complete () {
+      unfunction _bash_complete compgen complete
+      builtin autoload +X -Uz bashcompinit
+      bashcompinit
+      bashcompinit() { : }
+      ${(%):-%N} "$@"
+    }
 
 .autocomplete.compinit.precmd() {
   emulate -L zsh
@@ -33,19 +32,20 @@ compdef() {
   typeset -gH \
       _comp_dumpfile=${_comp_dumpfile:-${ZSH_COMPDUMP:-${XDG_CACHE_HOME:-$HOME/.cache}/zsh/compdump}}
 
-  if [[ -v _comps && $_comps[-command-] != _autocomplete.command ]]; then
+  if [[ -v _comps[-command-] && $_comps[-command-] != _autocomplete.command ]]; then
     zf_rm -f $_comp_dumpfile
   else
-    local -Pa comps=( ~zsh-autocomplete/functions/completion/_autocomplete.*~*.zwc(N-.) )
+    local -Pa compfuncfiles=( ~zsh-autocomplete/functions/completion/_autocomplete.*~*.zwc(N-.) )
 
-    if ! (( $#comps )); then
-      print -u2 -- 'zsh-autocomplete: Failed to find completion functions. Aborting.'
+    if ! (( $#compfuncfiles )); then
+      print -u2 -- 'autocomplete: Failed to find completion function files. Aborting.'
       return 66
     fi
 
+    # Check if any of our function files are newer than the comp dump file.
     local -P f=
-    for f in $comps[@]; do
-      if ! [[ -v functions[$f:t] && $f -ot $_comp_dumpfile ]]; then
+    for f in $compfuncfiles[@]; do
+      if [[ -v functions[$f:t] && $f -nt $_comp_dumpfile ]]; then
         zf_rm -f $_comp_dumpfile
         break
       fi
@@ -92,8 +92,13 @@ EOF
     fi
   ) &|
 
+  # Workaround: Some other plugins rely on patching _main_complete, which can interfere with our completion.
+  functions[autocomplete:tmp]="$functions[_main_complete]"
   .autocomplete.patch _main_complete
-  _main_complete() {
+  functions[_main_complete]="$functions[autocomplete:tmp]"
+  unfunction autocomplete:tmp
+
+  autocomplete:new:_main_complete() {
     local -i _autocomplete__reserved_lines=0
     local -Pi ret=1
     unset _autocomplete__partial_list _autocomplete__unambiguous
@@ -106,8 +111,8 @@ EOF
     [[ -v functions[compadd] ]] ||
         functions[compadd]=$functions[.autocomplete.compadd]
 
-    local +h -a comppostfuncs=( _autocomplete._main_complete.post "$comppostfuncs[@]" )
-    .autocomplete._main_complete "$@"
+    local +h -a comppostfuncs=( autocomplete:new:_main_complete.post "$comppostfuncs[@]" )
+    autocomplete:old:_main_complete "$@"
   }
 
   # Add support for coloring file types to _expand.
@@ -122,7 +127,7 @@ EOF
     fi
   }
 
-  _autocomplete._main_complete.post() {
+  autocomplete:new:_main_complete.post() {
     [[ $WIDGET != _complete_help ]] &&
         unfunction compadd 2> /dev/null
     _autocomplete.unambiguous
@@ -136,17 +141,17 @@ EOF
       compstate[pattern_insert]=  # Make compstate[insert]=unambiguous work.
       compstate[pattern_match]=\* # Smartly append * to the pattern.
 
-      .autocomplete._expand "$@"
+      autocomplete:old:_expand "$@"
       return
     fi
 
-    .autocomplete._expand "$@"
+    autocomplete:old:_expand "$@"
   }
 
   .autocomplete.patch _complete
   _complete() {
     local -i nmatches=$compstate[nmatches]
-    .autocomplete._complete "$@" ||
+    autocomplete:old:_complete "$@" ||
         _autocomplete.ancestor_dirs "$@" ||
             _autocomplete.recent_paths "$@"
 
@@ -184,7 +189,7 @@ EOF
         builtin compadd "$@"
       }
 
-      .autocomplete._approximate "$@"
+      autocomplete:old:_approximate "$@"
       ret=$?
       _lastdescr=( ${_lastdescr[@]:#corrections} )
     } always {
@@ -221,9 +226,9 @@ EOF
           "${(@)params[@]:/(#m)*/${MATCH}:${${(kv)${(P)MATCH}}[1,COLUMNS]}}"
       displays=( "${(@)displays[@]//(#m)[^[:print:]]##/${(q+)MATCH}}" )
       displays=( "${(@)displays[@]:/(#m)*/$MATCH[1,COLUMNS]}" )
-      .autocomplete._wanted "$@" -d displays -a params
+      autocomplete:old:_wanted "$@" -d displays -a params
     else
-      .autocomplete._wanted "$@"
+      autocomplete:old:_wanted "$@"
     fi
   }
 }
