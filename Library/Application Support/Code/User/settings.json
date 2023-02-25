@@ -62,7 +62,8 @@
     "editor.useTabStops": false,
     "editor.tabSize": 2,
     "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.defaultFormatter": "ms-python.python"
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.formatOnType": true
 	},
   "rust-analyzer.runnableEnv": null,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -146,5 +147,8 @@
 		"*.ts": "typescript"
 	},
 	"explorer.confirmDelete": false,
-	"typescript.tsserver.log": "off"
+	"typescript.tsserver.log": "off",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": []
+	}
 }
