@@ -93,4 +93,4 @@ export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/cli/src/bin"
+export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
