@@ -79,9 +79,6 @@ export PATH="$PATH:/Users/leondreamed/.cargo/bin"
 
 alias clear="printf '\33c\e[3J'"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
-export PATH="$PATH:/Users/leondreamed/.mint/bin"
-export FLYCTL_INSTALL="/Users/leondreamed/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/Users/leondreamed/bin:$PATH"
 export GEM_HOME=$HOME/.gem
 export PATH="$PATH:/Users/leondreamed/.gem/bin"
@@ -93,4 +90,4 @@ export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
+
