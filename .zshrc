@@ -91,3 +91,7 @@ export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+
+# begin:tunnel-shell-configuration
+export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
+# end:tunnel-shell-configuration
