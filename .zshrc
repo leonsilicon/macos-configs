@@ -40,9 +40,6 @@ zstyle ':completion:*' select-prompt ''
 autoload -Uz compinit
 compinit -i
 
-export PNPM_HOME="/Users/leondreamed/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
 export PATH="$(pnpm bin -g):$PATH"
 export PATH="/Users/leondreamed/code/bin:$PATH"
 
@@ -87,11 +84,16 @@ export PATH="$PATH:/Users/leondreamed/.gem/bin"
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
 export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
-# pnpm
-export PNPM_HOME="/Users/leondreamed/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-
 # begin:tunnel-shell-configuration
 export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
 # end:tunnel-shell-configuration
+
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
+
+# pnpm
+export PNPM_HOME="/Users/leondreamed/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
