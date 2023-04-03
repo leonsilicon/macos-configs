@@ -40,7 +40,6 @@ zstyle ':completion:*' select-prompt ''
 autoload -Uz compinit
 compinit -i
 
-export PATH="$(pnpm bin -g):$PATH"
 export PATH="/Users/leondreamed/code/bin:$PATH"
 
 
@@ -97,4 +96,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export PATH="$(pnpm bin -g):$PATH"
+
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
+

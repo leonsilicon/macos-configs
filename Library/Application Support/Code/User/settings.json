@@ -150,5 +150,11 @@
 	"typescript.tsserver.log": "off",
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": true,
+		"markdown": false
 	}
 }
