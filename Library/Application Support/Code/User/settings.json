@@ -147,7 +147,7 @@
 		"*.ts": "typescript"
 	},
 	"explorer.confirmDelete": false,
-	"typescript.tsserver.log": "off",
+	"typescript.tsserver.log": "verbose",
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
