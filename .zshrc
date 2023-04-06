@@ -2,7 +2,6 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(zsh-syntax-highlighting)
 
 
-source $ZSH/oh-my-zsh.sh
 source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
@@ -95,3 +94,7 @@ export PATH="$PNPM_HOME:$PATH"
 # begin:tunnel-shell-configuration
 export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
 # end:tunnel-shell-configuration
+
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
+
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
