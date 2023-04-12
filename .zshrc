@@ -41,9 +41,6 @@ zstyle ':completion:*' select-prompt ''
 autoload -Uz compinit
 compinit -i
 
-export PATH="/Users/leondreamed/code/bin:$PATH"
-
-
 # For Python & Tkinter
 # For compilers to find zlib you may need to set:
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
@@ -83,9 +80,10 @@ export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
 # begin:tunnel-shell-configuration
 export DIRENV_LOG_FORMAT=""
-cd /Users/leondreamed/projects/Tunnel-Dev/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd -
+cd /Users/leondreamed/projects/Tunnel-Dev/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
 # end:tunnel-shell-configuration
 
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
-export PATH="$(tea pnpm bin -g):$PATH"
+export PATH="$HOME/.tea/nodejs.org/v*/bin:$PATH"
+export PATH="$($HOME/.tea/pnpm.io/v*/bin/pnpm bin -g):$PATH"
