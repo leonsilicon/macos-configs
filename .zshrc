@@ -87,4 +87,4 @@ test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --s
 
 export PATH="$HOME/.tea/nodejs.org/v*/bin:$PATH"
 export PATH="$($HOME/.tea/pnpm.io/v*/bin/pnpm bin -g):$PATH"
-
+export PATH="$HOME/Library/pnpm:$PATH"
