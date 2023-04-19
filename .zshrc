@@ -1,3 +1,5 @@
+DISABLE_AUTO_UPDATE="true"
+
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(zsh-syntax-highlighting)
 

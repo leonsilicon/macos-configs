@@ -149,5 +149,12 @@
 	"C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-12",
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": false,
+		"markdown": true,
+		"scminput": false
 	}
 }
