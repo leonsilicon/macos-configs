@@ -141,7 +141,7 @@
     "editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"explorer.confirmDelete": false,
 	"redhat.telemetry.enabled": false,
