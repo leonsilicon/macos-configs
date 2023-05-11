@@ -87,6 +87,7 @@ cd /Users/leondreamed/projects/Tunnel-Dev/Tunnel && eval "$('/Users/leondreamed/
 
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
-export PATH="$HOME/.tea/nodejs.org/v*/bin:$PATH"
-export PATH="$($HOME/.tea/pnpm.io/v*/bin/pnpm bin -g):$PATH"
+export PATH="$HOME/.tea/nodejs.org/v18.16/bin:$PATH"
+export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
+export PATH="$($HOME/.tea/pnpm.io/v8.5.0/bin/pnpm bin -g):$PATH"
 export PATH="$HOME/Library/pnpm:$PATH"
