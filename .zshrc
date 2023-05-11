@@ -8,9 +8,6 @@ source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
 
-zstyle ':completion:*' list-prompt   ''
-zstyle ':completion:*' select-prompt ''
-
 eval "$(starship init zsh)"
 set -o vi
 
