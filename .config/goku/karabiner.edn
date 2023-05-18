@@ -2,7 +2,7 @@
 ;; note: all the keys are in QWERTY because karabiner uses the hardware key
 {
 	:devices {
-		:macbook-keyboard [{:vendor_id 1452 :product_id 641}]
+		:macbook-keyboard [{:vendor_id 0 :product_id 0}]
 	}
 	:applications {:vscode ["^com\\.microsoft\\.VSCode$"]}
 	:main, [
@@ -22,7 +22,7 @@
 				:from {:apple_vendor_top_case_key_code :keyboard_fn}
 				:to [{:key_code :left_control}]
 				:conditions [{
-					:identifiers [{:vendor_id 1452 :product_id 641}]
+					:identifiers [{:vendor_id 0 :product_id 0}]
 					:type :device_if
 				}]
 				:type :basic
@@ -42,7 +42,7 @@
 				:from {:key_code :right_arrow}
 				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
 				:conditions [{
-					:identifiers [{:vendor_id 1452 :product_id 641}]
+					:identifiers [{:vendor_id 0 :product_id 0}]
 					:type :device_if
 				}]
 				:type :basic
