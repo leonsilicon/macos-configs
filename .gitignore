@@ -10,6 +10,11 @@
 !.oh-my-zsh/*
 .oh-my-zsh/.git
 
+# File Structure
+!repos
+repos/*
+!repos/.gitkeep
+
 # Config files
 !.config
 .config/*
