@@ -1,144 +1,160 @@
 #autoload
 
 _autocomplete.history_lines() {
-  local -P tag=history-lines
-  _tags $tag
-  _tags ||
-      return 1
-  _requested $tag ||
+  local -a match=() mbegin=() mend=()
+
+  # Don't run more than once.
+  (( _matcher_num > 1 )) &&
       return 1
 
-  local -PA events=()
-  local -Pi min_lines= max_lines=
-  builtin zstyle -s ":autocomplete:${curcontext}:" list-lines min_lines ||
-      min_lines=16
-  (( max_lines = min( min_lines, HISTNO - 1, LINES - BUFFERLINES ) ))
+  local -P lbuffer='' rbuffer=''
 
-  if [[ -z $BUFFER ]]; then
-    if [[ $curcontext == *-forward:* ]]; then
-      local -Pi inc=1 histno=1
+  (( CURRENT > 1 )) &&
+      lbuffer="${(j.[[:blank:]]##.)${(@b)words[1,CURRENT-1]}}[[:blank:]]##"
+  (( CURRENT < $#words[@] )) &&
+      rbuffer="[[:blank:]]##${(j.[[:blank:]]##.)${(@b)words[CURRENT+1,-1]}}"
+  lbuffer="$lbuffer${(b)QIPREFIX}"
+  rbuffer="${(b)QISUFFIX}$rbuffer"
+
+  local -P query=''
+  if [[ -n $words[CURRENT] ]]; then
+    local -Pa includes=( "${(@s..b)^words[CURRENT]}" )
+    local -Pa excludes=( "(|[^${(@s..b)^words[CURRENT]}\n;]#)" )
+    local -Pa tokens=( ${(@)excludes:^includes} )
+    query="((#l)$tokens[2]${(j..)tokens[3,-1]})"
+
+    local -P no_delim='[^\n;]#' pre='' post=''
+    if [[ -z $lbuffer ]]; then
+      pre='*'
     else
-      local -Pi inc=-1 histno=$(( HISTNO - 1 ))
+      pre=$no_delim
     fi
-    if [[ -o histfindnodups ]]; then
-      while (( $#events[@] < max_lines && 0 < histno && histno < HISTNO )); do
-        # -v's arg is a literal string, so we need to quote all characters.
-        [[ -v history[$histno] && ! -v events[${(q)history[$histno]}] ]] &&
-            events[$history[$histno]]=$histno
-        (( histno += inc ))
-      done
-      events=( "${(@Oa)${(@kv)events}}" )
+    if [[ -z $rbuffer ]]; then
+      post='*'
     else
-      while (( $#events[@] < max_lines && 0 < histno && histno < HISTNO )); do
-        [[ -v history[$histno] ]] &&
-            events[$histno]="$history[$histno]"
-        (( histno += inc ))
-      done
+      post=$no_delim
     fi
-    _comp_colors=( '(history-lines)=[[:space:]]#(#b)(<->) *=0=2' "$_comp_colors[@]" )
+    query="(|$pre)$query$post"
   else
-    local -PaU queries=() err=( '(#ia'{0..$(( $#words[CURRENT] ))}')' )
-    local -P query lbuffer= rbuffer=
-    if [[ $WIDGET == (|*-)search(|-*) ]]; then
-      queries=( \*$^err${(j:*:)${(0)words[CURRENT]}}\* )
-    else
-      lbuffer="${(j.[[:blank:]]##.)${(@b)words[1,CURRENT-1]}}"
-      rbuffer="${(j.[[:blank:]]##.)${(@b)words[CURRENT+1,-1]}}"
-      [[ -n $lbuffer ]] &&
-          lbuffer="${lbuffer}[[:blank:]]##"
-      [[ -n $rbuffer ]] &&
-          rbuffer="[[:blank:]]##${rbuffer}"
-      lbuffer="$lbuffer${(b)QIPREFIX}"
-      rbuffer="${(b)QISUFFIX}$rbuffer"
-      queries=( $lbuffer\*\($^err${words[CURRENT]}\)\*$rbuffer )
-    fi
-    if [[ -o histfindnodups ]]; then
-      local -Pa numbers=()
-      for query in $queries[@]; do
-        numbers=( "${(@k)history[(R)$~query]}" )
-        (( $#numbers[@] > 1 )) &&
-            break
-      done
-      local -Pa lines=( "${(@v)history[(I)(${(~j:|:)numbers})]}" )
-      if [[ $curcontext != *-forward:* ]]; then
-        numbers=( "${(@Oa)numbers}" )
-        lines=( "${(@Oa)lines}" )
-      fi
-      events=( "${(@)lines:^numbers}" )
-      events=( "${(@Oa)${(@kv)events}}" )
-    else
-      for query in $queries[@]; do
-        events=( "${(@kv)history[(R)$~query]}" )
-        (( $#events[@] > 1 )) &&
-            break
-      done
-    fi
-    _comp_colors=(
-        "(history-lines)=[[:space:]]#(#b)(<->) *(${${query#$lbuffer\*}%\*$rbuffer})*=0=2=30;103"
-        "$_comp_colors[@]"
-    )
+    query='()*'
   fi
 
-  (( $#events[@] )) ||
-      return
+  [[ $curcontext == *-incremental-* ]]
+  local -Pi is_incremental=$(( ! ? ))
 
-  local -a displays=()
-  printf -v displays "%s:%s" "${(@kv)events}"
-  displays=( "$displays[@]" )
+  # Non-incremental search potentially adds a lot of completions, which can be quite slow.
+  (( is_incremental )) ||
+      zle -R 'Loading...'
 
-  local -Pi diff=$(( $#displays[@] - max_lines ))
-  local -P suf=
-  if [[ $WIDGET == (|*-)search(|-*) ]]; then
-    displays=( ${(@n)displays} )
-    (( diff > 0 )) &&
-        shift "$diff" displays
-    suf=';'
-  else
-    if [[ $curcontext == *-forward:* ]]; then
-        displays=( ${(@n)displays} )
-    else
-        displays=( ${(@On)displays} )
-    fi
-    (( diff > 0 )) &&
-        shift -p "$diff" displays
-    suf=' '
-  fi
+  # Using fc is way faster than using $history.
+  local -P output="$( fc -lrm "$lbuffer$query$rbuffer" -1 1 2> /dev/null )"
 
-  local -a matches=( "${displays[@]##[[:blank:]]#<->:}" )
-  [[ $WIDGET != (|*-)search(|-*) ]] &&
-      matches=( "${(@)${(@)matches[@]##$~lbuffer}%%$~rbuffer}" )
+  # No results
+  [[ -z $output ]] &&
+      return 1
 
-  local -Pa match=() mbegin=() mend=()
-  displays=(
-      "${(@r:COLUMNS-1:)displays[@]/%(#b)(<->):(*)/${(l:$#HISTNO:)match[1]} ${(V)${(Z+c+)match[2]}}}"
+  local -aU displays=( "${(f)output}" )
+  local -P numpat='[[:blank:]]#(<->)[*[:blank:]][[:blank:]]'
+
+  local -P groups="${(l:$(( 2 * $#words[CURRENT] ))::=0:):-}"
+  _comp_colors=(
+      "=(#b)${numpat}${lbuffer}(${query})${rbuffer}${rbuffer:+[[:blank:]]#}=2=2=0=0=30;103$groups"
+      "=(#b)${numpat}${lbuffer}(${query})*=2=2=0=30;103$groups"
+      "=(#b)${numpat}${lbuffer}(*)=2=2=0"
+      "=(#b)${numpat}*=0=2"
+      ${(M)_comp_colors:#ma=*}
   )
 
-  local -a expl=()
+  local -Pi list_lines=0
+  if ! builtin zstyle -s ":autocomplete:${curcontext}:" list-lines list_lines; then
+    if (( is_incremental )); then
+      (( list_lines = 16 ))
+    else
+      (( list_lines = 256 ))
+    fi
+  fi
+
+  local -Pi excess=0 max=0
+
+  if (( is_incremental )); then
+    # Don't overflow the available space.
+    (( list_lines = min( list_lines, LINES - BUFFERLINES - 1 ) ))
+
+    # Leave some room for bubbling up more relevant results.
+    (( max = 16 * $list_lines ))
+  else
+    (( max = list_lines ))
+  fi
+
+  local -Pi index=0
+
+  if [[ -o histfindnodups ]]; then
+    local -PaU uniques=()
+    local -Pa lines=()
+    local -Pi size=0
+    for index in {$#displays[@]..1}; do
+      uniques+=( ${displays[index]##$~numpat} )
+      (( $#uniques[@] > size )) &&
+          lines+=( "$displays[index]" )
+      (( size = $#uniques ))
+    done
+    displays=( "${(aO)lines[@]}" )
+  else
+    (( excess = $#displays[@] - max ))
+    (( excess > 0 )) &&
+        shift $excess displays
+  fi
+
+  local -P pop=''
+  if (( is_incremental )); then
+    if [[ -n $words[CURRENT] ]]; then
+      # Fuzzy sort
+      local -Pi num=0
+      for index in {1..$#displays[@]}; do
+        num=${(SM)${(M)displays[index]##$~numpat}##<->}
+        displays[index]=${history[$num]:/(#b)$~lbuffer$~query$~rbuffer/$((
+                HISTNO + num - 2 * $#match[2] - mbegin[2]
+            ))}$'\0'$displays[index]
+      done
+      displays=( ${${(@nO)displays}[@]##<->$'\0'} )
+    else
+      displays=( ${(@aO)displays} )
+    fi
+    pop=-p
+  fi
+
+  (( excess = $#displays[@] - list_lines ))
+  (( excess > 0 )) &&
+      shift $pop $excess displays
+
+  # To avoid wrapping, each completion should be one char less than terminal width.
+  displays=( ${(@r:COLUMNS-1:)displays} )
+
+  local -Pa matches=()
+  for index in "${(MS)displays[@]##<->}"; do
+    matches+=( "${${history[$index]##$~lbuffer}%%$~rbuffer}" )
+  done
+
+  local -Pa suf=()
+  if (( $#words[@] == 1 )); then
+    if [[ $WIDGETSTYLE == *-select* ]]; then
+      # Enable mult-select.
+      suf=( -S ';' -R _autocomplete.history_lines.suffix )
+    else
+      suf=( -qS ' ' )
+    fi
+  fi
+
+  _comp_tags=history-lines
   local _comp_no_ignore=1
-  _description -2V "$tag" expl 'history line'
-  builtin compadd "$expl[@]" -S "$suf" -R _autocomplete.history_lines.suffix \
-      -QU -ld displays -a matches
+  local -a expl=()
+  _description -2V $_comp_tags expl ''
+  builtin compadd $suf -QU -ld displays "$expl[@]" -a matches
 }
-# functions -T _autocomplete.history_lines
 
 _autocomplete.history_lines.suffix() {
-  case $WIDGET in
-    ( (|.|*-)(hist(|ory)|search|delete|kill)(|-*) )
-    ;;
-    ( (|.)(self-insert(|-*)|magic-space) )
-      case $KEYS[-1] in
-        ( [$ZLE_SPACE_SUFFIX_CHARS$ZLE_REMOVE_SUFFIX_CHARS] )
-          LBUFFER=$LBUFFER[1,-1-$1]
-        ;|
-        ( [$ZLE_SPACE_SUFFIX_CHARS] )
-          LBUFFER+=' '
-        ;;
-      esac
-    ;;
-    ( * )
+  [[ $KEYS[-1] != $'\C-@' ]] &&
       LBUFFER=$LBUFFER[1,-1-$1]
-    ;;
-  esac
 }
 
 _autocomplete.history_lines "$@"
