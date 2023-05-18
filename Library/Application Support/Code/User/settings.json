@@ -34,11 +34,10 @@
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "vs-kubernetes": {
-		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-		"vs-kubernetes.minikube-show-information-expiration": "2023-05-13T17:48:02.569Z"
+		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vsicons.dontShowNewVersionMessage": true,
   "cSpell.userWords": ["Subroom", "Tabulo", "Timeblocking"],
@@ -65,8 +64,8 @@
     "editor.useTabStops": false,
     "editor.tabSize": 2,
     "gitlens.codeLens.symbolScopes": ["!Module"],
-"editor.defaultFormatter": "ms-python.python",
-"editor.formatOnType": true
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.formatOnType": true
   },
   "rust-analyzer.lruCapacity": 2048,
   "rust-analyzer.runnableEnv": null,
@@ -142,23 +141,13 @@
     "editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"eslint.quiet": true,
-	"files.associations": {
-		"*.ts": "typescript"
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"explorer.confirmDelete": false,
+	"redhat.telemetry.enabled": false,
 	"typescript.tsserver.log": "off",
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
-	},
-	"github.copilot.enable": {
-		"*": true,
-		"plaintext": false,
-		"markdown": true,
-		"scminput": false,
-		"yaml": false
 	},
 	"workbench.colorTheme": "Default Dark+"
 }
