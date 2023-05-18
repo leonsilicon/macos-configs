@@ -6,6 +6,9 @@
 !.zshrc
 !.zsh_aliases
 !.tmux.conf
+!.oh-my-zsh
+!.oh-my-zsh/*
+.oh-my-zsh/.git
 
 # Config files
 !.config
@@ -77,8 +80,7 @@ Library/Application Support/espanso/*
 !code
 !code/install.sh
 !code/zsh-autocomplete
-code/zsh-autocomplete/*
-!code/zsh-autocomplete/.gitrepo
+!code/zsh-autocomplete/*
 
 # Bin Scripts
 !bin

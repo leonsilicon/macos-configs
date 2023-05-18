@@ -2,7 +2,8 @@
   "global" : {
     "check_for_updates_on_startup" : true,
     "show_in_menu_bar" : true,
-    "show_profile_name_in_menu_bar" : false
+    "show_profile_name_in_menu_bar" : false,
+    "unsafe_ui" : false
   },
   "profiles" : [ {
     "complex_modifications" : {
@@ -416,7 +417,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
           } ],
           "type" : "basic"
         }, {
@@ -428,7 +429,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
           } ],
           "type" : "basic"
         }, {
@@ -440,7 +441,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
           } ],
           "type" : "basic"
         }, {
@@ -452,7 +453,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
           } ],
           "type" : "basic"
         }, {
@@ -512,7 +513,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap next || yabai -m window --swap first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"
           } ],
           "type" : "basic"
         }, {
@@ -524,7 +525,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap next || yabai -m window --swap first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"
           } ],
           "type" : "basic"
         }, {
@@ -536,7 +537,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap prev || yabai -m window --swap last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"
           } ],
           "type" : "basic"
         }, {
@@ -548,7 +549,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --swap prev || yabai -m window --swap last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"
           } ],
           "type" : "basic"
         }, {
@@ -560,7 +561,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"
           } ],
           "type" : "basic"
         }, {
@@ -572,7 +573,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:-50:0; yabai -m window --resize left:-50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"
           } ],
           "type" : "basic"
         }, {
@@ -584,7 +585,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"
           } ],
           "type" : "basic"
         }, {
@@ -596,7 +597,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize right:50:0; yabai -m window --resize left:50:0"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"
           } ],
           "type" : "basic"
         }, {
@@ -608,7 +609,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"
           } ],
           "type" : "basic"
         }, {
@@ -620,7 +621,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"
           } ],
           "type" : "basic"
         }, {
@@ -632,7 +633,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"
           } ],
           "type" : "basic"
         }, {
@@ -644,7 +645,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"
           } ],
           "type" : "basic"
         }, {
@@ -680,7 +681,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -692,7 +693,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -704,7 +705,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display next || yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -716,7 +717,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display next || yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -728,7 +729,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -740,7 +741,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -752,7 +753,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
@@ -764,7 +765,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
@@ -776,7 +777,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus next"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus next"
           } ],
           "type" : "basic"
         }, {
@@ -788,7 +789,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus next"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus next"
           } ],
           "type" : "basic"
         }, {
@@ -800,7 +801,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus prev"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus prev"
           } ],
           "type" : "basic"
         }, {
@@ -812,7 +813,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "yabai -m space --focus prev"
+            "shell_command" : "/opt/homebrew/bin/yabai -m space --focus prev"
           } ],
           "type" : "basic"
         }, {
@@ -837,30 +838,6 @@
           },
           "to" : [ {
             "shell_command" : "open -na '/Applications/qutebrowser.app'"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "i",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control" ],
-              "optional" : [ "right_command", "right_control" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /System/Applications/Calendar.app"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "i",
-            "modifiers" : {
-              "mandatory" : [ "right_command", "right_control" ],
-              "optional" : [ "left_command", "left_control" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /System/Applications/Calendar.app"
           } ],
           "type" : "basic"
         }, {
@@ -1014,7 +991,8 @@
       },
       "ignore" : false,
       "manipulate_caps_lock_led" : true,
-      "simple_modifications" : [ ]
+      "simple_modifications" : [ ],
+      "treat_as_built_in_keyboard" : false
     }, {
       "disable_built_in_keyboard_if_exists" : false,
       "fn_function_keys" : [ ],
@@ -1026,7 +1004,8 @@
       },
       "ignore" : false,
       "manipulate_caps_lock_led" : true,
-      "simple_modifications" : [ ]
+      "simple_modifications" : [ ],
+      "treat_as_built_in_keyboard" : false
     }, {
       "disable_built_in_keyboard_if_exists" : false,
       "fn_function_keys" : [ ],
@@ -1038,7 +1017,48 @@
       },
       "ignore" : false,
       "manipulate_caps_lock_led" : true,
-      "simple_modifications" : [ ]
+      "simple_modifications" : [ ],
+      "treat_as_built_in_keyboard" : false
+    }, {
+      "disable_built_in_keyboard_if_exists" : false,
+      "fn_function_keys" : [ ],
+      "identifiers" : {
+        "is_keyboard" : false,
+        "is_pointing_device" : true,
+        "product_id" : 641,
+        "vendor_id" : 1452
+      },
+      "ignore" : true,
+      "manipulate_caps_lock_led" : false,
+      "simple_modifications" : [ ],
+      "treat_as_built_in_keyboard" : false
+    }, {
+      "disable_built_in_keyboard_if_exists" : false,
+      "fn_function_keys" : [ ],
+      "identifiers" : {
+        "is_keyboard" : true,
+        "is_pointing_device" : false,
+        "product_id" : 591,
+        "vendor_id" : 1452
+      },
+      "ignore" : false,
+      "manipulate_caps_lock_led" : true,
+      "simple_modifications" : [ {
+        "from" : {
+          "key_code" : "caps_lock"
+        },
+        "to" : [ {
+          "key_code" : "delete_or_backspace"
+        } ]
+      }, {
+        "from" : {
+          "key_code" : "delete_or_backspace"
+        },
+        "to" : [ {
+          "key_code" : "caps_lock"
+        } ]
+      } ],
+      "treat_as_built_in_keyboard" : false
     } ],
     "fn_function_keys" : [ {
       "from" : {

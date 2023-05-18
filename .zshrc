@@ -1,12 +1,12 @@
-export ZSH="$HOME/.oh-my-zsh"
-plugins=(wakatime zsh-autocomplete zsh-syntax-highlighting)
+DISABLE_AUTO_UPDATE="true"
 
-source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(zsh-syntax-highlighting)
+
+source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
+source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
-
-zstyle ':completion:*' list-prompt   ''
-zstyle ':completion:*' select-prompt ''
 
 eval "$(starship init zsh)"
 set -o vi
@@ -40,9 +40,6 @@ zstyle ':completion:*' select-prompt ''
 autoload -Uz compinit
 compinit -i
 
-export PATH="/Users/leondreamed/code/bin:$PATH"
-
-
 # For Python & Tkinter
 # For compilers to find zlib you may need to set:
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
@@ -73,9 +70,6 @@ export PATH="$PATH:/Users/leondreamed/.cargo/bin"
 
 alias clear="printf '\33c\e[3J'"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
-export PATH="$PATH:/Users/leondreamed/.mint/bin"
-export FLYCTL_INSTALL="/Users/leondreamed/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/Users/leondreamed/bin:$PATH"
 export GEM_HOME=$HOME/.gem
 export PATH="$PATH:/Users/leondreamed/.gem/bin"
@@ -83,12 +77,23 @@ export PATH="$PATH:/Users/leondreamed/.gem/bin"
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
 export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
+<<<<<<< HEAD
 # begin:tunnel-shell-configuration
 export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
 # end:tunnel-shell-configuration
 
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
+=======
+
+
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
+
+export PATH="$HOME/.tea/nodejs.org/v18.16/bin:$PATH"
+export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
+export PATH="$HOME/Library/pnpm:$PATH"
+
+>>>>>>> m1
 # pnpm
 export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 case ":$PATH:" in
@@ -97,7 +102,15 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+<<<<<<< HEAD
 export PATH="$(pnpm bin -g):$PATH"
 
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
+=======
+# begin:tunnel-shell-configuration
+PATH="/Users/leondreamed/projects/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:$PATH"
+export DIRENV_LOG_FORMAT=""
+cd /Users/leondreamed/projects/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
+# end:tunnel-shell-configuration
+>>>>>>> m1

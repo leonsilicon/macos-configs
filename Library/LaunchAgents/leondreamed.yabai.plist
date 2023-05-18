@@ -6,7 +6,7 @@
   <string>leondreamed.yabai.plist</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/local/opt/yabai/bin/yabai</string>
+    <string>/opt/homebrew/bin/yabai</string>
   </array>
   <key>EnvironmentVariables</key>
   <dict>

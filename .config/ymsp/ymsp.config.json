@@ -1,4 +1,4 @@
 {
-	"yabaiPath": "/usr/local/bin/yabai",
+	"yabaiPath": "/opt/homebrew/bin/yabai",
 	"debug": true
 }
