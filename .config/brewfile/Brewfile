@@ -2,6 +2,7 @@
 # tap repositories and their packages
 
 tap 'homebrew/core'
+brew '1password'
 brew 'aom'
 brew 'autoconf'
 brew 'automake'
@@ -180,6 +181,7 @@ brew 'python-tk@3.9'
 brew 'python@3.10'
 brew 'python@3.9'
 brew 'rav1e'
+brew 'raycast'
 brew 'readline'
 brew 'reattach-to-user-namespace'
 brew 'redis'

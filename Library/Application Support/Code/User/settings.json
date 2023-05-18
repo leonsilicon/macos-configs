@@ -147,14 +147,7 @@
 	"redhat.telemetry.enabled": false,
 	"typescript.tsserver.log": "off",
 	"editor.tokenColorCustomizations": {
-		"textMateRules": [
-			{
-				"scope": "keyword.other.dotenv",
-				"settings": {
-					"foreground": "#FF000000"
-				}
-			}
-		]
+		"textMateRules": []
 	},
 	"workbench.colorTheme": "Default Dark+"
 }
