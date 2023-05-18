@@ -144,31 +144,17 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-<<<<<<< HEAD
 	"eslint.quiet": true,
 	"files.associations": {
 		"*.ts": "typescript"
 	},
 	"explorer.confirmDelete": false,
-	"typescript.tsserver.log": "verbose",
-=======
-	"explorer.confirmDelete": false,
-	"redhat.telemetry.enabled": false,
 	"typescript.tsserver.log": "off",
-	"C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-12",
->>>>>>> m1
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
 	"github.copilot.enable": {
 		"*": true,
-<<<<<<< HEAD
-		"yaml": false,
-		"plaintext": true,
-		"markdown": false
-	}
-}
-=======
 		"plaintext": false,
 		"markdown": true,
 		"scminput": false,
@@ -176,4 +162,3 @@
 	},
 	"workbench.colorTheme": "Default Dark+"
 }
->>>>>>> m1
