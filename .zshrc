@@ -77,23 +77,12 @@ export PATH="$PATH:/Users/leondreamed/.gem/bin"
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
 export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
-<<<<<<< HEAD
-# begin:tunnel-shell-configuration
-export PATH="$PATH:/Users/leondreamed/projects/Tunnel-Dev/Tunnel/products/npm-package/src/bin"
-# end:tunnel-shell-configuration
-
-test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
-
-=======
-
-
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
 export PATH="$HOME/.tea/nodejs.org/v18.16/bin:$PATH"
 export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
 export PATH="$HOME/Library/pnpm:$PATH"
 
->>>>>>> m1
 # pnpm
 export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 case ":$PATH:" in
@@ -102,15 +91,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-<<<<<<< HEAD
-export PATH="$(pnpm bin -g):$PATH"
-
-test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
-
-=======
 # begin:tunnel-shell-configuration
 PATH="/Users/leondreamed/projects/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:$PATH"
 export DIRENV_LOG_FORMAT=""
 cd /Users/leondreamed/projects/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
 # end:tunnel-shell-configuration
->>>>>>> m1
