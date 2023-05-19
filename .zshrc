@@ -1,11 +1,5 @@
 DISABLE_AUTO_UPDATE="true"
 
-export ZSH="$HOME/.oh-my-zsh"
-plugins=(zsh-syntax-highlighting)
-
-source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
-source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
 
 eval "$(starship init zsh)"
@@ -89,16 +83,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-
-
-
-
-
-
-
-
-
 
 # begin:tunnel-shell-configuration
 PATH="/Users/leondreamed/repos/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:$PATH"
