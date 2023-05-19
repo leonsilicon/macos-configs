@@ -71,6 +71,11 @@ export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
+
 export PATH="$HOME/.tea/nodejs.org/v18.16/bin:$PATH"
 export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
 export PATH="$HOME/Library/pnpm:$PATH"
