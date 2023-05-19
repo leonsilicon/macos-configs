@@ -1,5 +1,7 @@
 DISABLE_AUTO_UPDATE="true"
 
+source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
 
 eval "$(starship init zsh)"
@@ -29,9 +31,6 @@ fi
 
 zstyle ':completion:*' list-prompt ''
 zstyle ':completion:*' select-prompt ''
-
-autoload -Uz compinit
-compinit -i
 
 # For Python & Tkinter
 # For compilers to find zlib you may need to set:
@@ -89,3 +88,5 @@ PATH="/Users/leondreamed/repos/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:
 export DIRENV_LOG_FORMAT=""
 cd /Users/leondreamed/repos/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
 # end:tunnel-shell-configuration
+
+source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
