@@ -553,11 +553,6 @@
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
-		"key": "enter",
-		"command": "-renameFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
 		"key": "cmd+space",
 		"command": "editor.action.triggerSuggest",
 		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
@@ -807,5 +802,20 @@
 	{
 		"key": "cmd+alt+shift+i",
 		"command": "editor.action.inspectTMScopes"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "enter",
+		"command": "-renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "enter",
+		"command": "list.select",
+		"when": "listFocus && !inputFocus"
 	}
 ]
