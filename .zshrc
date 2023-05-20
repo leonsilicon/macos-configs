@@ -3,6 +3,7 @@ DISABLE_AUTO_UPDATE="true"
 source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
+export SHELL="nvim"
 
 eval "$(starship init zsh)"
 set -o vi
@@ -88,10 +89,14 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+
+
+source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
 # begin:tunnel-shell-configuration
 PATH="/Users/leondreamed/repos/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:$PATH"
 export DIRENV_LOG_FORMAT=""
 cd /Users/leondreamed/repos/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
 # end:tunnel-shell-configuration
-
-source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
