@@ -3,7 +3,7 @@ DISABLE_AUTO_UPDATE="true"
 source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
-export SHELL="nvim"
+export EDITOR="nvim"
 
 eval "$(starship init zsh)"
 set -o vi
@@ -92,6 +92,10 @@ esac
 
 
 source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
+
 
 
 
