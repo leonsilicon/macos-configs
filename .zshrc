@@ -89,15 +89,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-
-
 source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-
-
-
-
 
 
 
