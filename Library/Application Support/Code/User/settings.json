@@ -149,5 +149,6 @@
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
-	"workbench.colorTheme": "Default Dark+"
+	"workbench.colorTheme": "Default Dark+",
+	"window.zoomLevel": 1
 }
