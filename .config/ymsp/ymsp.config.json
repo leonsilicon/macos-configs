@@ -1,4 +1,5 @@
 {
 	"yabaiPath": "/opt/homebrew/bin/yabai",
-	"debug": true
+	"debug": true,
+	"masterPosition": "left"
 }

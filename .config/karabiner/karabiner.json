@@ -418,7 +418,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus west"
           } ],
           "type" : "basic"
         }, {
@@ -430,7 +430,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus west"
           } ],
           "type" : "basic"
         }, {
@@ -442,7 +442,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap west"
           } ],
           "type" : "basic"
         }, {
@@ -454,7 +454,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap west"
           } ],
           "type" : "basic"
         }, {
