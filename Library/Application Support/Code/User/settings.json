@@ -149,5 +149,10 @@
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
-	"workbench.colorTheme": "Default Dark+"
+	"workbench.colorTheme": "Default Dark+",
+	"files.associations": {
+		"dockerfile.ts": "typescript",
+		"dockerfile.md": "typescript",
+		".env*": "dotenv"
+	}
 }
