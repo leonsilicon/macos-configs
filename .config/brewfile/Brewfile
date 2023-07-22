@@ -294,6 +294,7 @@ cask 'qutebrowser'
 cask 'raycast'
 cask 'rescuetime'
 cask 'send-anywhere'
+cask 'shortcat'
 cask 'slack'
 cask 'spotify'
 cask 'time-out'
@@ -338,7 +339,9 @@ brew 'goku'
 
 # App Store applications
 mas 'GarageBand (10.4.7)', id: 682658836
+mas 'Gifski (2.22.3)', id: 1351639930
 mas 'iMovie (10.3.5)', id: 408981434
 mas 'Keynote (12.2.1)', id: 409183694
+mas 'Klack (1.2.1)', id: 6446206067
 mas 'Numbers (12.2.1)', id: 409203825
 mas 'Pages (12.2.1)', id: 409201541

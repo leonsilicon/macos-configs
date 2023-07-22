@@ -99,8 +99,21 @@ export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # begin:tunnel-shell-configuration
 export DIRENV_LOG_FORMAT=""
 cd /Users/leondreamed/repos/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
-PATH="/Users/leondreamed/repos/Tunnel-Labs/Tunnel/pnpm-tooling/pnpm-wrapper/bin:$PATH"
 # end:tunnel-shell-configuration

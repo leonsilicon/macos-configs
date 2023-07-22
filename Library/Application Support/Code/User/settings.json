@@ -154,5 +154,6 @@
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
 		".env*": "dotenv"
-	}
+	},
+	"window.zoomLevel": -1
 }
