@@ -93,11 +93,12 @@ source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
-
-
+export PATH="/Users/leondreamed/.tea/go.dev/v*/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
 
 
 

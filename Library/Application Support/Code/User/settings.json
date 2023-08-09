@@ -40,7 +40,12 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vsicons.dontShowNewVersionMessage": true,
-  "cSpell.userWords": ["Subroom", "Tabulo", "Timeblocking"],
+  "cSpell.userWords": [
+		"Fastify",
+		"Subroom",
+		"Tabulo",
+		"Timeblocking"
+	],
   "rust.wait_to_build": 1,
   "[sql]": {
     "editor.defaultFormatter": "bradymholt.pgformatter"
@@ -154,6 +159,17 @@
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
 		".env*": "dotenv"
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"editor.largeFileOptimizations": false,
+	"dotenv.enableAutocloaking": false,
+	"go.alternateTools": {
+		"go": "/Users/leondreamed/.tea/go.dev/v*/bin/go"
 	},
 	"window.zoomLevel": -1
 }
