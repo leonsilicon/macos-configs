@@ -74,11 +74,11 @@
 			[:!CT#QWv "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			[:!QW#CTv "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			;; mod + m: focus on master
-			[:!CT#QWm "/opt/homebrew/bin/yabai -m window --focus west"]
-			[:!QW#CTm "/opt/homebrew/bin/yabai -m window --focus west"]
+			[:!CT#QWm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!QW#CTm "/opt/homebrew/bin/yabai -m window --focus east"]
 			;; mod + shift + m: move window to master
-			[:!CTS#QWRm "/opt/homebrew/bin/yabai -m window --swap west"]
-			[:!QWR#CTSm "/opt/homebrew/bin/yabai -m window --swap west"]
+			[:!CTS#QWRm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!QWR#CTSm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
 			[:!CTS#QWRg "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
 			[:!QWR#CTSg "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
