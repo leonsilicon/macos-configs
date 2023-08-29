@@ -158,7 +158,9 @@
 	"files.associations": {
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
-		".env*": "dotenv"
+		".env*": "dotenv",
+		"*.ts.snap": "javascript",
+		"*.mdx": "markdown"
 	},
 	"github.copilot.enable": {
 		"*": true,
