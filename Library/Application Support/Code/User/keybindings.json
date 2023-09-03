@@ -821,5 +821,10 @@
 	{
 		"key": "shift+alt+b",
 		"command": "-java.workspace.compile"
+	},
+	{
+		"key": "shift+cmd+b",
+		"command": "-workbench.action.tasks.build",
+		"when": "taskCommandsRegistered"
 	}
 ]
