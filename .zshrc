@@ -58,11 +58,10 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
-export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
-export PATH="$HOME/Library/pnpm:$PATH"
+# export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
+# export PATH="$HOME/Library/pnpm:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -73,12 +72,6 @@ export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/go.dev/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/npmjs.com/v9.8.1/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/nodejs.org/v20.5.0/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/Users/leondreamed/Library/pnpm:$PATH"
-
-
 
 # bun completions
 [ -s "/Users/leondreamed/.bun/_bun" ] && source "/Users/leondreamed/.bun/_bun"
