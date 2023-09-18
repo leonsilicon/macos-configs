@@ -922,7 +922,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Alacritty.app"
+            "shell_command" : "open -na /Applications/Warp.app"
           } ],
           "type" : "basic"
         }, {
@@ -934,7 +934,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Alacritty.app"
+            "shell_command" : "open -na /Applications/Warp.app"
           } ],
           "type" : "basic"
         } ]

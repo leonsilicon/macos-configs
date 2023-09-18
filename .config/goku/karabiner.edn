@@ -139,8 +139,8 @@
 			[:!CT#QWr "open -na /Applications/Bitwarden.app"]
 			[:!QW#CTr "open -na /Applications/Bitwarden.app"]
 			;; mod + return: open alacritty
-			[:!CT#QWreturn_or_enter "open -na /Applications/Alacritty.app"]
-			[:!QW#CTreturn_or_enter "open -na /Applications/Alacritty.app"]
+			[:!CT#QWreturn_or_enter "open -na /Applications/Warp.app"]
+			[:!QW#CTreturn_or_enter "open -na /Applications/Warp.app"]
 		]}
 		{:des "F23-24 to mod key", :rules [
 			[:##f23, :!Tleft_command]
