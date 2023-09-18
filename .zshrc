@@ -1,28 +1,13 @@
-DISABLE_AUTO_UPDATE="true"
-
-source ~/code/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 export PATH="/Users/leondreamed/code/homebrew/bin:$PATH"
 export EDITOR="nvim"
 
-eval "$(starship init zsh)"
 set -o vi
-
-# Loads tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux new-session
-fi
 
 export GOKU_EDN_CONFIG_FILE=~/.config/goku/karabiner.edn
 
 eval "$(zoxide init zsh)"
 
 . ~/.zsh_aliases
-
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
- source $(brew --prefix)/etc/brew-wrap
-fi
-
 
 # add brew bash autocompletion
 if type brew &>/dev/null
@@ -43,8 +28,6 @@ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
-RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/"
-RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
 export PYTHONPATH="$PYTHONPATH:$HOME/.pyenv/versions/3.6.15"
 export PATH="$PATH:$HOME/.pyenv/versions/3.6.15/bin"
 export PATH="$(pyenv root)/shims:$PATH"
@@ -70,14 +53,11 @@ export PATH="$PATH:/Users/leondreamed/.gem/bin"
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1q/
 export OPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1q/lib
 
-test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
-
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
-export PATH="$HOME/.tea/nodejs.org/v18.16/bin:$PATH"
 export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
 export PATH="$HOME/Library/pnpm:$PATH"
 
@@ -89,12 +69,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-source ~/code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
 export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/go.dev/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/npmjs.com/v9.8.1/bin:$PATH"
+export PATH="/Users/leondreamed/.tea/nodejs.org/v20.5.0/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
