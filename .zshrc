@@ -60,7 +60,7 @@ alias -g ......='../../../../..'
 
 export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
 export PATH="$HOME/.tea/pnpm.io/v7.33.6/bin:$PATH"
-export PATH="$HOME/.tea/tea.xyz/v*/bin:$PATH"
+export PATH="$HOME/.tea/tea.xyz/v0/bin:$PATH"
 
 # pnpm
 case ":$PATH:" in
