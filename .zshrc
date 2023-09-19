@@ -58,8 +58,9 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
-# export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
-# export PATH="$HOME/Library/pnpm:$PATH"
+export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
+export PATH="$HOME/.tea/pnpm.io/v7.33.6/bin:$PATH"
+export PATH="$HOME/.tea/tea.xyz/v*/bin:$PATH"
 
 # pnpm
 case ":$PATH:" in
@@ -72,6 +73,8 @@ export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/go.dev/v*/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/npmjs.com/v9.8.1/bin:$PATH"
 export PATH="/Users/leondreamed/.tea/nodejs.org/v20.5.0/bin:$PATH"
+export PATH="/Users/leondreamed/.tea/python.org/v*/bin:$PATH"
+export PATH="/Users/leondreamed/.tea/aws.amazon.com/cli/v2.13.11/bin:$PATH"
 
 # bun completions
 [ -s "/Users/leondreamed/.bun/_bun" ] && source "/Users/leondreamed/.bun/_bun"
