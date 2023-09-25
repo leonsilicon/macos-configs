@@ -58,30 +58,38 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
-export PATH="$HOME/.tea/npmjs.org/v*/bin:$PATH"
-export PATH="$HOME/.tea/pnpm.io/v7.33.6/bin:$PATH"
-export PATH="$HOME/.tea/tea.xyz/v0/bin:$PATH"
-
-# pnpm
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-export PATH="/Users/leondreamed/.tea/ruby-lang.org/v*/bin:$PATH"
-export PATH="/Users/leondreamed/.tea/go.dev/v*/bin:$PATH"
-export PATH="/Users/leondreamed/.tea/npmjs.com/v9.8.1/bin:$PATH"
-export PATH="/Users/leondreamed/.tea/nodejs.org/v20.5.0/bin:$PATH"
-export PATH="/Users/leondreamed/.tea/python.org/v*/bin:$PATH"
-export PATH="/Users/leondreamed/.tea/aws.amazon.com/cli/v2.13.11/bin:$PATH"
-
 # bun completions
 [ -s "/Users/leondreamed/.bun/_bun" ] && source "/Users/leondreamed/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+source <(tea --shellcode)  #docs.tea.xyz/shellcode
+
+
+
+
+# pnpm
+export PNPM_HOME="/Users/leondreamed/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export PATH="$HOME/.tea/aws.amazon.com/cli/v*/bin:$PATH"
+export PATH="$HOME/.tea/python.org/v*/bin:$PATH"
+
+
+
+
+
+
+
+
+
+
 
 # begin:tunnel-shell-configuration
 export DIRENV_LOG_FORMAT=""

@@ -193,5 +193,9 @@
 	"go.alternateTools": {
 		"go": "/Users/leondreamed/.tea/go.dev/v*/bin/go"
 	},
-	"window.zoomLevel": -1
+	"window.zoomLevel": -1,
+	"zig.zigPath": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+	"zig.zigVersion": "0.11.0",
+	"zig.zls.enabled": true,
+	"zig.zls.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls"
 }
