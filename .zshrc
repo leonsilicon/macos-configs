@@ -65,11 +65,6 @@ alias -g ......='../../../../..'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-source <(tea --shellcode)  #docs.tea.xyz/shellcode
-
-
-
-
 # pnpm
 export PNPM_HOME="/Users/leondreamed/Library/pnpm"
 case ":$PATH:" in
@@ -78,20 +73,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export PATH="$HOME/.tea/aws.amazon.com/cli/v*/bin:$PATH"
-export PATH="$HOME/.tea/python.org/v*/bin:$PATH"
-
-
-
-
-
-
-
-
-
-
-
-# begin:tunnel-shell-configuration
-export DIRENV_LOG_FORMAT=""
-cd /Users/leondreamed/repos/Tunnel-Labs/Tunnel && eval "$('/Users/leondreamed/.tea/direnv.net/v*/bin/direnv' hook zsh)" && cd - > /dev/null
-# end:tunnel-shell-configuration
+source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
