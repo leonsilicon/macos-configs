@@ -132,7 +132,7 @@
   "[bibtex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
@@ -193,7 +193,6 @@
 	"go.alternateTools": {
 		"go": "/Users/leondreamed/.tea/go.dev/v*/bin/go"
 	},
-	"window.zoomLevel": -1,
 	"zig.zigPath": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
 	"zig.zigVersion": "0.11.0",
 	"zig.zls.enabled": true,

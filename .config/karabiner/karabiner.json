@@ -867,30 +867,6 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "l",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control" ],
-              "optional" : [ "right_command", "right_control" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /Applications/Notion.app"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "l",
-            "modifiers" : {
-              "mandatory" : [ "right_command", "right_control" ],
-              "optional" : [ "left_command", "left_control" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /Applications/Notion.app"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
             "key_code" : "r",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control" ],
