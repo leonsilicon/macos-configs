@@ -174,13 +174,15 @@
 		},
 		"textMateRules": []
 	},
-	"workbench.colorTheme": "Default Dark+",
+	"workbench.colorTheme": "Gruvbox Light Hard",
 	"files.associations": {
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
 		".env*": "dotenv",
 		"*.ts.snap": "javascript",
-		"*.mdx": "markdown"
+		"*.mdx": "markdown",
+		"libturbo.h": "c",
+		"turbo.json": "jsonc"
 	},
 	"github.copilot.enable": {
 		"*": true,
@@ -196,5 +198,6 @@
 	"zig.zigPath": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
 	"zig.zigVersion": "0.11.0",
 	"zig.zls.enabled": true,
-	"zig.zls.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls"
+	"zig.zls.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"window.zoomLevel": -1
 }

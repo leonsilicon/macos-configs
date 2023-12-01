@@ -107,17 +107,17 @@
 			[:!CTS#QWRx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			[:!QWR#CTSx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
-			[:!CT#QWe "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
-			[:!QW#CTe "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!CT#QWe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
+			[:!QW#CTe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
 			;; mod + shift + period: move window to next display
-			[:!CTS#QWRe "/opt/homebrew/bin/yabai -m window --display prev || yabai -m window --display last"]
-			[:!QWR#CTSe "/opt/homebrew/bin/yabai -m window --display prev || yabai -m window --display last"]
+			[:!CTS#QWRe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
+			[:!QWR#CTSe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
 			;; mod + comma: switch to previous display
-			[:!CT#QWw "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
-			[:!QW#CTw "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
+			[:!CT#QWw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!QW#CTw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
 			;; mod + shift + comma: move window to previous display
-			[:!CTS#QWRw "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"]
-			[:!QWR#CTSw "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"]
+			[:!CTS#QWRw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
+			[:!QWR#CTSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
 			;; mod + <number>: switch to space number <number>
 			[:!CT#QW9 "/opt/homebrew/bin/yabai -m space --focus next"]
 			[:!QW#CT9 "/opt/homebrew/bin/yabai -m space --focus next"]

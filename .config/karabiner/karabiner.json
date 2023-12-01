@@ -682,7 +682,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -694,7 +694,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
           } ],
           "type" : "basic"
         }, {
@@ -706,7 +706,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -718,7 +718,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || yabai -m window --display last"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"
           } ],
           "type" : "basic"
         }, {
@@ -730,7 +730,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -742,7 +742,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"
           } ],
           "type" : "basic"
         }, {
@@ -754,7 +754,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
@@ -766,7 +766,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"
           } ],
           "type" : "basic"
         }, {
