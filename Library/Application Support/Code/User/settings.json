@@ -1,149 +1,167 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "html.autoCreateQuotes": false,
-  "editor.fontSize": 18,
-  "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["K"],
-      "after": ["g", "h"]
-    },
-    {
-      "before": ["<C-@>"],
-      "commands": [
-        ":s#\\C\\(\\<\\u[a-z0-9]\\+\\|[a-z0-9]\\+\\)\\(\\u\\)#\\l\\1_\\l\\2#g"
-      ]
-    }
-  ],
-  "vim.vimrc.enable": true,
-  "[vue]": {
-    "editor.useTabStops": true
-  },
-  "eslint.workingDirectories": ["frontend"],
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "emmet.extensionsPath": [
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"html.autoCreateQuotes": false,
+	"editor.fontSize": 18,
+	"editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"K"
+			],
+			"after": [
+				"g",
+				"h"
+			]
+		},
+		{
+			"before": [
+				"<C-@>"
+			],
+			"commands": [
+				":s#\\C\\(\\<\\u[a-z0-9]\\+\\|[a-z0-9]\\+\\)\\(\\u\\)#\\l\\1_\\l\\2#g"
+			]
+		}
+	],
+	"vim.vimrc.enable": true,
+	"[vue]": {
+		"editor.useTabStops": true
+	},
+	"eslint.workingDirectories": [
+		"frontend"
+	],
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"emmet.extensionsPath": [
 		""
 	],
-  "emmet.showExpandedAbbreviation": "never",
-  "emmet.includeLanguages": {
-    "html": "pug"
-  },
-  "emmet.excludeLanguages": ["markdown"],
-  "editor.tabSize": 2,
-  "workbench.iconTheme": "vscode-icons",
-  "vs-kubernetes": {
+	"emmet.showExpandedAbbreviation": "never",
+	"emmet.includeLanguages": {
+		"html": "pug"
+	},
+	"emmet.excludeLanguages": [
+		"markdown"
+	],
+	"editor.tabSize": 2,
+	"workbench.iconTheme": "vscode-icons",
+	"vs-kubernetes": {
 		"vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "vsicons.dontShowNewVersionMessage": true,
-  "cSpell.userWords": [
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"vsicons.dontShowNewVersionMessage": true,
+	"cSpell.userWords": [
 		"Fastify",
 		"Subroom",
 		"Tabulo",
 		"Timeblocking"
 	],
-  "rust.wait_to_build": 1,
-  "[sql]": {
-    "editor.defaultFormatter": "bradymholt.pgformatter"
-  },
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "pgFormatter.tabs": true,
-  "pgFormatter.keywordCase": "lowercase",
-  "[markdown]": {
+	"rust.wait_to_build": 1,
+	"[sql]": {
+		"editor.defaultFormatter": "bradymholt.pgformatter"
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"pgFormatter.tabs": true,
+	"pgFormatter.keywordCase": "lowercase",
+	"[markdown]": {
 		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "files.autoSave": "onFocusChange",
-  "[yaml]": {
-    "editor.insertSpaces": true,
-    "editor.autoIndent": "keep",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[python]": {
-    "editor.useTabStops": false,
-    "editor.tabSize": 2,
-    "gitlens.codeLens.symbolScopes": ["!Module"],
+	},
+	"files.autoSave": "onFocusChange",
+	"[yaml]": {
+		"editor.insertSpaces": true,
+		"editor.autoIndent": "keep",
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[python]": {
+		"editor.useTabStops": false,
+		"editor.tabSize": 2,
+		"gitlens.codeLens.symbolScopes": [
+			"!Module"
+		],
 		"editor.defaultFormatter": "ms-python.python",
 		"editor.formatOnType": true
-  },
-  "rust-analyzer.lruCapacity": 2048,
-  "rust-analyzer.runnableEnv": null,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.cursorStyle": "line",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "on",
-  "files.eol": "\n",
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "security.workspace.trust.untrustedFiles": "open",
-  "files.trimTrailingWhitespace": true,
-  "editor.renderWhitespace": "all",
-  "editor.insertSpaces": false,
-  "editor.useTabStops": true,
-  "editor.detectIndentation": false,
-  "editor.accessibilitySupport": "off",
-  "eslint.packageManager": "pnpm",
-  "eslint.runtime": "node",
-  "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "rojo.pluginManagement": true,
-  "rojo.releaseBranch": "7.x",
+	},
+	"rust-analyzer.lruCapacity": 2048,
+	"rust-analyzer.runnableEnv": null,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.cursorStyle": "line",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "on",
+	"files.eol": "\n",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"security.workspace.trust.untrustedFiles": "open",
+	"files.trimTrailingWhitespace": true,
+	"editor.renderWhitespace": "all",
+	"editor.insertSpaces": false,
+	"editor.useTabStops": true,
+	"editor.detectIndentation": false,
+	"editor.accessibilitySupport": "off",
+	"eslint.packageManager": "pnpm",
+	"eslint.runtime": "node",
+	"[rust]": {
+		"editor.defaultFormatter": "matklad.rust-analyzer"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"rojo.pluginManagement": true,
+	"rojo.releaseBranch": "7.x",
 	"javascript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "latex-workshop.view.pdf.viewer": "tab",
-  "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
-  "latex-workshop.latex.outDir": "./out/",
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latex-workflow",
-      "tools": ["latex-workflow"]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latex-workflow",
-      "command": "latex-workflow",
-      "args": ["--output-directory=out", "%DOC%.tex"]
-    }
-  ],
-  "latex-workshop.latex.autoBuild.run": "never",
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[bibtex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
-  "workbench.editor.showTabs": "single",
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "rust-analyzer.lru.capacity": 2048,
-  "editor.inlineSuggest.enabled": true,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"latex-workshop.view.pdf.viewer": "tab",
+	"[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+	"latex-workshop.latex.outDir": "./out/",
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "latex-workflow",
+			"tools": [
+				"latex-workflow"
+			]
+		}
+	],
+	"latex-workshop.latex.tools": [
+		{
+			"name": "latex-workflow",
+			"command": "latex-workflow",
+			"args": [
+				"--output-directory=out",
+				"%DOC%.tex"
+			]
+		}
+	],
+	"latex-workshop.latex.autoBuild.run": "never",
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[bibtex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+	"workbench.editor.showTabs": "single",
+	"lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+	"[swift]": {
+		"editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"rust-analyzer.lru.capacity": 2048,
+	"editor.inlineSuggest.enabled": true,
+	"[terraform]": {
+		"editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -174,7 +192,7 @@
 		},
 		"textMateRules": []
 	},
-	"workbench.colorTheme": "Gruvbox Light Hard",
+	"workbench.colorTheme": "Gruvbox Material Light",
 	"files.associations": {
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
@@ -199,5 +217,8 @@
 	"zig.zigVersion": "0.11.0",
 	"zig.zls.enabled": true,
 	"zig.zls.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"zig.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+	"zig.initialSetupDone": true,
+	"editor.autoClosingBrackets": "never",
 	"window.zoomLevel": -1
 }

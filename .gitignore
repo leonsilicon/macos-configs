@@ -88,8 +88,4 @@ Library/Application Support/espanso/*
 !code/zsh-autocomplete
 !code/zsh-autocomplete/*
 
-# Bin Scripts
-!bin
-!bin/*
-
 .DS_Store

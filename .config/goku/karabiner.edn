@@ -68,7 +68,7 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
-			[:!CT#QWc "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"]
+			[:!CT#QWc "ymsp focus-down-window > /dev/null"]
 			[:!QW#CTc "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"]
 			;; mod + k: focus up
 			[:!CT#QWv "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"]

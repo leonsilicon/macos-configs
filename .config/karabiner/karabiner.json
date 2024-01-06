@@ -370,7 +370,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"
+            "shell_command" : "ymsp focus-down-window > /dev/null"
           } ],
           "type" : "basic"
         }, {
