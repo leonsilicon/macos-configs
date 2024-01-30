@@ -70,3 +70,5 @@ esac
 source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
 
 eval "$(zoxide init zsh)"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
