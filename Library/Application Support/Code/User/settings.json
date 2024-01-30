@@ -24,7 +24,8 @@
 	],
 	"vim.vimrc.enable": true,
 	"[vue]": {
-		"editor.useTabStops": true
+		"editor.useTabStops": true,
+		"editor.defaultFormatter": "dprint.dprint"
 	},
 	"eslint.workingDirectories": [
 		"frontend"
@@ -156,7 +157,7 @@
 		"editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
 	},
 	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dprint.dprint"
 	},
 	"rust-analyzer.lru.capacity": 2048,
 	"editor.inlineSuggest.enabled": true,
@@ -164,7 +165,7 @@
 		"editor.defaultFormatter": "hashicorp.terraform"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dprint.dprint"
 	},
 	"explorer.confirmDelete": false,
 	"redhat.telemetry.enabled": false,
@@ -200,7 +201,8 @@
 		"*.ts.snap": "javascript",
 		"*.mdx": "markdown",
 		"libturbo.h": "c",
-		"turbo.json": "jsonc"
+		"turbo.json": "jsonc",
+		"*.shot": "jest-snapshot"
 	},
 	"github.copilot.enable": {
 		"*": true,
@@ -220,5 +222,10 @@
 	"zig.path": "/Users/leondreamed/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
 	"zig.initialSetupDone": true,
 	"editor.autoClosingBrackets": "never",
-	"window.zoomLevel": -1
+	"playwright.reuseBrowser": false,
+	"typescript.disableAutomaticTypeAcquisition": true,
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"window.zoomLevel": 1
 }

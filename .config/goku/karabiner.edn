@@ -69,10 +69,10 @@
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
 			[:!CT#QWc "ymsp focus-down-window > /dev/null"]
-			[:!QW#CTc "/Users/leondreamed/Library/pnpm/ymsp focus-down-window > /dev/null"]
+			[:!QW#CTc "/Users/leonsilicon/Library/pnpm/ymsp focus-down-window > /dev/null"]
 			;; mod + k: focus up
-			[:!CT#QWv "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"]
-			[:!QW#CTv "/Users/leondreamed/Library/pnpm/ymsp focus-up-window > /dev/null"]
+			[:!CT#QWv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
+			[:!QW#CTv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			;; mod + m: focus on master
 			[:!CT#QWm "/opt/homebrew/bin/yabai -m window --focus east"]
 			[:!QW#CTm "/opt/homebrew/bin/yabai -m window --focus east"]
@@ -80,11 +80,11 @@
 			[:!CTS#QWRm "/opt/homebrew/bin/yabai -m window --swap east"]
 			[:!QWR#CTSm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
-			[:!CTS#QWRg "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
-			[:!QWR#CTSg "/Users/leondreamed/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
+			[:!CTS#QWRg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
+			[:!QWR#CTSg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
 			;; mod + shift + d: decrease number of master windows
-			[:!CTS#QWRh "/Users/leondreamed/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
-			[:!QWR#CTSh "/Users/leondreamed/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
+			[:!CTS#QWRh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
+			[:!QWR#CTSh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
 			;; mod + shift + j: move window down
 			[:!CTS#QWRc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
 			[:!QWR#CTSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
@@ -104,8 +104,8 @@
 			[:!CTS#QWRj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			[:!QWR#CTSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			;; mod + shift + q: close focused window
-			[:!CTS#QWRx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
-			[:!QWR#CTSx "/Users/leondreamed/Library/pnpm/ymsp close-focused-window > /dev/null"]
+			[:!CTS#QWRx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
+			[:!QWR#CTSx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
 			[:!CT#QWe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
 			[:!QW#CTe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
@@ -130,8 +130,8 @@
 			[:!CT#QWn "open -na '/Applications/qutebrowser.app'"]
 			[:!QW#CTn "open -na '/Applications/qutebrowser.app'"]
 											  ;; mod + f: open finder
-			[:!CT#QWy "open /Users/leondreamed"]
-			[:!QW#CTy "open /Users/leondreamed"]
+			[:!CT#QWy "open /Users/leonsilicon"]
+			[:!QW#CTy "open /Users/leonsilicon"]
 			;; mod + p open bitwarden (password manager)
 			[:!CT#QWr "open -na /Applications/Bitwarden.app"]
 			[:!QW#CTr "open -na /Applications/Bitwarden.app"]
