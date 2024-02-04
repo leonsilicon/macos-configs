@@ -1,6 +1,6 @@
 alias python='python3.10'
 alias v='nvim'
-alias e='exa'
+alias e='eza'
 alias git-largest-files="git rev-list --objects --all |
   git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' |
   sed -n 's/^blob //p' |

@@ -227,5 +227,6 @@
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
-	"window.zoomLevel": 1
+	"security.promptForLocalFileProtocolHandling": false,
+	"window.zoomLevel": -1
 }
