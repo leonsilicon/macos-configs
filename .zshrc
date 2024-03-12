@@ -71,3 +71,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
 
 source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+
+eval "$(direnv hook zsh)"
