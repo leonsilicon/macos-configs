@@ -120,7 +120,7 @@
 	"rojo.pluginManagement": true,
 	"rojo.releaseBranch": "7.x",
 	"javascript.preferences.importModuleSpecifier": "non-relative",
-	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifier": "project-relative",
 	"latex-workshop.view.pdf.viewer": "tab",
 	"[latex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -355,5 +355,10 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "dprint.dprint"
 	},
-	"svelte.ask-to-enable-ts-plugin": false
+	"svelte.ask-to-enable-ts-plugin": false,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.preferences.importModuleSpecifierEnding": "js",
+	"editor.lineNumbers": "on",
+	"editor.glyphMargin": true
 }
