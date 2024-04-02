@@ -819,78 +819,6 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "n",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open -na '/Applications/qutebrowser.app'"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "n",
-            "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option" ],
-              "optional" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open -na '/Applications/qutebrowser.app'"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "y",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /Users/leonsilicon"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "y",
-            "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option" ],
-              "optional" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open /Users/leonsilicon"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "r",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open -na /Applications/Bitwarden.app"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "r",
-            "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option" ],
-              "optional" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "shell_command" : "open -na /Applications/Bitwarden.app"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
             "key_code" : "return_or_enter",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control", "left_option" ],
@@ -975,14 +903,7 @@
       "manipulate_caps_lock_led" : true,
       "mouse_flip_y" : false,
       "mouse_swap_wheels" : false,
-      "simple_modifications" : [ {
-        "from" : {
-          "key_code" : "up_arrow"
-        },
-        "to" : [ {
-          "key_code" : "up_arrow"
-        } ]
-      } ],
+      "simple_modifications" : [ ],
       "treat_as_built_in_keyboard" : false,
       "mouse_flip_x" : false
     }, {
