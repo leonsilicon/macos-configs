@@ -365,8 +365,8 @@
           "from" : {
             "key_code" : "c",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -377,8 +377,8 @@
           "from" : {
             "key_code" : "c",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -389,8 +389,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -401,8 +401,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -413,8 +413,8 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -425,8 +425,8 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -437,8 +437,8 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -449,8 +449,8 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -461,8 +461,8 @@
           "from" : {
             "key_code" : "g",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -473,8 +473,8 @@
           "from" : {
             "key_code" : "g",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -485,8 +485,8 @@
           "from" : {
             "key_code" : "h",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -497,8 +497,8 @@
           "from" : {
             "key_code" : "h",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -509,8 +509,8 @@
           "from" : {
             "key_code" : "c",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -521,8 +521,8 @@
           "from" : {
             "key_code" : "c",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -533,8 +533,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -545,8 +545,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -557,8 +557,8 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -569,8 +569,8 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -581,8 +581,8 @@
           "from" : {
             "key_code" : "p",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -593,8 +593,8 @@
           "from" : {
             "key_code" : "p",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -605,8 +605,8 @@
           "from" : {
             "key_code" : "p",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -617,8 +617,8 @@
           "from" : {
             "key_code" : "p",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -629,8 +629,8 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -641,8 +641,8 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -653,8 +653,8 @@
           "from" : {
             "key_code" : "x",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -665,8 +665,8 @@
           "from" : {
             "key_code" : "x",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -677,8 +677,8 @@
           "from" : {
             "key_code" : "e",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -689,8 +689,8 @@
           "from" : {
             "key_code" : "e",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -701,8 +701,8 @@
           "from" : {
             "key_code" : "e",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -713,8 +713,8 @@
           "from" : {
             "key_code" : "e",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -725,8 +725,8 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -737,8 +737,8 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -749,8 +749,8 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
             }
           },
           "to" : [ {
@@ -761,8 +761,8 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
             }
           },
           "to" : [ {
@@ -773,8 +773,8 @@
           "from" : {
             "key_code" : "9",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -785,8 +785,8 @@
           "from" : {
             "key_code" : "9",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -797,8 +797,8 @@
           "from" : {
             "key_code" : "quote",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -809,8 +809,8 @@
           "from" : {
             "key_code" : "quote",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -821,8 +821,8 @@
           "from" : {
             "key_code" : "n",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -833,8 +833,8 @@
           "from" : {
             "key_code" : "n",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -845,8 +845,8 @@
           "from" : {
             "key_code" : "y",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -857,8 +857,8 @@
           "from" : {
             "key_code" : "y",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -869,8 +869,8 @@
           "from" : {
             "key_code" : "r",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -881,8 +881,8 @@
           "from" : {
             "key_code" : "r",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -893,8 +893,8 @@
           "from" : {
             "key_code" : "return_or_enter",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "fn" ],
-              "optional" : [ "right_command", "right_control", "right_option", "fn" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -905,8 +905,8 @@
           "from" : {
             "key_code" : "return_or_enter",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "fn" ],
-              "optional" : [ "left_command", "left_control", "left_option", "fn" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -924,8 +924,8 @@
             }
           },
           "to" : [ {
-            "key_code" : "fn",
-            "modifiers" : [ "left_command", "left_control", "left_option" ]
+            "key_code" : "left_option",
+            "modifiers" : [ "left_command", "left_control" ]
           } ],
           "type" : "basic"
         }, {
@@ -936,8 +936,8 @@
             }
           },
           "to" : [ {
-            "key_code" : "fn",
-            "modifiers" : [ "right_command", "right_control", "right_option" ]
+            "key_code" : "right_option",
+            "modifiers" : [ "right_command", "right_control" ]
           } ],
           "type" : "basic"
         } ]

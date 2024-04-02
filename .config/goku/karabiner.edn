@@ -1,4 +1,4 @@
-;; note: mod key is cmd + ctrl + opt + fn (CTOF/QWEF)
+;; note: mod key is cmd + ctrl + opt (CTO/QWE); we can't use fn because that isn't supported as a modifier key on macOS apps
 ;; note: all the keys are in QWERTY because karabiner uses the hardware key
 {
 	:devices {
@@ -68,80 +68,80 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; mod + j: focus down
-			[:!CTOF#QWEFc "ymsp focus-down-window > /dev/null"]
-			[:!QWEF#CTOFc "/Users/leonsilicon/Library/pnpm/ymsp focus-down-window > /dev/null"]
+			[:!CTO#QWEc "ymsp focus-down-window > /dev/null"]
+			[:!QWE#CTOc "/Users/leonsilicon/Library/pnpm/ymsp focus-down-window > /dev/null"]
 			;; mod + k: focus up
-			[:!CTOF#QWEFv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
-			[:!QWEF#CTOFv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
+			[:!CTO#QWEv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
+			[:!QWE#CTOv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			;; mod + m: focus on master
-			[:!CTOF#QWEFm "/opt/homebrew/bin/yabai -m window --focus east"]
-			[:!QWEF#CTOFm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
 			;; mod + shift + m: move window to master
-			[:!CTOFS#QWEFRm "/opt/homebrew/bin/yabai -m window --swap east"]
-			[:!QWEFR#CTOFSm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!CTOS#QWERm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!QWER#CTOSm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; mod + shift + i: increase number of master windows
-			[:!CTOFS#QWEFRg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
-			[:!QWEFR#CTOFSg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
+			[:!CTOS#QWERg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
+			[:!QWER#CTOSg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
 			;; mod + shift + d: decrease number of master windows
-			[:!CTOFS#QWEFRh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
-			[:!QWEFR#CTOFSh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
+			[:!CTOS#QWERh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
+			[:!QWER#CTOSh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
 			;; mod + shift + j: move window down
-			[:!CTOFS#QWEFRc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
-			[:!QWEFR#CTOFSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
+			[:!CTOS#QWERc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
+			[:!QWER#CTOSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
 			;; mod + shift + k: move window up
-			[:!CTOFS#QWEFRv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
-			[:!QWEFR#CTOFSv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!CTOS#QWERv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!QWER#CTOSv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
 			;; mod + h: resize window left
-			[:!CTOF#QWEFj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
-			[:!QWEF#CTOFj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!CTO#QWEj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!QWE#CTOj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
 			;; mod + l: resize window right
-			[:!CTOF#QWEFp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
-			[:!QWEF#CTOFp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			[:!CTO#QWEp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			[:!QWE#CTOp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
 			;; mod + alt + k: resize window top
-			[:!CTOFS#QWEFRp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
-			[:!QWEFR#CTOFSp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			[:!CTOS#QWERp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			[:!QWER#CTOSp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
 			;; mod + alt + j: resize window bottom
-			[:!CTOFS#QWEFRj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
-			[:!QWEFR#CTOFSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!CTOS#QWERj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!QWER#CTOSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			;; mod + shift + q: close focused window
-			[:!CTOFS#QWEFRx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
-			[:!QWEFR#CTOFSx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
+			[:!CTOS#QWERx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
+			[:!QWER#CTOSx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			;; mod + period: switch to next display
-			[:!CTOF#QWEFe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
-			[:!QWEF#CTOFe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
+			[:!CTO#QWEe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
+			[:!QWE#CTOe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
 			;; mod + shift + period: move window to next display
-			[:!CTOFS#QWEFRe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
-			[:!QWEFR#CTOFSe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
+			[:!CTOS#QWERe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
+			[:!QWER#CTOSe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
 			;; mod + comma: switch to previous display
-			[:!CTOF#QWEFw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
-			[:!QWEF#CTOFw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!CTO#QWEw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
+			[:!QWE#CTOw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
 			;; mod + shift + comma: move window to previous display
-			[:!CTOFS#QWEFRw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
-			[:!QWEFR#CTOFSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
+			[:!CTOS#QWERw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
+			[:!QWER#CTOSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
 			;; mod + <number>: switch to space number <number>
-			[:!CTOF#QWEF9 "/opt/homebrew/bin/yabai -m space --focus next"]
-			[:!QWEF#CTOF9 "/opt/homebrew/bin/yabai -m space --focus next"]
-			[:!CTOF#QWEFquote "/opt/homebrew/bin/yabai -m space --focus prev"]
-			[:!QWEF#CTOFquote "/opt/homebrew/bin/yabai -m space --focus prev"]
+			[:!CTO#QWE9 "/opt/homebrew/bin/yabai -m space --focus next"]
+			[:!QWE#CTO9 "/opt/homebrew/bin/yabai -m space --focus next"]
+			[:!CTO#QWEquote "/opt/homebrew/bin/yabai -m space --focus prev"]
+			[:!QWE#CTOquote "/opt/homebrew/bin/yabai -m space --focus prev"]
 
 			;; applications
 
 			;; mod + b: open brave (browser)
-			[:!CTOF#QWEFn "open -na '/Applications/qutebrowser.app'"]
-			[:!QWEF#CTOFn "open -na '/Applications/qutebrowser.app'"]
+			[:!CTO#QWEn "open -na '/Applications/qutebrowser.app'"]
+			[:!QWE#CTOn "open -na '/Applications/qutebrowser.app'"]
 											  ;; mod + f: open finder
-			[:!CTOF#QWEFy "open /Users/leonsilicon"]
-			[:!QWEF#CTOFy "open /Users/leonsilicon"]
+			[:!CTO#QWEy "open /Users/leonsilicon"]
+			[:!QWE#CTOy "open /Users/leonsilicon"]
 			;; mod + p open bitwarden (password manager)
-			[:!CTOF#QWEFr "open -na /Applications/Bitwarden.app"]
-			[:!QWEF#CTOFr "open -na /Applications/Bitwarden.app"]
+			[:!CTO#QWEr "open -na /Applications/Bitwarden.app"]
+			[:!QWE#CTOr "open -na /Applications/Bitwarden.app"]
 			;; mod + return: open alacritty
-			[:!CTOF#QWEFreturn_or_enter "open -na /Applications/Warp.app"]
-			[:!QWEF#CTOFreturn_or_enter "open -na /Applications/Warp.app"]
+			[:!CTO#QWEreturn_or_enter "open -na /Applications/Warp.app"]
+			[:!QWE#CTOreturn_or_enter "open -na /Applications/Warp.app"]
 		]}
 		{:des "F23-24 to mod key", :rules [
-			[:##f23, :!CTOfn]
-			[:##f24, :!QWEfn]
+			[:##f23, :!CTleft_option]
+			[:##f24, :!QWright_option]
 		]}
 		{:des "F22 to Fn key", :rules [
 			[:##f22, :fn]
