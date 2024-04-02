@@ -24,8 +24,8 @@
             }
           },
           "to" : [ {
-            "key_code" : "left_command",
-            "modifiers" : [ "left_control" ]
+            "key_code" : "left_option",
+            "modifiers" : [ "left_command", "left_control" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -43,8 +43,8 @@
             }
           },
           "to" : [ {
-            "key_code" : "right_command",
-            "modifiers" : [ "right_control" ]
+            "key_code" : "right_option",
+            "modifiers" : [ "right_command", "right_control" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {

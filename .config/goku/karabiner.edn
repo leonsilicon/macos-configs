@@ -8,9 +8,9 @@
 	:main, [
 		{:des "Configure modifier keys on macbook keyboard" :rules [
 			;; left cmd -> left mod (left cmd + left ctrl)
-			[:##left_command :!Tleft_command :macbook-keyboard]
+			[:##left_command :!CTleft_option :macbook-keyboard]
 			;; right cmd -> right mod (right cmd + right ctrl)
-			[:##right_command :!Wright_command :macbook-keyboard]
+			[:##right_command :!QWright_option :macbook-keyboard]
 
 			;; left ctrl -> left cmd
 			[:##left_control :left_command :macbook-keyboard]
