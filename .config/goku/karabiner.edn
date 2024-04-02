@@ -126,16 +126,7 @@
 
 			;; applications
 
-			;; mod + b: open brave (browser)
-			[:!CTO#QWEn "open -na '/Applications/qutebrowser.app'"]
-			[:!QWE#CTOn "open -na '/Applications/qutebrowser.app'"]
-											  ;; mod + f: open finder
-			[:!CTO#QWEy "open /Users/leonsilicon"]
-			[:!QWE#CTOy "open /Users/leonsilicon"]
-			;; mod + p open bitwarden (password manager)
-			[:!CTO#QWEr "open -na /Applications/Bitwarden.app"]
-			[:!QWE#CTOr "open -na /Applications/Bitwarden.app"]
-			;; mod + return: open alacritty
+			;; mod + return: open terminal
 			[:!CTO#QWEreturn_or_enter "open -na /Applications/Warp.app"]
 			[:!QWE#CTOreturn_or_enter "open -na /Applications/Warp.app"]
 		]}
