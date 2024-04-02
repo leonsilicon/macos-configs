@@ -140,8 +140,8 @@
 			[:!QWEF#CTOFreturn_or_enter "open -na /Applications/Warp.app"]
 		]}
 		{:des "F23-24 to mod key", :rules [
-			[:##f23, :!Tleft_command]
-			[:##f24, :!Wright_command]
+			[:##f23, :!CTOfn]
+			[:##f24, :!QWEfn]
 		]}
 		{:des "F22 to Fn key", :rules [
 			[:##f22, :fn]
