@@ -17,7 +17,7 @@ My Karabiner-Elements keymaps are auto-generated using a tool called [GokuRakuJo
 
 ### System-wide utilities
 
-Shortcuts for system-wide utilities such as controlling Yabai (the window manager) or opening certain applications use the following modifier keys (`⌘⌥^(⇧)`)
+Shortcuts for system-wide utilities such as controlling Yabai (the window manager) or opening certain applications use the following combination of modifier keys: `⌘⌥^` (and optionally `⇧`)
 
 > We don't use the `Fn` key because it's not detectable when setting shortcuts in certain applications.
 
