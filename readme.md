@@ -25,9 +25,9 @@ Shortcuts for system-wide utilities such as controlling Yabai (the window manage
 
 My VSCode shortcuts generally adhere to the following principles:
 
-`⌘` - Used for "write" actions - actions that modify some sort of state
-`⌘⇧` - Used for complementary "write" actions, e.g. opposites (`⌘Z` = Undo, `⌘⇧Z` = Redo), or scope changes (`⌘F` = Find in current file, `⌘⇧F` = Find in all files)
-`⌥` - Used for "read" actions - actions that don't modify state (e.g. changing views, navigation, etc.)
-`^` - Not used for any VSCode shortcuts - reserved for the Vim extension
+`⌘` - Used for "write" actions - actions that modify some sort of state\
+`⌘⇧` - Used for complementary "write" actions, e.g. opposites (`⌘Z` = Undo, `⌘⇧Z` = Redo), or scope changes (`⌘F` = Find in current file, `⌘⇧F` = Find in all files)\
+`⌥` - Used for "read" actions - actions that don't modify state (e.g. changing views, navigation, etc.)\
+`^` - Not used for any VSCode shortcuts - reserved for the Vim extension\
 `^⇧` - TODO
 
