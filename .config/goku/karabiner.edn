@@ -129,6 +129,10 @@
 			;; mod + return: open terminal
 			[:!CTO#QWEreturn_or_enter "open -na /Applications/Warp.app"]
 			[:!QWE#CTOreturn_or_enter "open -na /Applications/Warp.app"]
+
+			;; mod + q open qutebrowser
+			[:!CTO#QWEx "open -na /Applications/Qutebrowser.app"]
+			[:!QWE#CTOx "open -na /Applications/Qutebrowser.app"]
 		]}
 		{:des "F23-24 to mod key", :rules [
 			[:##f23, :!CTleft_option]

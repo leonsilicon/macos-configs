@@ -71,7 +71,7 @@
 		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
 	},
 	{
-		"key": "cmd+shift+r",
+		"key": "alt+shift+r",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
 	},
@@ -826,5 +826,48 @@
 		"key": "shift+cmd+b",
 		"command": "-workbench.action.tasks.build",
 		"when": "taskCommandsRegistered"
+	},
+	{
+		"key": "cmd+r",
+		"command": "rerunSearchEditorSearch",
+		"when": "inSearchEditor"
+	},
+	{
+		"key": "shift+cmd+r",
+		"command": "-rerunSearchEditorSearch",
+		"when": "inSearchEditor"
+	},
+	{
+		"key": "shift+cmd+r",
+		"command": "workbench.action.replaceInFiles"
+	},
+	{
+		"key": "shift+cmd+h",
+		"command": "-workbench.action.replaceInFiles"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "editor.action.replaceAll",
+		"when": "editorFocus && findWidgetVisible"
+	},
+	{
+		"key": "alt+cmd+enter",
+		"command": "-editor.action.replaceAll",
+		"when": "editorFocus && findWidgetVisible"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "search.action.replaceAll",
+		"when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+	},
+	{
+		"key": "alt+cmd+enter",
+		"command": "-search.action.replaceAll",
+		"when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "-editor.action.insertLineAfter",
+		"when": "editorTextFocus && !editorReadonly"
 	}
 ]

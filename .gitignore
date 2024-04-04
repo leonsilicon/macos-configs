@@ -22,6 +22,7 @@ repos/*
 
 # Qutebrowser
 !.qutebrowser
+!.qutebrowser/autoconfig.yml
 !.qutebrowser/config.py
 
 # Refined GitHub
@@ -58,6 +59,11 @@ repos/*
 !Library/Application Support/Code/User
 !Library/Application Support/Code/User/keybindings.json
 !Library/Application Support/Code/User/settings.json
+
+# Qutebrowser
+!Library/Preferences
+!Library/Preferences/qutebrowser
+!Library/Preferences/qutebrowser/autoconfig.yml
 
 # launchctl
 !Library/LaunchAgents
