@@ -252,7 +252,7 @@
 		"when": "problemFocus"
 	},
 	{
-		"key": "alt+v s",
+		"key": "alt+s",
 		"command": "workbench.action.focusSideBar"
 	},
 	{
@@ -520,10 +520,6 @@
 		"command": "-editor.action.clipboardPasteAction"
 	},
 	{
-		"key": "shift+alt+s",
-		"command": "stylelint.executeAutofix"
-	},
-	{
 		"key": "shift+alt+f",
 		"command": "actions.find",
 		"when": "editorFocus || editorIsOpen"
@@ -571,7 +567,7 @@
 		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
 	},
 	{
-		"key": "alt+cmd+tab",
+		"key": "alt+tab",
 		"command": "workbench.action.quickOpenNavigateNextInEditorPicker",
 		"when": "inEditorsPicker && inQuickOpen"
 	},
@@ -603,15 +599,15 @@
 		"command": "eslint.executeAutofix"
 	},
 	{
-		"key": "alt+v left",
+		"key": "alt+left",
 		"command": "workbench.action.navigateLeft"
 	},
 	{
-		"key": "alt+v right",
+		"key": "alt+right",
 		"command": "workbench.action.navigateRight"
 	},
 	{
-		"key": "alt+v down",
+		"key": "alt+down",
 		"command": "workbench.action.navigateDown"
 	},
 	{
@@ -829,7 +825,7 @@
 		"when": "inFilesPicker && inQuickOpen"
 	},
 	{
-		"key": "alt+v p",
+		"key": "alt+p",
 		"command": "workbench.action.problems.focus"
 	},
 	{
@@ -875,17 +871,12 @@
 		"command": "-workbench.action.zoomOut"
 	},
 	{
-		"key": "alt+v z",
-		"command": "workbench.action.toggleZenMode",
-		"when": "!isAuxiliaryWindowFocusedContext"
-	},
-	{
 		"key": "cmd+k z",
 		"command": "-workbench.action.toggleZenMode",
 		"when": "!isAuxiliaryWindowFocusedContext"
 	},
 	{
-		"key": "alt+v t",
+		"key": "alt+t",
 		"command": "workbench.action.terminal.toggleTerminal",
 		"when": "terminal.active"
 	},
@@ -895,15 +886,11 @@
 		"when": "terminal.active"
 	},
 	{
-		"key": "alt+v w",
-		"command": "editor.action.toggleWordWrap"
-	},
-	{
 		"key": "alt+z",
 		"command": "-editor.action.toggleWordWrap"
 	},
 	{
-		"key": "alt+v b",
+		"key": "shift+alt+s",
 		"command": "workbench.action.toggleAuxiliaryBar"
 	},
 	{
@@ -929,7 +916,7 @@
 		"command": "-workbench.action.togglePanel"
 	},
 	{
-		"key": "alt+v o",
+		"key": "alt+o",
 		"command": "workbench.action.output.toggleOutput",
 		"when": "workbench.panel.output.active"
 	},
@@ -1171,7 +1158,7 @@
 		"when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
 	},
 	{
-		"key": "alt+v up",
+		"key": "alt+up",
 		"command": "workbench.action.navigateUp"
 	},
 	{
@@ -1279,7 +1266,7 @@
 		"when": "editorHasCallHierarchyProvider"
 	},
 	{
-		"key": "alt+v e",
+		"key": "alt+e",
 		"command": "workbench.action.focusActiveEditorGroup"
 	},
 	{
@@ -1295,5 +1282,15 @@
 		"key": "ctrl+shift+g",
 		"command": "-workbench.view.scm",
 		"when": "workbench.scm.active"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
 	}
 ]
