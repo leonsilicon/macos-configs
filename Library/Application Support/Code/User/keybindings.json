@@ -1,10 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
 	{
-		"key": "cmd+n",
-		"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
-	},
-	{
 		"key": "cmd+e",
 		"command": "-workbench.action.quickOpen"
 	},
@@ -377,7 +373,7 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "alt+9",
+		"key": "shift+cmd+9",
 		"command": "workbench.action.zoomIn"
 	},
 	{
@@ -398,7 +394,7 @@
 		"when": "inQuickOpen"
 	},
 	{
-		"key": "alt+-",
+		"key": "shift+cmd+-",
 		"command": "workbench.action.zoomOut"
 	},
 	{
@@ -567,7 +563,7 @@
 		"command": "-workbench.action.showAllEditors"
 	},
 	{
-		"key": "alt+cmd+tab",
+		"key": "alt+tab",
 		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
 	},
 	{
@@ -585,7 +581,7 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
-		"key": "shift+alt+cmd+tab",
+		"key": "shift+alt+tab",
 		"command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
 	},
 	{
@@ -997,19 +993,9 @@
 		"when": "workbench.panel.repl.view.active"
 	},
 	{
-		"key": "alt+v m",
-		"command": "workbench.action.toggleMaximizeEditorGroup",
-		"when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
-	},
-	{
 		"key": "cmd+k cmd+m",
 		"command": "-workbench.action.toggleMaximizeEditorGroup",
 		"when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
-	},
-	{
-		"key": "alt+v shift+e",
-		"command": "workbench.action.unpinEditor",
-		"when": "activeEditorIsPinned"
 	},
 	{
 		"key": "cmd+k shift+enter",
@@ -1017,7 +1003,7 @@
 		"when": "activeEditorIsPinned"
 	},
 	{
-		"key": "alt+v e",
+		"key": "alt+5",
 		"command": "workbench.view.explorer",
 		"when": "viewContainer.workbench.view.explorer.enabled"
 	},
@@ -1027,17 +1013,12 @@
 		"when": "viewContainer.workbench.view.explorer.enabled"
 	},
 	{
-		"key": "alt+v x",
-		"command": "workbench.view.extensions",
-		"when": "viewContainer.workbench.view.extensions.enabled"
-	},
-	{
 		"key": "shift+cmd+x",
 		"command": "-workbench.view.extensions",
 		"when": "viewContainer.workbench.view.extensions.enabled"
 	},
 	{
-		"key": "alt+v r",
+		"key": "alt+9",
 		"command": "workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
@@ -1047,9 +1028,8 @@
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
 	{
-		"key": "alt+v f",
-		"command": "workbench.view.search",
-		"when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+		"key": "alt+8",
+		"command": "workbench.view.search"
 	},
 	{
 		"key": "shift+cmd+f",
@@ -1223,5 +1203,97 @@
 		"key": "ctrl+w l",
 		"command": "-workbench.action.navigateRight",
 		"when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+	},
+	{
+		"key": "cmd+k alt+cmd+right",
+		"command": "-workbench.action.nextEditorInGroup"
+	},
+	{
+		"key": "cmd+3",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "shift+cmd+2",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "alt+cmd+left",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "cmd+k alt+cmd+left",
+		"command": "-workbench.action.previousEditorInGroup"
+	},
+	{
+		"key": "cmd+k shift+enter",
+		"command": "-workbench.action.pinEditor",
+		"when": "!activeEditorIsPinned"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "cmd+4",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "shift+cmd+0",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+0",
+		"command": "-workbench.action.lastEditorInGroup"
+	},
+	{
+		"key": "cmd+9",
+		"command": "-workbench.action.lastEditorInGroup"
+	},
+	{
+		"key": "ctrl+w 6",
+		"command": "-workbench.action.evenEditorWidths",
+		"when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+	},
+	{
+		"key": "cmd+numpad0",
+		"command": "-workbench.action.zoomReset"
+	},
+	{
+		"key": "f11",
+		"command": "-extension.node-debug.startWithStopOnEntry",
+		"when": "!inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'node' || !inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'pwa-extensionHost' || !inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'pwa-node'"
+	},
+	{
+		"key": "f7",
+		"command": "-editor.action.accessibleDiffViewer.next",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "shift+f7",
+		"command": "-editor.action.accessibleDiffViewer.prev",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-references-view.showCallHierarchy",
+		"when": "editorHasCallHierarchyProvider"
+	},
+	{
+		"key": "alt+v e",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "alt+3",
+		"command": "workbench.view.extensions"
+	},
+	{
+		"key": "alt+4",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active"
 	}
 ]
