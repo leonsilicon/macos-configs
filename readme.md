@@ -67,5 +67,6 @@ My VSCode shortcuts generally adhere to the following principles:
 `⌘` - Used for "non-navigation" actions (usually modifies state, but also includes actions like search/find)
 `⌘⇧` - Used for complementary "non-navigation" actions, e.g. opposites (`⌘Z` = Undo, `⌘⇧Z` = Redo), or scope changes (`⌘F` = Find in current file, `⌘⇧F` = Find in all files)\
 `^` - Not used for any VSCode shortcuts - reserved for the Vim extension\
-`^⇧` - TODO
+`^⌥` - Used for setting/toggling options
+
 

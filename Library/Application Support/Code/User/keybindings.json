@@ -32,7 +32,7 @@
 		"when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
 	},
 	{
-		"key": "shift+enter",
+		"key": "alt+a",
 		"command": "workbench.files.action.showActiveFileInExplorer",
 		"when": "editorFocus"
 	},
@@ -446,10 +446,6 @@
 		"command": "-workbench.action.showCommands"
 	},
 	{
-		"key": "cmd+alt+c p",
-		"command": "extension.changeCase.pascal"
-	},
-	{
 		"key": "cmd+shift+c",
 		"command": "-workbench.action.terminal.copySelection",
 		"when": "terminalFocus && terminalProcessSupported && terminalTextSelected && terminalTextSelected"
@@ -463,18 +459,6 @@
 		"key": "cmd+alt+c",
 		"command": "-search.action.copyPath",
 		"when": "fileMatchOrFolderMatchWithResourceFocus"
-	},
-	{
-		"key": "cmd+alt+c s",
-		"command": "extension.changeCase.snake"
-	},
-	{
-		"key": "cmd+alt+c c",
-		"command": "extension.changeCase.camel"
-	},
-	{
-		"key": "cmd+alt+c k",
-		"command": "extension.changeCase.kebab"
 	},
 	{
 		"key": "cmd+alt+left",
@@ -502,7 +486,7 @@
 		"when": "hasSearchResult && searchViewletFocus"
 	},
 	{
-		"key": "cmd+shift+c",
+		"key": "alt+cmd+c",
 		"command": "copyFilePath"
 	},
 	{
@@ -871,7 +855,7 @@
 		"command": "-editor.action.toggleWordWrap"
 	},
 	{
-		"key": "shift+alt+s",
+		"key": "ctrl+alt+s",
 		"command": "workbench.action.toggleAuxiliaryBar"
 	},
 	{
@@ -884,7 +868,7 @@
 		"when": "workbench.panel.markers.view.active"
 	},
 	{
-		"key": "alt+v v",
+		"key": "ctrl+alt+p",
 		"command": "workbench.action.togglePanel"
 	},
 	{
@@ -946,7 +930,7 @@
 		"command": "-workbench.action.splitEditorUp"
 	},
 	{
-		"key": "alt+v d",
+		"key": "ctrl+alt+d",
 		"command": "workbench.debug.action.toggleRepl",
 		"when": "workbench.panel.repl.view.active"
 	},
@@ -1669,5 +1653,240 @@
 		"key": "cmd+; shift+cmd+i",
 		"command": "-testing.toggleInlineCoverage",
 		"when": "testing.isTestCoverageOpen"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "toggleSearchEditorCaseSensitive",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+cmd+c",
+		"command": "-toggleSearchEditorCaseSensitive",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "workbench.action.terminal.toggleFindCaseSensitive",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "alt+cmd+c",
+		"command": "-workbench.action.terminal.toggleFindCaseSensitive",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "toggleFindCaseSensitive",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+cmd+c",
+		"command": "-toggleFindCaseSensitive",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "toggleSearchCaseSensitive",
+		"when": "searchViewletFocus && !fileMatchOrFolderMatchFocus"
+	},
+	{
+		"key": "alt+cmd+c",
+		"command": "-toggleSearchCaseSensitive",
+		"when": "searchViewletFocus && !fileMatchOrFolderMatchFocus"
+	},
+	{
+		"key": "ctrl+alt+z",
+		"command": "workbench.action.toggleZenMode"
+	},
+	{
+		"key": "ctrl+alt+,",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "-markdown.extension.onCtrlEnterKey",
+		"when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/ || editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && config.editor.acceptSuggestionOnEnter == 'off' && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+	},
+	{
+		"key": "ctrl+alt+p",
+		"command": "-list.focusAnyUp",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "ctrl+alt+t",
+		"command": "editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+shift+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "editor.toggleFold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "cmd+k cmd+l",
+		"command": "-editor.toggleFold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+alt+/",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+/",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+a",
+		"command": "-editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+e",
+		"command": "-editor.action.toggleScreenReaderAccessibilityMode",
+		"when": "accessibilityHelpIsShown"
+	},
+	{
+		"key": "shift+alt+f1",
+		"command": "-editor.action.toggleScreenReaderAccessibilityMode"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "-workbench.action.terminal.runRecentCommand",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "-workbench.action.terminal.sendSequence",
+		"when": "accessibilityModeEnabled && terminalFocus"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "workbench.action.terminal.toggleFindRegex",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "-workbench.action.terminal.toggleFindRegex",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "workbench.action.terminal.toggleFindWholeWord",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "alt+cmd+w",
+		"command": "-workbench.action.terminal.toggleFindWholeWord",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "toggleSearchEditorRegex",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "-toggleSearchEditorRegex",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "toggleSearchEditorWholeWord",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+cmd+w",
+		"command": "-toggleSearchEditorWholeWord",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "-workbench.action.toggleDevTools",
+		"when": "isDevelopment"
+	},
+	{
+		"key": "shift+f9",
+		"command": "-editor.debug.action.toggleInlineBreakpoint",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+k y",
+		"command": "-notebook.cell.toggleOutputScrolling",
+		"when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus"
+	},
+	{
+		"key": "alt+cmd+l",
+		"command": "-toggleSearchEditorContextLines",
+		"when": "inSearchEditor"
+	},
+	{
+		"key": "alt+z",
+		"command": "-workbench.action.terminal.sizeToContentWidth",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+	},
+	{
+		"key": "alt+h",
+		"command": "-testing.toggleTestingPeekHistory",
+		"when": "testing.isPeekVisible"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "toggleFindRegex",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "-toggleFindRegex",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "toggleFindWholeWord",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+cmd+w",
+		"command": "-toggleFindWholeWord",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+alt+r",
+		"command": "toggleSearchRegex",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "-toggleSearchRegex",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "toggleSearchWholeWord",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "alt+cmd+w",
+		"command": "-toggleSearchWholeWord",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "ctrl+alt+i",
+		"command": "toggleFindInSelection",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+cmd+l",
+		"command": "-toggleFindInSelection",
+		"when": "editorFocus"
 	}
 ]
