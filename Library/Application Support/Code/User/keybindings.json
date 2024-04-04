@@ -124,7 +124,7 @@
 		"when": "editorTextFocus"
 	},
 	{
-		"key": "cmd+p",
+		"key": "alt+p",
 		"command": "editor.action.marker.next",
 		"when": "editorFocus"
 	},
@@ -139,7 +139,7 @@
 		"when": "editorFocus"
 	},
 	{
-		"key": "alt+cmd+p",
+		"key": "alt+f alt+p",
 		"command": "editor.action.marker.nextInFiles",
 		"when": "editorFocus"
 	},
@@ -192,7 +192,7 @@
 		"command": "-workbench.action.showCommands"
 	},
 	{
-		"key": "shift+alt+p",
+		"key": "cmd+p",
 		"command": "editor.action.formatDocument",
 		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
 	},
@@ -202,7 +202,7 @@
 		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
 	},
 	{
-		"key": "shift+alt+p",
+		"key": "cmd+p",
 		"command": "editor.action.formatDocument",
 		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
 	},
@@ -585,7 +585,7 @@
 		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
 	},
 	{
-		"key": "shift+alt+cmd+tab",
+		"key": "shift+alt+tab",
 		"command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
 		"when": "inEditorsPicker && inQuickOpen"
 	},
@@ -595,7 +595,7 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
-		"key": "shift+alt+e",
+		"key": "cmd+e",
 		"command": "eslint.executeAutofix"
 	},
 	{
@@ -825,10 +825,6 @@
 		"when": "inFilesPicker && inQuickOpen"
 	},
 	{
-		"key": "alt+p",
-		"command": "workbench.action.problems.focus"
-	},
-	{
 		"key": "alt+cmd+p",
 		"command": "-keybindings.editor.toggleSortByPrecedence",
 		"when": "inKeybindings"
@@ -876,11 +872,6 @@
 		"when": "!isAuxiliaryWindowFocusedContext"
 	},
 	{
-		"key": "alt+t",
-		"command": "workbench.action.terminal.toggleTerminal",
-		"when": "terminal.active"
-	},
-	{
 		"key": "ctrl+shift+[Equal]",
 		"command": "-workbench.action.terminal.toggleTerminal",
 		"when": "terminal.active"
@@ -898,11 +889,6 @@
 		"command": "-workbench.action.toggleAuxiliaryBar"
 	},
 	{
-		"key": "alt+v shift+p",
-		"command": "workbench.actions.view.problems",
-		"when": "workbench.panel.markers.view.active"
-	},
-	{
 		"key": "shift+cmd+m",
 		"command": "-workbench.actions.view.problems",
 		"when": "workbench.panel.markers.view.active"
@@ -916,7 +902,7 @@
 		"command": "-workbench.action.togglePanel"
 	},
 	{
-		"key": "alt+o",
+		"key": "shift+alt+8",
 		"command": "workbench.action.output.toggleOutput",
 		"when": "workbench.panel.output.active"
 	},
@@ -1068,11 +1054,6 @@
 	{
 		"key": "cmd+k cmd+w",
 		"command": "-workbench.action.closeAllEditors"
-	},
-	{
-		"key": "alt+v ctrl+d",
-		"command": "workbench.action.closeActiveEditor",
-		"when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
 	},
 	{
 		"key": "ctrl+w q",
@@ -1291,6 +1272,127 @@
 	{
 		"key": "alt+down",
 		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+tab",
+		"command": "workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+		"when": "inQuickOpen && inRecentFilesPicker"
+	},
+	{
+		"key": "ctrl+shift+r",
+		"command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+		"when": "inQuickOpen && inRecentFilesPicker"
+	},
+	{
+		"key": "alt+tab",
+		"command": "workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+		"when": "inQuickOpen && inRecentFilesPicker"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+		"when": "inQuickOpen && inRecentFilesPicker"
+	},
+	{
+		"key": "alt+tab",
+		"command": "workbench.action.quickOpenNavigateNextInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "shift+alt+tab",
+		"command": "workbench.action.quickOpenNavigatePreviousInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "shift+alt+5",
+		"command": "workbench.action.problems.focus"
+	},
+	{
+		"key": "shift+alt+4",
+		"command": "terminal.focus"
+	},
+	{
+		"key": "shift+alt+9",
+		"command": "~remote.forwardedPorts.focus"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "cmd+p",
+		"command": "editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "cmd+k cmd+f",
+		"command": "-editor.action.formatSelection",
+		"when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-notebook.format",
+		"when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "shift+cmd+l",
+		"command": "-addCursorsAtSearchResults",
+		"when": "fileMatchOrMatchFocus && searchViewletVisible"
+	},
+	{
+		"key": "cmd+k s",
+		"command": "-workbench.action.files.saveWithoutFormatting"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-notebook.formatCell",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "shift+alt+p",
+		"command": "editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+alt+f8",
+		"command": "-editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+f shift+alt+p",
+		"command": "editor.action.marker.prevInFiles",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+f8",
+		"command": "-editor.action.marker.prevInFiles",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+k m",
+		"command": "-workbench.action.editor.changeLanguageMode",
+		"when": "!notebookEditorFocused"
+	},
+	{
+		"key": "cmd+f2",
+		"command": "-editor.action.changeAll",
 		"when": "editorTextFocus && !editorReadonly"
 	}
 ]
