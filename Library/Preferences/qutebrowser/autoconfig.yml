@@ -6,5 +6,16 @@
 
 config_version: 2
 settings:
+  fonts.default_size:
+    global: 20pt
   hints.chars:
-    global: aoeuhtns
+    global: aoeuidhtns
+  qt.highdpi:
+    global: true
+  url.default_page:
+    global: https://google.com
+  url.searchengines:
+    global:
+      DEFAULT: https://google.com/?q={}
+  url.start_pages:
+    global: https://google.com
