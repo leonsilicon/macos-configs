@@ -10,7 +10,9 @@ settings:
     global:
       insert: {}
       normal:
+        <Shift+Tab>: fake-key <Shift-Tab>
         E: fake-key <Escape>
+        W: download-open
         e: hint
         f: spawn --userscript qute-1pass
   fonts.default_size:
