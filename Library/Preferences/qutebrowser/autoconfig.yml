@@ -6,6 +6,13 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      insert: {}
+      normal:
+        E: fake-key <Escape>
+        e: hint
+        f: spawn --userscript qute-1pass
   fonts.default_size:
     global: 20pt
   hints.chars:
@@ -16,6 +23,6 @@ settings:
     global: https://google.com
   url.searchengines:
     global:
-      DEFAULT: https://google.com/?q={}
+      DEFAULT: https://google.com/search?q={}
   url.start_pages:
     global: https://google.com

@@ -64,6 +64,9 @@ repos/*
 !Library/Preferences
 !Library/Preferences/qutebrowser
 !Library/Preferences/qutebrowser/autoconfig.yml
+!Library/Application Support/qutebrowser
+!Library/Application Support/qutebrowser/userscripts
+!Library/Application Support/qutebrowser/userscripts/qute-1pass
 
 # launchctl
 !Library/LaunchAgents
