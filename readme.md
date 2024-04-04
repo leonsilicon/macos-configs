@@ -15,11 +15,26 @@ My Karabiner-Elements keymaps are auto-generated using a tool called [GokuRakuJo
 
 ## Shortcuts/Keybinds
 
-### System-wide utilities
+### System-wide
 
 Shortcuts for system-wide utilities such as controlling Yabai (the window manager) or opening certain applications use the following combination of modifier keys (referred to as "Super"): `⌘⌥^` (and optionally `⇧`)
 
 > We don't use the `Fn` key because it's not detectable when setting shortcuts in certain applications.
+
+#### Input navigation
+
+`<Option+Left>` Go to end of word
+`<Option+Shift+Left>` Select to end of word
+`<Option+Right>` Go to start of word
+`<Option+Shift+Right>` Select to start of word
+`<Command+Left>` Go to start of line
+`<Command+Shift+Left>` Select to start of line
+`<Command+Right>` Go to end of line
+`<Command+Shift+Right>` Select to end of line
+`<Command+Up>` Go to start of input
+`<Command+Shift+Up>` Select to start of input
+`<Command+Down>` Go to end of input
+`<Command+Shift+Down>` Select to end of input
 
 #### Yabai
 
