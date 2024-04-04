@@ -69,4 +69,31 @@ My VSCode shortcuts generally adhere to the following principles:
 `^` - Not used for any VSCode shortcuts - reserved for the Vim extension\
 `^⌥` - Used for setting/toggling options
 
+#### Common shortcuts
+
+##### Option+KEY
+
+`Option+A`: Reveal Active File in Explorer View\
+`Option+C`: Go to declaration\
+`Option+D`: Go to definition\
+`Option+F`: Go to file\
+`Option+G`: A chord keybind to represent "global"-ness\
+`Option+HJKL`: Navigate between views\
+`Option+I`: Go to implementations\
+`Option+M`: Go to next merge conflict\
+`Option+Shift+M`: Go to previous merge conflict\
+`Option+P`: Go to next problem\
+`Option+Shift+P`: Go to previous problem\
+`Option+R`: Go to references\
+
+##### Command+Key
+
+`Command+A`: Select all\
+`Command+C`: Copy\
+`Command+E`: ESLint: Fix auto-fixable problems\
+`Command+F`: Find in file\
+`Command+Shift+F`: Search in project\
+`Command+M B` Merge conflict: Accept both\
+`Command+M C` Merge conflict: Accept current\
+`Command+M I` Merge conflict: Accept incoming
 

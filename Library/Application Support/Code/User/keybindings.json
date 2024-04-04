@@ -583,15 +583,15 @@
 		"command": "eslint.executeAutofix"
 	},
 	{
-		"key": "alt+left",
+		"key": "alt+h",
 		"command": "workbench.action.navigateLeft"
 	},
 	{
-		"key": "alt+right",
+		"key": "alt+l",
 		"command": "workbench.action.navigateRight"
 	},
 	{
-		"key": "alt+down",
+		"key": "alt+j",
 		"command": "workbench.action.navigateDown"
 	},
 	{
@@ -1022,10 +1022,6 @@
 		"when": "sideBySideEditorActive"
 	},
 	{
-		"key": "alt+v ctrl+shift+d",
-		"command": "workbench.action.closeAllEditors"
-	},
-	{
 		"key": "cmd+k cmd+w",
 		"command": "-workbench.action.closeAllEditors"
 	},
@@ -1113,7 +1109,7 @@
 		"when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
 	},
 	{
-		"key": "alt+up",
+		"key": "alt+k",
 		"command": "workbench.action.navigateUp"
 	},
 	{
