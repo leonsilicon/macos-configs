@@ -351,11 +351,11 @@
 		"command": "-editor.action.goToDeclaration"
 	},
 	{
-		"key": "cmd+; f",
+		"key": "cmd+n f",
 		"command": "workbench.files.action.createFileFromExplorer"
 	},
 	{
-		"key": "cmd+; d",
+		"key": "cmd+n d",
 		"command": "workbench.files.action.createFolderFromExplorer"
 	},
 	{
@@ -1535,5 +1535,139 @@
 		"key": "cmd+k alt+cmd+up",
 		"command": "-editor.action.previousCommentingRange",
 		"when": "accessibilityModeEnabled && commentFocused || accessibilityModeEnabled && editorFocus || accessibilityHelpIsShown && accessibilityModeEnabled && accessibleViewCurrentProviderId == 'comments'"
+	},
+	{
+		"key": "alt+m",
+		"command": "merge-conflict.next"
+	},
+	{
+		"key": "shift+alt+m",
+		"command": "merge-conflict.previous"
+	},
+	{
+		"key": "cmd+m",
+		"command": "-markdown.extension.editing.toggleMath",
+		"when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+	},
+	{
+		"key": "cmd+m c",
+		"command": "merge-conflict.accept.current"
+	},
+	{
+		"key": "cmd+m i",
+		"command": "merge-conflict.accept.incoming"
+	},
+	{
+		"key": "cmd+m b",
+		"command": "merge-conflict.accept.both"
+	},
+	{
+		"key": "alt+g alt+m",
+		"command": "merge.goToNextUnhandledConflict"
+	},
+	{
+		"key": "alt+g shift+alt+m",
+		"command": "merge.goToPreviousUnhandledConflict"
+	},
+	{
+		"key": "shift+cmd+m b",
+		"command": "merge-conflict.accept.all-both"
+	},
+	{
+		"key": "shift+cmd+m c",
+		"command": "merge-conflict.accept.all-current"
+	},
+	{
+		"key": "shift+cmd+m i",
+		"command": "merge-conflict.accept.all-incoming"
+	},
+	{
+		"key": "cmd+; cmd+a",
+		"command": "-testing.debugAll"
+	},
+	{
+		"key": "cmd+; cmd+e",
+		"command": "-testing.debugFailTests"
+	},
+	{
+		"key": "cmd+; cmd+l",
+		"command": "-testing.debugLastRun"
+	},
+	{
+		"key": "cmd+; cmd+c",
+		"command": "-testing.debugAtCursor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; cmd+f",
+		"command": "-testing.debugCurrentFile",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; cmd+m",
+		"command": "-testing.openOutputPeek"
+	},
+	{
+		"key": "cmd+; cmd+r",
+		"command": "-testing.refreshTests",
+		"when": "testing.canRefresh"
+	},
+	{
+		"key": "cmd+; e",
+		"command": "-testing.reRunFailTests"
+	},
+	{
+		"key": "cmd+; l",
+		"command": "-testing.reRunLastRun"
+	},
+	{
+		"key": "cmd+; shift+cmd+l",
+		"command": "-testing.coverageLastRun"
+	},
+	{
+		"key": "cmd+; a",
+		"command": "-testing.runAll"
+	},
+	{
+		"key": "cmd+; shift+cmd+a",
+		"command": "-testing.coverageAll"
+	},
+	{
+		"key": "cmd+; c",
+		"command": "-testing.runAtCursor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; shift+cmd+c",
+		"command": "-testing.coverageAtCursor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; f",
+		"command": "-testing.runCurrentFile",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; shift+cmd+f",
+		"command": "-testing.coverageCurrentFile",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+; cmd+o",
+		"command": "-testing.showMostRecentOutput",
+		"when": "testing.hasAnyResults"
+	},
+	{
+		"key": "cmd+; cmd+i",
+		"command": "-testing.toggleInlineTestOutput"
+	},
+	{
+		"key": "cmd+; cmd+x",
+		"command": "-testing.cancelRun"
+	},
+	{
+		"key": "cmd+; shift+cmd+i",
+		"command": "-testing.toggleInlineCoverage",
+		"when": "testing.isTestCoverageOpen"
 	}
 ]
