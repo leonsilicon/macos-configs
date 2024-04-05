@@ -455,7 +455,7 @@
 		"command": "-workbench.action.moveEditorToPreviousGroup"
 	},
 	{
-		"key": "cmd+alt+left",
+		"key": "shift+alt+l",
 		"command": "workbench.action.decreaseViewWidth"
 	},
 	{
@@ -463,7 +463,7 @@
 		"command": "-workbench.action.moveEditorToNextGroup"
 	},
 	{
-		"key": "cmd+alt+right",
+		"key": "shift+alt+h",
 		"command": "workbench.action.increaseViewWidth"
 	},
 	{
@@ -494,7 +494,7 @@
 		"command": "-editor.action.clipboardPasteAction"
 	},
 	{
-		"key": "shift+alt+f",
+		"key": "cmd+f",
 		"command": "actions.find",
 		"when": "editorFocus || editorIsOpen"
 	},
@@ -2204,5 +2204,50 @@
 	{
 		"key": "f1",
 		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-editor.showCallHierarchy",
+		"when": "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-editor.showIncomingCalls",
+		"when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-editor.showOutgoingCalls",
+		"when": "callHierarchyVisible && callHierarchyDirection == 'incomingCalls'"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-editor.showSubtypes",
+		"when": "typeHierarchyVisible && typeHierarchyDirection == 'supertypes'"
+	},
+	{
+		"key": "shift+alt+h",
+		"command": "-editor.showSupertypes",
+		"when": "typeHierarchyVisible && typeHierarchyDirection == 'subtypes'"
+	},
+	{
+		"key": "cmd+f",
+		"command": "filesExplorer.findInFolder",
+		"when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-filesExplorer.findInFolder",
+		"when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+	},
+	{
+		"key": "cmd+f",
+		"command": "search.action.restrictSearchToFolder",
+		"when": "folderMatchWithResourceFocus && searchViewletVisible"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-search.action.restrictSearchToFolder",
+		"when": "folderMatchWithResourceFocus && searchViewletVisible"
 	}
 ]

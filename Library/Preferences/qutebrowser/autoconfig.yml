@@ -21,8 +21,10 @@ settings:
   content.javascript.clipboard:
     global: access
   content.media.audio_capture:
+    https://app.gather.town: true
     https://meet.google.com: true
   content.media.video_capture:
+    https://app.gather.town: true
     https://meet.google.com: true
   fonts.default_size:
     global: 20pt
