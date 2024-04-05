@@ -20,6 +20,10 @@ settings:
       like Gecko) Chrome/117.0.0.0 Safari/537.36
   content.javascript.clipboard:
     global: access
+  content.media.audio_capture:
+    https://meet.google.com: true
+  content.media.video_capture:
+    https://meet.google.com: true
   fonts.default_size:
     global: 20pt
   hints.chars:
