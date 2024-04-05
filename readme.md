@@ -11,7 +11,7 @@ git pull origin main
 
 ## Keymappings
 
-My Karabiner-Elements keymaps are auto-generated using a tool called [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) and can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn).
+My Karabiner-Elements keymaps, which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn), is defined using [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) which uses it to generate a `karabiner.json` file.
 
 ## Shortcuts/Keybinds
 
