@@ -1,4 +1,4 @@
-;; note: mod key is cmd + ctrl + opt (CTO/QWE); we can't use fn because that isn't supported as a modifier key on macOS apps
+;; note: super key is cmd + ctrl + opt (CTO/QWE); we can't use fn because that isn't supported as a modifier key on macOS apps
 ;; note: all the keys are in QWERTY because karabiner uses the hardware key
 {
 	:devices {
@@ -7,9 +7,9 @@
 	:applications {:vscode ["^com\\.microsoft\\.VSCode$"]}
 	:main, [
 		{:des "Configure modifier keys on macbook keyboard" :rules [
-			;; left cmd -> left mod (left cmd + left ctrl)
+			;; left cmd -> left super (left cmd + left ctrl)
 			[:##left_command :!CTleft_option :macbook-keyboard]
-			;; right cmd -> right mod (right cmd + right ctrl)
+			;; right cmd -> right super (right cmd + right ctrl)
 			[:##right_command :!QWright_option :macbook-keyboard]
 
 			;; left ctrl -> left cmd
@@ -67,58 +67,58 @@
 			[:!QRtab :vk_none]
 		]}
 		{:des, "Yabai keybinds", :rules [
-			;; mod + j: focus down
+			;; super + j: focus down
 			[:!CTO#QWEc "ymsp focus-down-window > /dev/null"]
 			[:!QWE#CTOc "/Users/leonsilicon/Library/pnpm/ymsp focus-down-window > /dev/null"]
-			;; mod + k: focus up
+			;; super + k: focus up
 			[:!CTO#QWEv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
 			[:!QWE#CTOv "/Users/leonsilicon/Library/pnpm/ymsp focus-up-window > /dev/null"]
-			;; mod + m: focus on master
+			;; super + m: focus on master
 			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
 			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
-			;; mod + shift + m: move window to master
+			;; super + shift + m: move window to master
 			[:!CTOS#QWERm "/opt/homebrew/bin/yabai -m window --swap east"]
 			[:!QWER#CTOSm "/opt/homebrew/bin/yabai -m window --swap east"]
-			;; mod + shift + i: increase number of master windows
+			;; super + shift + i: increase number of master windows
 			[:!CTOS#QWERg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
 			[:!QWER#CTOSg "/Users/leonsilicon/Library/pnpm/ymsp increase-master-window-count > /dev/null"]
-			;; mod + shift + d: decrease number of master windows
+			;; super + shift + d: decrease number of master windows
 			[:!CTOS#QWERh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
 			[:!QWER#CTOSh "/Users/leonsilicon/Library/pnpm/ymsp decrease-master-window-count > /dev/null"]
-			;; mod + shift + j: move window down
+			;; super + shift + j: move window down
 			[:!CTOS#QWERc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
 			[:!QWER#CTOSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
-			;; mod + shift + k: move window up
+			;; super + shift + k: move window up
 			[:!CTOS#QWERv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
 			[:!QWER#CTOSv "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
-			;; mod + h: resize window left
+			;; super + h: resize window left
 			[:!CTO#QWEj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
 			[:!QWE#CTOj "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
-			;; mod + l: resize window right
+			;; super + l: resize window right
 			[:!CTO#QWEp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
 			[:!QWE#CTOp "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
-			;; mod + alt + k: resize window top
+			;; super + alt + k: resize window top
 			[:!CTOS#QWERp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
 			[:!QWER#CTOSp "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
-			;; mod + alt + j: resize window bottom
+			;; super + alt + j: resize window bottom
 			[:!CTOS#QWERj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			[:!QWER#CTOSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
-			;; mod + shift + q: close focused window
+			;; super + shift + q: close focused window
 			[:!CTOS#QWERx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
 			[:!QWER#CTOSx "/Users/leonsilicon/Library/pnpm/ymsp close-focused-window > /dev/null"]
-			;; mod + period: switch to next display
+			;; super + period: switch to next display
 			[:!CTO#QWEe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
 			[:!QWE#CTOe "/opt/homebrew/bin/yabai -m display --focus next || yabai -m display --focus first"]
-			;; mod + shift + period: move window to next display
+			;; super + shift + period: move window to next display
 			[:!CTOS#QWERe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
 			[:!QWER#CTOSe "/opt/homebrew/bin/yabai -m window --display next || yabai -m window --display first"]
-			;; mod + comma: switch to previous display
+			;; super + comma: switch to previous display
 			[:!CTO#QWEw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
 			[:!QWE#CTOw "/opt/homebrew/bin/yabai -m display --focus prev || yabai -m display --focus last"]
-			;; mod + shift + comma: move window to previous display
+			;; super + shift + comma: move window to previous display
 			[:!CTOS#QWERw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
 			[:!QWER#CTOSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
-			;; mod + <number>: switch to space number <number>
+			;; super + <number>: switch to space number <number>
 			[:!CTO#QWE9 "/opt/homebrew/bin/yabai -m space --focus next"]
 			[:!QWE#CTO9 "/opt/homebrew/bin/yabai -m space --focus next"]
 			[:!CTO#QWEquote "/opt/homebrew/bin/yabai -m space --focus prev"]
@@ -126,11 +126,11 @@
 
 			;; applications
 
-			;; mod + return: open terminal
+			;; super + return: open terminal
 			[:!CTO#QWEreturn_or_enter "open -na /Applications/Warp.app"]
 			[:!QWE#CTOreturn_or_enter "open -na /Applications/Warp.app"]
 
-			;; mod + q open qutebrowser
+			;; super + q: open qutebrowser
 			[:!CTO#QWEx "open -na /Applications/Qutebrowser.app"]
 			[:!QWE#CTOx "open -na /Applications/Qutebrowser.app"]
 		]}
