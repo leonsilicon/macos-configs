@@ -5,13 +5,13 @@
 ```shell
 cd ~
 git init
-git remote add origin https://github.com/leondreamed/macos-configs
+git remote add origin https://github.com/leonsilicon/macos-configs
 git pull origin main
 ```
 
 ## Keymappings
 
-My Karabiner-Elements keymaps are auto-generated using a tool called [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) and can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn).
+My Karabiner-Elements keymaps, which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn), is defined using [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) which uses it to generate a `karabiner.json` file.
 
 ## Shortcuts/Keybinds
 
@@ -20,21 +20,6 @@ My Karabiner-Elements keymaps are auto-generated using a tool called [GokuRakuJo
 Shortcuts for system-wide utilities such as controlling Yabai (the window manager) or opening certain applications use the following combination of modifier keys (referred to as "Super"): `⌘⌥^` (and optionally `⇧`)
 
 > We don't use the `Fn` key because it's not detectable when setting shortcuts in certain applications.
-
-#### Input navigation
-
-`<Option+Left>` Go to end of word
-`<Option+Shift+Left>` Select to end of word
-`<Option+Right>` Go to start of word
-`<Option+Shift+Right>` Select to start of word
-`<Command+Left>` Go to start of line
-`<Command+Shift+Left>` Select to start of line
-`<Command+Right>` Go to end of line
-`<Command+Shift+Right>` Select to end of line
-`<Command+Up>` Go to start of input
-`<Command+Shift+Up>` Select to start of input
-`<Command+Down>` Go to end of input
-`<Command+Shift+Down>` Select to end of input
 
 #### Yabai
 
@@ -74,15 +59,30 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+A>` Opens Todoist (`A` for "**a**dd todo)\
 `<Super+N>` Show Notion Calendar
 
+#### Input navigation
+
+`<Option+Left>` Go to end of word\
+`<Option+Shift+Left>` Select to end of word\
+`<Option+Right>` Go to start of word\
+`<Option+Shift+Right>` Select to start of word\
+`<Command+Left>` Go to start of line\
+`<Command+Shift+Left>` Select to start of line\
+`<Command+Right>` Go to end of line\
+`<Command+Shift+Right>` Select to end of line\
+`<Command+Up>` Go to start of input\
+`<Command+Shift+Up>` Select to start of input\
+`<Command+Down>` Go to end of input\
+`<Command+Shift+Down>` Select to end of input\
+
 ### VSCode
 
 My VSCode shortcuts generally adhere to the following principles:
 
-`⌥` - Used for "navigation" actions (e.g. changing views, go to definition, switching between editors, etc.)
-`⌘` - Used for "non-navigation" actions (usually modifies state, but also includes actions like search/find)
+`⌥` - Used for "navigation" actions (e.g. changing views, go to definition, switching between editors, etc.)\
+`⌘` - Used for "non-navigation" actions (usually modifies state, but also includes actions like search/find)\
 `⌘⇧` - Used for complementary "non-navigation" actions, e.g. opposites (`⌘Z` = Undo, `⌘⇧Z` = Redo), or scope changes (`⌘F` = Find in current file, `⌘⇧F` = Find in all files)\
 `^` - Not used for any VSCode shortcuts - reserved for the Vim extension\
-`^⌥` - Used for setting/toggling options
+`^⌥` - Used for shortcuts that set/toggle some sort of option
 
 #### Common shortcuts
 
@@ -99,7 +99,7 @@ My VSCode shortcuts generally adhere to the following principles:
 `<Option+Shift+M>` Go to previous merge conflict\
 `<Option+P>` Go to next problem\
 `<Option+Shift+P>` Go to previous problem\
-`<Option+R>` Go to references\
+`<Option+R>` Go to references
 
 ##### Command+Key
 
