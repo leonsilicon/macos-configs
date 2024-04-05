@@ -82,7 +82,7 @@ My VSCode shortcuts generally adhere to the following principles:
 `⌘` - Used for "non-navigation" actions (usually modifies state, but also includes actions like search/find)\
 `⌘⇧` - Used for complementary "non-navigation" actions, e.g. opposites (`⌘Z` = Undo, `⌘⇧Z` = Redo), or scope changes (`⌘F` = Find in current file, `⌘⇧F` = Find in all files)\
 `^` - Not used for any VSCode shortcuts - reserved for the Vim extension\
-`^⌥` - Used for setting/toggling options
+`^⌥` - Used for shortcuts that set/toggle some sort of option
 
 #### Common shortcuts
 
@@ -99,7 +99,7 @@ My VSCode shortcuts generally adhere to the following principles:
 `<Option+Shift+M>` Go to previous merge conflict\
 `<Option+P>` Go to next problem\
 `<Option+Shift+P>` Go to previous problem\
-`<Option+R>` Go to references\
+`<Option+R>` Go to references
 
 ##### Command+Key
 
