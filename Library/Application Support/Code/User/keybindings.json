@@ -62,7 +62,7 @@
 		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
 	},
 	{
-		"key": "alt+shift+r",
+		"key": "cmd+r",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
 	},
@@ -611,7 +611,7 @@
 		"command": "-extension.CompileRun"
 	},
 	{
-		"key": "cmd+r",
+		"key": "cmd+l",
 		"command": "workbench.action.reloadWindow"
 	},
 	{
@@ -2249,5 +2249,30 @@
 		"key": "shift+alt+f",
 		"command": "-search.action.restrictSearchToFolder",
 		"when": "folderMatchWithResourceFocus && searchViewletVisible"
+	},
+	{
+		"key": "alt+cmd+f",
+		"command": "-editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "shift+cmd+.",
+		"command": "-editor.action.inPlaceReplace.down",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+,",
+		"command": "-editor.action.inPlaceReplace.up",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+l cmd+c",
+		"command": "-fiveServer.close",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+l cmd+o",
+		"command": "-fiveServer.start",
+		"when": "editorTextFocus"
 	}
 ]

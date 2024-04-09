@@ -651,6 +651,30 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "y",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "y",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "x",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control", "left_option" ],
