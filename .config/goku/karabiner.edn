@@ -106,18 +106,20 @@
 			;; super + shift + q: close focused window
 			[:!CTOS#QWERx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"]
 			[:!QWER#CTOSx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"]
-			;; super + period: switch to next display
-			[:!CTO#QWEe "/opt/homebrew/bin/yabai -m display --focus next || /opt/homebrew/bin/yabai -m display --focus first"]
-			[:!QWE#CTOe "/opt/homebrew/bin/yabai -m display --focus next || /opt/homebrew/bin/yabai -m display --focus first"]
+			;; super + period: focus next display
+			[:!CTO#QWEe "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
+			[:!QWE#CTOe "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
 			;; super + shift + period: move window to next display
-			[:!CTOS#QWERe "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"]
-			[:!QWER#CTOSe "/opt/homebrew/bin/yabai -m window --display next || /opt/homebrew/bin/yabai -m window --display first"]
-			;; super + comma: switch to previous display
-			[:!CTO#QWEw "/opt/homebrew/bin/yabai -m display --focus prev || /opt/homebrew/bin/yabai -m display --focus last"]
-			[:!QWE#CTOw "/opt/homebrew/bin/yabai -m display --focus prev || /opt/homebrew/bin/yabai -m display --focus last"]
+			[:!CTOS#QWERe "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+			[:!QWER#CTOSe "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+
+			;; super + comma: focus previous display
+			[:!CTO#QWEw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
+			[:!QWE#CTOw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
 			;; super + shift + comma: move window to previous display
-			[:!CTOS#QWERw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
-			[:!QWER#CTOSw "/opt/homebrew/bin/yabai -m window --display prev || /opt/homebrew/bin/yabai -m window --display last"]
+			[:!CTOS#QWERw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+			[:!QWER#CTOSw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+
 			;; super + <number>: switch to space number <number>
 			[:!CTO#QWE9 "/opt/homebrew/bin/yabai -m space --focus next"]
 			[:!QWE#CTO9 "/opt/homebrew/bin/yabai -m space --focus next"]

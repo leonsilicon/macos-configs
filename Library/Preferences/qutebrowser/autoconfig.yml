@@ -32,6 +32,8 @@ settings:
     global: aoeuidhtns
   qt.highdpi:
     global: true
+  scrolling.smooth:
+    global: true
   url.default_page:
     global: https://google.com
   url.searchengines:
