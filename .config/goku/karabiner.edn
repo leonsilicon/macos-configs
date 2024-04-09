@@ -128,9 +128,9 @@
 
 			;; applications
 
-			;; super + return: open terminal
-			[:!CTO#QWEreturn_or_enter "open -na /Applications/Warp.app"]
-			[:!QWE#CTOreturn_or_enter "open -na /Applications/Warp.app"]
+			;; super + w: open Warp (terminal)
+			[:!CTO#QWEcomma "open -na /Applications/Warp.app"]
+			[:!QWE#CTOcomma "open -na /Applications/Warp.app"]
 
 			;; super + q: open qutebrowser
 			[:!CTO#QWEx "open -na /Applications/Qutebrowser.app"]
