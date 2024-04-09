@@ -25,7 +25,7 @@ Shortcuts for system-wide utilities such as controlling Yabai (the window manage
 
 Karabiner is used for the keybinds which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn)
 
-> The general rule for using "Shift" is either if a command is a complementary one (e.g. increasing height instead of width) or if it modifies some sort of state (e.g. moving windows)
+> The general rule for using "Shift" is if a command is a complementary one (e.g. increasing height instead of width)
 
 `<Super+J>` Focus window down\
 `<Super+Shift+J>` Move window down\
@@ -57,8 +57,11 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+P>` Opens 1**P**assword (quick access mode)\
 `<Super+G>` Opens To**g**gl Track
 `<Super+A>` Opens Todoist (quick **a**dd mode)
-`<Super+N>` Show **N**otion Calendar
+`<Super+O>` Show N**o**tion Calendar
+`<Super+Shift+O>` Join upcoming meeting in N**o**tion Calendar
 `<Super+X>` Connect/Disconnect Headphones (Sony WH-1000**X**M5) via ToothFairy
+`<Super+N>` Open/Hide Side**N**otes 
+`<Super+Shift+N>` Create new note in Side**N**otes
 
 #### Raycast Hotkeys
 
