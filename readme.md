@@ -53,10 +53,10 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+T>` Opens Shor**t**cat\
 `<Super+W>` Opens **W**arp\
-`<Super+Q>` Opens **Q**utebrowser\
+`<Super+B>` Opens Qute**b**rowser\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
 `<Super+G>` Opens To**g**gl Track
-`<Super+A>` Opens Todoist (`A` for "**a**dd todo)\
+`<Super+A>` Opens Todoist (quick **a**dd mode)
 `<Super+N>` Show **N**otion Calendar
 
 #### Raycast Hotkeys
