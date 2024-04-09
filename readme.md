@@ -35,16 +35,16 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+Shift+L>` Increase window height\
 `<Super+H>` Narrow/expand window to right\
 `<Super+Shift+H>` Decrease window height\
-`<Super+M>` Focus master window\
-`<Super+K>` Focus master window\
-`<Super+Shift+M>` Move window to master\
-`<Super+Shift+I>` Increase number of master windows\
-`<Super+Shift+D>` Decrease number of master windows\
+`<Super+M>` Focus **m**aster window\
+`<Super+Shift+M>` _Move_ window to **m**aster\
+`<Super+I>` **I**ncrease number of master windows\
+`<Super+D>` **D**ecrease number of master windows\
 `<Super+,>` Focus previous display\
 `<Super+Shift+,>` Move window to previous display\
 `<Super+.>` Focus next display\
 `<Super+Shift+.>` Focus window to next display\
-`<Super+Shift+Q>` Close focused window
+`<Super+Z>` Minimi**z**e focused window
+`<Super+Q>` **Q**uit focused window
 
 #### Apps
 
@@ -58,7 +58,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+G>` Opens To**g**gl Track
 `<Super+A>` Opens Todoist (quick **a**dd mode)
 `<Super+N>` Show **N**otion Calendar
-`<Super+B>` Connect/Disconnect **B**luetooth Headphones via ToothFairy
+`<Super+X>` Connect/Disconnect Headphones (Sony WH-1000**X**M5) via ToothFairy
 
 #### Raycast Hotkeys
 
