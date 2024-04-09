@@ -48,16 +48,16 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 #### Apps
 
-`<Super+R>` Opens Raycast\
-`<Super+S>` Opens CleanShot X (capture mode)\
-`<Super+C>` Opens CleanShot X (all-in-one mode)\
-`<Super+T>` Opens Shortcat\
-`<Super+Enter>` Opens Warp\
-`<Super+Q>` Opens Qutebrowser\
-`<Super+P>` Opens 1Password (quick access mode)\
-`<Super+E>` Opens Toggl Track (`E` for "time **e**ntry")\
+`<Super+R>` Opens **R**aycast\
+`<Super+C>` Opens **C**leanShot X (capture mode)\
+`<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
+`<Super+T>` Opens Shor**t**cat\
+`<Super+W>` Opens **W**arp\
+`<Super+Q>` Opens **Q**utebrowser\
+`<Super+P>` Opens 1**P**assword (quick access mode)\
+`<Super+G>` Opens To**g**gl Track
 `<Super+A>` Opens Todoist (`A` for "**a**dd todo)\
-`<Super+N>` Show Notion Calendar
+`<Super+N>` Show **N**otion Calendar
 
 #### Input navigation
 

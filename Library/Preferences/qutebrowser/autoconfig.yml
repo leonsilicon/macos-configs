@@ -33,7 +33,7 @@ settings:
   qt.highdpi:
     global: true
   scrolling.smooth:
-    global: true
+    global: false
   url.default_page:
     global: https://google.com
   url.searchengines:
