@@ -826,7 +826,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Warp.app"
+            "shell_command" : "open -a /Applications/Warp.app"
           } ],
           "type" : "basic"
         }, {
@@ -838,12 +838,12 @@
             }
           },
           "to" : [ {
-            "shell_command" : "open -na /Applications/Warp.app"
+            "shell_command" : "open -a /Applications/Warp.app"
           } ],
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "n",
+            "key_code" : "x",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control", "left_option" ],
               "optional" : [ "right_command", "right_control", "right_option" ]
@@ -855,7 +855,7 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "n",
+            "key_code" : "x",
             "modifiers" : {
               "mandatory" : [ "right_command", "right_control", "right_option" ],
               "optional" : [ "left_command", "left_control", "left_option" ]

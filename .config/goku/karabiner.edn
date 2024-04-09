@@ -131,10 +131,9 @@
 			;; super + w: open Warp (terminal)
 			[:!CTO#QWEcomma "open -a /Applications/Warp.app"]
 			[:!QWE#CTOcomma "open -a /Applications/Warp.app"]
-
-			;; super + b: open Qutebrowser
-			[:!CTO#QWEn "open -na /Applications/Qutebrowser.app"]
-			[:!QWE#CTOn "open -na /Applications/Qutebrowser.app"]
+			;; super + q: open Qutebrowser
+			[:!CTO#QWEx "open -na /Applications/Qutebrowser.app"]
+			[:!QWE#CTOx "open -na /Applications/Qutebrowser.app"]
 		]}
 		{:des "F23-24 to mod key", :rules [
 			[:##f23, :!CTleft_option]
