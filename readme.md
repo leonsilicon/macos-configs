@@ -59,6 +59,10 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+A>` Opens Todoist (`A` for "**a**dd todo)\
 `<Super+N>` Show **N**otion Calendar
 
+#### Raycast Hotkeys
+
+`<Super+;>` Lock Screen
+
 #### Input navigation
 
 `<Option+Left>` Go to end of word\
