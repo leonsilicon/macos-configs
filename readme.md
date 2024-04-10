@@ -64,12 +64,15 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+X>` Connect/Disconnect Headphones (Sony WH-1000**X**M5) via ToothFairy
 `<Super+Enter>` Open/Hide Side**N**otes 
 `<Super+Shift+Enter>` Create new note in Side**N**otes
+`<Super+)>` Increase brightness (using [Lunar](https://lunar.fyi))
+`<Super+(>` Decrease brightness (using [Lunar](https://lunar.fyi))
 
-#### Raycast Hotkeys
+#### System
 
 `<Super+;>` Lock Screen (since `,` and `.` represent moving between displays, it seems fitting that the key `;` to the left of `,` should mean "lock screen")
-`<Super+U>` Vol**u**me Up
-`<Super+Shift+U>` Vol**u**me Down
+`<Super+[>` Vol**u**me Down
+`<Super+]>` Vol**u**me Up
+`<Super+0>` Volume Mute
 
 #### Input navigation
 

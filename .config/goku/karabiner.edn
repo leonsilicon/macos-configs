@@ -125,12 +125,6 @@
 			[:!CTOS#QWERw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
 			[:!QWER#CTOSw "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
 
-			;; super + <number>: switch to space number <number>
-			[:!CTO#QWE9 "/opt/homebrew/bin/yabai -m space --focus next"]
-			[:!QWE#CTO9 "/opt/homebrew/bin/yabai -m space --focus next"]
-			[:!CTO#QWEquote "/opt/homebrew/bin/yabai -m space --focus prev"]
-			[:!QWE#CTOquote "/opt/homebrew/bin/yabai -m space --focus prev"]
-
                         ;; super + z: minimize window
 			[:!CTO#QWEslash "/opt/homebrew/bin/yabai -m window --minimize"]
 			[:!QWE#CTOslash "/opt/homebrew/bin/yabai -m window --minimize"]
