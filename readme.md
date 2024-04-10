@@ -48,20 +48,22 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 #### Apps
 
-`<Super+R>` Opens **R**aycast\
+`<Super+Space>` Opens Raycast\
 `<Super+C>` Opens **C**leanShot X (capture mode)\
 `<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
-`<Super+T>` Opens Shor**t**cat\
+`<Super+R>` Opens Sho**r**tcat\
 `<Super+W>` Opens **W**arp\
 `<Super+Q>` Opens **Q**utebrowser\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
-`<Super+G>` Opens To**g**gl Track
+`<Super+T>` Opens **T**oggl Track
+`<Super+Shift+T>` Start/Stop Timer in **T**oggl Track
 `<Super+A>` Opens Todoist (quick **a**dd mode)
-`<Super+O>` Show N**o**tion Calendar
-`<Super+Shift+O>` Join upcoming meeting in N**o**tion Calendar
+`<Super+N>` Show **N**otion Calendar
+`<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar
+`<Super+G>` Play/Pause Lofi **G**arden
 `<Super+X>` Connect/Disconnect Headphones (Sony WH-1000**X**M5) via ToothFairy
-`<Super+N>` Open/Hide Side**N**otes 
-`<Super+Shift+N>` Create new note in Side**N**otes
+`<Super+Enter>` Open/Hide Side**N**otes 
+`<Super+Shift+Enter>` Create new note in Side**N**otes
 
 #### Raycast Hotkeys
 
