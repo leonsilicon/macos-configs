@@ -67,7 +67,9 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 #### Raycast Hotkeys
 
-`<Super+;>` Lock Screen
+`<Super+;>` Lock Screen (since `,` and `.` represent moving between displays, it seems fitting that the key `;` to the left of `,` should mean "lock screen")
+`<Super+U>` Vol**u**me Up
+`<Super+Shift+U>` Vol**u**me Down
 
 #### Input navigation
 
