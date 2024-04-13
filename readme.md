@@ -53,7 +53,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+R>` Opens Sho**r**tcat\
 `<Super+W>` Opens **W**arp\
-`<Super+Q>` Opens **Q**utebrowser\
+`<Super+B>` Opens Qute**b**rowser\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
 `<Super+T>` Opens **T**oggl Track
 `<Super+Shift+T>` Start/Stop Timer in **T**oggl Track
@@ -61,7 +61,8 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+N>` Show **N**otion Calendar
 `<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar
 `<Super+G>` Play/Pause Lofi **G**arden
-`<Super+X>` Connect/Disconnect Headphones (Sony WH-1000**X**M5) via ToothFairy
+`<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)
+`<Super+U>` Toggle [N**u**mi](https://numi.app)
 `<Super+Enter>` Open/Hide Side**N**otes 
 `<Super+Shift+Enter>` Create new note in Side**N**otes
 `<Super+)>` Increase brightness (using [Lunar](https://lunar.fyi))

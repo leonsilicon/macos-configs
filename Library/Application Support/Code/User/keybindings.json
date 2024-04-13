@@ -3270,5 +3270,9 @@
 		"key": "shift+cmd+;",
 		"command": "-breadcrumbs.focus",
 		"when": "breadcrumbsPossible && breadcrumbsVisible"
+	},
+	{
+		"key": "alt+o s",
+		"command": "workbench.action.openGlobalKeybindings"
 	}
 ]
