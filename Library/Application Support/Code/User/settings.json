@@ -193,7 +193,6 @@
 		},
 		"textMateRules": []
 	},
-	"workbench.colorTheme": "Gruvbox Material Light",
 	"files.associations": {
 		"dockerfile.ts": "typescript",
 		"dockerfile.md": "typescript",
@@ -360,5 +359,6 @@
 	"javascript.preferences.importModuleSpecifierEnding": "js",
 	"typescript.preferences.importModuleSpecifierEnding": "js",
 	"editor.lineNumbers": "on",
-	"editor.glyphMargin": true
+	"editor.glyphMargin": true,
+	"workbench.colorTheme": "Gruvbox Material Light"
 }
