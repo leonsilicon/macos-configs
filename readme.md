@@ -49,13 +49,14 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 #### Apps
 
 `<Super+Space>` Opens Raycast\
-`<Super+C>` Opens **C**leanShot X (capture mode)\
-`<Super+Shift+C>` Opens Sip (**C**olor Picker)
-`<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
+`<Super+S>` **S**creenshot w/ CleanShot X ("Capture Area")\
+`<Super+Shift+S>` **S**creenshot to clipboard w/ CleanShot X ("Capture Area & Copy to Clipboard")\
+`<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+R>` Opens Sho**r**tcat\
 `<Super+W>` Opens **W**arp\
 `<Super+B>` Opens Qute**b**rowser\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
+`<Super+Shift+P>` Opens ColorSnapper Color **P**icker (ColorSlurp causes focused window to lose focus, Sip has bug with shortcuts that use the Command key)\
 `<Super+T>` Opens **T**oggl Track
 `<Super+Shift+T>` Start/Stop Timer in **T**oggl Track
 `<Super+A>` Opens Todoist (quick **a**dd mode)
