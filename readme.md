@@ -50,6 +50,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 `<Super+Space>` Opens Raycast\
 `<Super+C>` Opens **C**leanShot X (capture mode)\
+`<Super+Shift+C>` Opens Sip (**C**olor Picker)
 `<Super+S>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+R>` Opens Sho**r**tcat\
 `<Super+W>` Opens **W**arp\
