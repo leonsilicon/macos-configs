@@ -77,4 +77,4 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
 eval "$(direnv hook zsh)"
-
+eval $(thefuck --alias f)
