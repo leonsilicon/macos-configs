@@ -2,11 +2,22 @@
 
 ## Setup
 
+### Cloning the repo
+
 ```shell
 cd ~
 git init
 git remote add origin https://github.com/leonsilicon/macos-configs
 git pull origin main
+```
+
+### Disabling F14/F15 for brightness
+
+```shell
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:53:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:54:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:55:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:56:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 ```
 
 ## Keymappings
@@ -48,26 +59,28 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 #### Apps
 
-`<Super+Space>` Opens Raycast\
-`<Super+S>` **S**creenshot w/ CleanShot X ("Capture Area")\
-`<Super+Shift+S>` **S**creenshot to clipboard w/ CleanShot X ("Capture Area & Copy to Clipboard")\
-`<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
-`<Super+R>` Opens Sho**r**tcat\
-`<Super+W>` Opens **W**arp\
+`<Super+A>` Opens Todoist (quick **a**dd mode)\
 `<Super+B>` Opens Qute**b**rowser\
+`<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
+`<Super+G>` Play/Pause Lofi **G**arden\
+`<Super+N>` Show **N**otion Calendar\
+`<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
 `<Super+Shift+P>` Opens ColorSnapper Color **P**icker (ColorSlurp causes focused window to lose focus, Sip has bug with shortcuts that use the Command key)\
-`<Super+T>` Opens **T**oggl Track
-`<Super+Shift+T>` Start/Stop Timer in **T**oggl Track
-`<Super+A>` Opens Todoist (quick **a**dd mode)
-`<Super+N>` Show **N**otion Calendar
-`<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar
-`<Super+G>` Play/Pause Lofi **G**arden
-`<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)
-`<Super+U>` Toggle [N**u**mi](https://numi.app)
-`<Super+Enter>` Open/Hide Side**N**otes 
-`<Super+Shift+Enter>` Create new note in Side**N**otes
-`<Super+)>` Increase brightness (using [Lunar](https://lunar.fyi))
+`<Super+R>` Opens Sho**r**tcat\
+`<Super+S>` **S**creenshot w/ CleanShot X ("Capture Area")\
+`<Super+Shift+S>` **S**creenshot to clipboard w/ CleanShot X ("Capture Area & Copy to Clipboard")\
+`<Super+T>` Opens **T**oggl Track\
+`<Super+Shift+T>` Start/Stop Timer in **T**oggl Track\
+`<Super+U>` Toggle [N**u**mi](https://numi.app)\
+`<Super+V>` Toggle [**P**aste](https://pasteapp.io/)\
+`<Super+W>` Opens **W**arp\
+`<Super+Shift+W>` Opens **W**arp in a new window\
+`<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)\
+`<Super+Space>` Opens Raycast\
+`<Super+Enter>` Open/Hide Side**N**otes \
+`<Super+Shift+Enter>` Create new note in Side**N**otes\
+`<Super+)>` Increase brightness (using [Lunar](https://lunar.fyi))\
 `<Super+(>` Decrease brightness (using [Lunar](https://lunar.fyi))
 
 #### System

@@ -15,6 +15,35 @@
         "basic.to_if_held_down_threshold_milliseconds" : 500
       },
       "rules" : [ {
+        "description" : "Disable <Super+Shift+V> (sysdiagnose)",
+        "manipulators" : [ {
+          "from" : {
+            "key_code" : "period",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "f19",
+            "modifiers" : [ "left_command" ]
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "period",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "f19",
+            "modifiers" : [ "left_command" ]
+          } ],
+          "type" : "basic"
+        } ]
+      }, {
         "description" : "Configure modifier keys on macbook keyboard",
         "manipulators" : [ {
           "from" : {
@@ -843,6 +872,30 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option", "right_shift" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "open -na /Applications/Warp.app"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
+              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "open -na /Applications/Warp.app"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "n",
             "modifiers" : {
               "mandatory" : [ "left_command", "left_control", "left_option" ],
@@ -867,7 +920,21 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "F23-24 to mod key",
+        "description" : "F22 to Fn key",
+        "manipulators" : [ {
+          "from" : {
+            "key_code" : "f22",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "fn"
+          } ],
+          "type" : "basic"
+        } ]
+      }, {
+        "description" : "F23-24 to super key",
         "manipulators" : [ {
           "from" : {
             "key_code" : "f23",
@@ -890,20 +957,6 @@
           "to" : [ {
             "key_code" : "right_option",
             "modifiers" : [ "right_command", "right_control" ]
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
-        "description" : "F22 to Fn key",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "f22",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "fn"
           } ],
           "type" : "basic"
         } ]
