@@ -87,9 +87,15 @@ Library/Application Support/espanso/*
 !Library/Application Support/espanso/match
 !Library/Application Support/espanso/match/*
 
-# Hackintosh Configs
-!.config/hackintosh
-!.config/hackintosh/**/*
+# Scripts for leonsilicon/macos-confis
+!Developer
+Developer/*
+!Developer/github
+Developer/github/*
+!Developer/github/leonsilicon
+Developer/github/leonsilicon/*
+!Developer/github/leonsilicon/macos-configs
+!Developer/github/leonsilicon/macos-configs/**
 
 # Repos
 !code

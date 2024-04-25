@@ -1,0 +1,50 @@
+| **Shortcut**        | **Description**                                            |
+| ------------------- | ---------------------------------------------------------- |
+| `super + (`         | Decrease brightness using Lunar                            |
+| `super + )`         | Increase brightness using Lunar                            |
+| `super + ;`         | Go to Lock screen                                          |
+| `super + ,`         | Focus previous display                                     |
+| `super + shift + ,` | Move window to previous display                            |
+| `super + .`         | Focus next display                                         |
+| `super + shift + .` | Move window to next display                                |
+| `super + 0`         | Mute volume                                                |
+| `super + a`         | Opens Todoist (quick **a**dd mode)                         |
+| `super + b`         | Opens Qute**b**rowser                                      |
+| `super + shift + b` | Show/hide hidden menu bar items in **B**artender           |
+| `super + c`         | Opens **C**leanShot X (all-in-one mode)                    |
+| `super + d`         | (yabai) **D**ecrease number of master windows              |
+| `super + e`         | Toggles KeyCastr                                           |
+| `super + f`         | Fullscreen window (using macOS's native fullscreen)        |
+| `super + g`         | Play/pause Lofi Garden                                     |
+| `super + shift + g` | Toggle Lungo                                               |
+| `super + h`         | (yabai) Move master-stack dividing line left               |
+| `super + shift + h` | (yabai) Decrease window height                             |
+| `super + i`         | (yabai) **I**ncrease number of master windows              |
+| `super + j`         | (yabai) Focus window down                                  |
+| `super + shift + j` | (yabai) Move window down                                   |
+| `super + k`         | (yabai) Focus window up                                    |
+| `super + shift + k` | (yabai) Move window up                                     |
+| `super + l`         | (yabai) Move master-stack dividing line right              |
+| `super + shift + l` | (yabai) Increase window height                             |
+| `super + m`         | (yabai) Focus master window                                |
+| `super + shift + m` | (yabai) Move window to master                              |
+| `super + n`         | Show **N**otion Calender                                   |
+| `super + shift + n` | Join upcoming meeting in **N**otion Calender               |
+| `super + p`         | Open 1**P**assword Quick Access Mode                       |
+| `super + shift + p` | Opens ColorSnapper Color **P**icker                        |
+| `super + q`         | Quit focused window                                        |
+| `super + r`         | Opens Sho**rtcat                                           |
+| `super + s`         | **S**creenshot area with CleanShot X                       |
+| `super + shift + s` | **S**creenshot area and copy to clipboard with CleanShot X |
+| `super + t`         | Opens **T**oggl Track                                      |
+| `super + shift + t` | Start/stop timer in **T**oggl Track                        |
+| `super + u`         | Toggle N**u**mi                                            |
+| `super + shift + u` | Show/hide **u**Bar                                         |
+| `super + v`         | Toggle Paste                                               |
+| `super + shift + v` | Show webcam video preview with Hand Mirror                 |
+| `super + w`         | Opens Warp                                                 |
+| `super + shift + w` | Opens Warp in a new window                                 |
+| `super + x`         | Toggle PixelSnap                                           |
+| `super + z`         | Minimi**z**e focused window                                |
+| `super + [`         | Volume down                                                |
+| `super + ]`         | Volume up                                                  |
