@@ -75,6 +75,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+U>` Toggle [N**u**mi](https://numi.app)\
 `<Super+Shift+U>` Show/Hide **u**Bar\
 `<Super+V>` Toggle [**P**aste](https://pasteapp.io/)\
+`<Super+Shift+V>` Show webcam **v**ideo preview with Hand Mirror\
 `<Super+W>` Opens **W**arp\
 `<Super+Shift+W>` Opens **W**arp in a new window\
 `<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)\
