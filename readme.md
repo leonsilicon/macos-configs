@@ -11,15 +11,6 @@ git remote add origin https://github.com/leonsilicon/macos-configs
 git pull origin main
 ```
 
-### Disabling F14/F15 for brightness
-
-```shell
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:53:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:54:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:55:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:56:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-```
-
 ## Keymappings
 
 My Karabiner-Elements keymaps, which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn), is defined using [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) which uses it to generate a `karabiner.json` file.
@@ -62,6 +53,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+A>` Opens Todoist (quick **a**dd mode)\
 `<Super+B>` Opens Qute**b**rowser\
 `<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
+`<Super+E>` Toggles K**e**yCastr\
 `<Super+G>` Play/Pause Lofi **G**arden\
 `<Super+N>` Show **N**otion Calendar\
 `<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar\

@@ -399,7 +399,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"
           } ],
           "type" : "basic"
         }, {
@@ -411,7 +411,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"
           } ],
           "type" : "basic"
         }, {
@@ -423,7 +423,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"
           } ],
           "type" : "basic"
         }, {
@@ -435,7 +435,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"
           } ],
           "type" : "basic"
         }, {
@@ -495,7 +495,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"
           } ],
           "type" : "basic"
         }, {
@@ -507,7 +507,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"
           } ],
           "type" : "basic"
         }, {
@@ -519,7 +519,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"
           } ],
           "type" : "basic"
         }, {
@@ -531,7 +531,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"
           } ],
           "type" : "basic"
         }, {
@@ -711,7 +711,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"
           } ],
           "type" : "basic"
         }, {
@@ -723,7 +723,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"
           } ],
           "type" : "basic"
         }, {

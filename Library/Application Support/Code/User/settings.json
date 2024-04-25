@@ -360,5 +360,6 @@
 	"typescript.preferences.importModuleSpecifierEnding": "js",
 	"editor.lineNumbers": "on",
 	"editor.glyphMargin": true,
-	"workbench.colorTheme": "Gruvbox Material Light"
+	"workbench.colorTheme": "Gruvbox Material Light",
+	"git.openRepositoryInParentFolders": "never"
 }

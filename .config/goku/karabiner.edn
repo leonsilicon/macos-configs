@@ -75,11 +75,11 @@
 		]}
 		{:des, "Yabai keybinds", :rules [
 			;; super + j: focus down
-			[:!CTO#QWEc "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window > /dev/null"]
-			[:!QWE#CTOc "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window > /dev/null"]
+			[:!CTO#QWEc "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
+			[:!QWE#CTOc "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
 			;; super + k: focus up
-			[:!CTO#QWEv "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window > /dev/null"]
-			[:!QWE#CTOv "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window > /dev/null"]
+			[:!CTO#QWEv "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
+			[:!QWE#CTOv "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
 			;; super + m: focus on master
 			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
 			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
@@ -87,11 +87,11 @@
 			[:!CTOS#QWERm "/opt/homebrew/bin/yabai -m window --swap east"]
 			[:!QWER#CTOSm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; super + i: increase number of master windows
-			[:!CTO#QWEg "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count > /dev/null"]
-			[:!QWE#CTOg "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count > /dev/null"]
+			[:!CTO#QWEg "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
+			[:!QWE#CTOg "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
 			;; super +  d: decrease number of master windows
-			[:!CTO#QWEh "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count > /dev/null"]
-			[:!QWE#CTOh "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count > /dev/null"]
+			[:!CTO#QWEh "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
+			[:!QWE#CTOh "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
 			;; super + shift + j: move window down
 			[:!CTOS#QWERc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
 			[:!QWER#CTOSc "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
@@ -115,8 +115,8 @@
 			[:!CTO#QWEy "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
 
 			;; super + q: close focused window
-			[:!CTO#QWEx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"]
-			[:!QWE#CTOx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window > /dev/null"]
+			[:!CTO#QWEx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
+			[:!QWE#CTOx "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
 
 			;; super + period: focus next display
 			[:!CTO#QWEe "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
