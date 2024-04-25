@@ -61,6 +61,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 `<Super+A>` Opens Todoist (quick **a**dd mode)\
 `<Super+B>` Opens Qute**b**rowser\
+`<Super+Shift+B>` Show/Hide hidden menu bar items in Bartender\
 `<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+G>` Play/Pause Lofi **G**arden\
 `<Super+Shift+G>` Toggle Lun**g**o\
