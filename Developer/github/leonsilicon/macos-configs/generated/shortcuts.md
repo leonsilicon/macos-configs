@@ -8,11 +8,11 @@
 | `super + .`         | Focus next display                                         |
 | `super + shift + .` | Move window to next display                                |
 | `super + 0`         | Mute volume                                                |
-| `super + a`         | Opens Todoist (quick **a**dd mode)                         |
+| `super + a`         | Open Todoist (quick **a**dd mode)                          |
 | `super + shift + a` |                                                            |
-| `super + b`         | Opens Qute**b**rowser                                      |
+| `super + b`         | Open Qute**b**rowser                                       |
 | `super + shift + b` | Show/hide hidden menu bar items in **B**artender           |
-| `super + c`         | Opens **C**leanShot X (all-in-one mode)                    |
+| `super + c`         | Open **C**leanShot X (all-in-one mode)                     |
 | `super + shift + c` |                                                            |
 | `super + d`         | [yabai] **D**ecrease number of master windows              |
 | `super + shift + d` |                                                            |
@@ -39,21 +39,21 @@
 | `super + o`         |                                                            |
 | `super + shift + o` |                                                            |
 | `super + p`         | Open 1**P**assword Quick Access Mode                       |
-| `super + shift + p` | Opens ColorSnapper Color **P**icker                        |
+| `super + shift + p` | Open ColorSnapper Color **P**icker                         |
 | `super + q`         | Quit focused window                                        |
 | `super + shift + q` |                                                            |
-| `super + r`         | Opens Sho**r**tcat                                         |
+| `super + r`         | Open Sho**r**tcat                                          |
 | `super + shift + r` |                                                            |
 | `super + s`         | **S**creenshot area with CleanShot X                       |
 | `super + shift + s` | **S**creenshot area and copy to clipboard with CleanShot X |
-| `super + t`         | Opens **T**oggl Track                                      |
+| `super + t`         | Open **T**oggl Track                                       |
 | `super + shift + t` | Start/stop timer in **T**oggl Track                        |
 | `super + u`         | Toggle N**u**mi                                            |
 | `super + shift + u` | Show/hide **u**Bar                                         |
 | `super + v`         | Toggle Paste                                               |
 | `super + shift + v` | Show webcam video preview with Hand Mirror                 |
-| `super + w`         | Opens Warp                                                 |
-| `super + shift + w` | Opens Warp in a new window                                 |
+| `super + w`         | Open Warp                                                  |
+| `super + shift + w` | Open Warp in a new window                                  |
 | `super + x`         | Toggle PixelSnap                                           |
 | `super + shift + x` |                                                            |
 | `super + y`         |                                                            |

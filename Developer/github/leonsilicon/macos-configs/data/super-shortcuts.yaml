@@ -23,23 +23,23 @@ super + 0:
   Mute volume
 
 super + a: |-
-  Opens Todoist (quick **a**dd mode)
+  Open Todoist (quick **a**dd mode)
 
 super + shift + a:
 
 super + b: |-
-  Opens Qute**b**rowser
+  Open Qute**b**rowser
 
 super + shift + b: |-
   Show/hide hidden menu bar items in **B**artender
 
 super + c: |-
-  Opens **C**leanShot X (all-in-one mode)
+  Open **C**leanShot X (all-in-one mode)
 
 super + shift + c:
 
 super + d: |-
-  (yabai) **D**ecrease number of master windows
+  [yabai] **D**ecrease number of master windows
 
 super + shift + d:
 
@@ -60,39 +60,39 @@ super + shift + g: |-
   Toggle Lungo
 
 super + h: |-
-  (yabai) Move master-stack dividing line left
+  [yabai] Move master-stack dividing line left
 
 super + shift + h: |-
-  (yabai) Decrease window height
+  [yabai] Decrease window height
 
 super + i: |-
-  (yabai) **I**ncrease number of master windows
+  [yabai] **I**ncrease number of master windows
 
 super + shift + i:
 
 super + j: |-
-  (yabai) Focus window down
+  [yabai] Focus window down
 
 super + shift + j: |-
-  (yabai) Move window down
+  [yabai] Move window down
 
 super + k: |-
-  (yabai) Focus window up
+  [yabai] Focus window up
 
 super + shift + k: |-
-  (yabai) Move window up
+  [yabai] Move window up
 
 super + l: |-
-  (yabai) Move master-stack dividing line right
+  [yabai] Move master-stack dividing line right
 
 super + shift + l: |-
-  (yabai) Increase window height
+  [yabai] Increase window height
 
 super + m: |-
-  (yabai) Focus master window
+  [yabai] Focus master window
 
 super + shift + m: |-
-  (yabai) Move window to master
+  [yabai] Move window to master
 
 super + n: |-
   Show **N**otion Calender
@@ -108,7 +108,7 @@ super + p: |-
   Open 1**P**assword Quick Access Mode
 
 super + shift + p: |-
-  Opens ColorSnapper Color **P**icker
+  Open ColorSnapper Color **P**icker
 
 super + q: |-
   Quit focused window
@@ -116,7 +116,7 @@ super + q: |-
 super + shift + q:
 
 super + r: |-
-  Opens Sho**r**tcat
+  Open Sho**r**tcat
 
 super + shift + r:
 
@@ -127,7 +127,7 @@ super + shift + s: |-
   **S**creenshot area and copy to clipboard with CleanShot X
 
 super + t: |-
-  Opens **T**oggl Track
+  Open **T**oggl Track
 
 super + shift + t: |-
   Start/stop timer in **T**oggl Track
@@ -145,10 +145,10 @@ super + shift + v: |-
   Show webcam video preview with Hand Mirror
 
 super + w: |-
-  Opens Warp
+  Open Warp
 
 super + shift + w: |-
-  Opens Warp in a new window
+  Open Warp in a new window
 
 super + x: |-
   Toggle PixelSnap
