@@ -73,6 +73,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+T>` Opens **T**oggl Track\
 `<Super+Shift+T>` Start/Stop Timer in **T**oggl Track\
 `<Super+U>` Toggle [N**u**mi](https://numi.app)\
+`<Super+Shift+U>` Show/Hide **u**Bar\
 `<Super+V>` Toggle [**P**aste](https://pasteapp.io/)\
 `<Super+W>` Opens **W**arp\
 `<Super+Shift+W>` Opens **W**arp in a new window\
