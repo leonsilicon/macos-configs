@@ -63,6 +63,7 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+B>` Opens Qute**b**rowser\
 `<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+G>` Play/Pause Lofi **G**arden\
+`<Super+Shift+G>` Toggle Lun**g**o\
 `<Super+N>` Show **N**otion Calendar\
 `<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
