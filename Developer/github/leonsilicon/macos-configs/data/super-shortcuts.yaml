@@ -111,7 +111,7 @@ super + shift + p: |-
   Open ColorSnapper Color **P**icker
 
 super + q: |-
-  Quit focused window
+  [yabai] Quit focused window
 
 super + shift + q:
 

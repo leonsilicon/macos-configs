@@ -40,7 +40,7 @@
 | `super + shift + o` |                                                            |
 | `super + p`         | Open 1**P**assword Quick Access Mode                       |
 | `super + shift + p` | Open ColorSnapper Color **P**icker                         |
-| `super + q`         | Quit focused window                                        |
+| `super + q`         | [yabai] Quit focused window                                |
 | `super + shift + q` |                                                            |
 | `super + r`         | Open Sho**r**tcat                                          |
 | `super + shift + r` |                                                            |
