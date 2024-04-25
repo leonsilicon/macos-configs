@@ -1,15 +1,13 @@
 #!/usr/bin/env tsx
 
+import { getMonorepoDirpath } from 'get-monorepo-root';
 import fs from 'node:fs';
 import nullthrows from 'nullthrows-es';
 import { outdent } from 'outdent';
 import path from 'pathe';
-import { packageDirectorySync } from 'pkg-dir';
 import yaml from 'yaml';
 
-const monorepoDirpath = nullthrows(
-	packageDirectorySync({ cwd: import.meta.url }),
-);
+const monorepoDirpath = nullthrows(getMonorepoDirpath(import.meta.url));
 
 const superShortcuts = yaml.parse(
 	fs.readFileSync(
@@ -32,13 +30,9 @@ const longestDescriptionLength = Math.max(
 const descriptionColumnContentWidth = longestDescriptionLength;
 
 const getShortcutTableRow = (shortcut: string, description: string | null) => {
-	if (description === null) {
-		return null;
-	}
-
 	return outdent`
 		| ${('`' + shortcut + '`').padEnd(shortcutColumnContentWidth)} | ${
-		description.padEnd(descriptionColumnContentWidth)
+		(description ?? '').padEnd(descriptionColumnContentWidth)
 	} |
 	`;
 };

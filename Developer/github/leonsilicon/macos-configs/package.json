@@ -5,7 +5,7 @@
 		"nullthrows-es": "^1.0.1",
 		"outdent": "^0.8.0",
 		"pathe": "^1.1.2",
-		"pkg-dir": "^8.0.0",
+		"get-monorepo-root": "^1.2.1",
 		"yaml": "^2.4.1"
 	},
 	"devDependencies": {

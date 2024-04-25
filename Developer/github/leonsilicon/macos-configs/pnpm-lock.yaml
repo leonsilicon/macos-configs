@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  get-monorepo-root:
+    specifier: ^1.2.1
+    version: 1.2.1
   nullthrows-es:
     specifier: ^1.0.1
     version: 1.0.1
@@ -14,9 +17,6 @@ dependencies:
   pathe:
     specifier: ^1.1.2
     version: 1.1.2
-  pkg-dir:
-    specifier: ^8.0.0
-    version: 8.0.0
   yaml:
     specifier: ^2.4.1
     version: 2.4.1
@@ -348,11 +348,6 @@ packages:
       '@esbuild/win32-x64': 0.19.12
     dev: true
 
-  /find-up-simple@1.0.0:
-    resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
-    engines: {node: '>=18'}
-    dev: false
-
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -360,6 +355,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /get-monorepo-root@1.2.1:
+    resolution: {integrity: sha512-Rr2/g1y1MfcQXiUs7wD1OHKzKOA5N94m/kFaGSX/dS18enmwW3yfoDCLChF8Er/qSD7/BZGEaEEDCbz7UHXEnQ==}
+    dependencies:
+      pathe: 1.1.2
+    dev: false
 
   /get-tsconfig@4.7.3:
     resolution: {integrity: sha512-ZvkrzoUA0PQZM6fy6+/Hce561s+faD1rsNwhnO5FelNjyy7EMGJ3Rz1AQ8GYDWjhRs/7dBLOEJvhK8MiEJOAFg==}
@@ -378,13 +379,6 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
-    dev: false
-
-  /pkg-dir@8.0.0:
-    resolution: {integrity: sha512-4peoBq4Wks0riS0z8741NVv+/8IiTvqnZAr8QGgtdifrtpdXbNw/FxRS1l6NFqm4EMzuS0EDqNNx4XGaz8cuyQ==}
-    engines: {node: '>=18'}
-    dependencies:
-      find-up-simple: 1.0.0
     dev: false
 
   /resolve-pkg-maps@1.0.0:
