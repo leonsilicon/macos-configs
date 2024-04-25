@@ -3,10 +3,10 @@
 | `super + (`         | Decrease brightness using Lunar                            |
 | `super + )`         | Increase brightness using Lunar                            |
 | `super + ;`         | Go to Lock screen                                          |
-| `super + ,`         | Focus previous display                                     |
-| `super + shift + ,` | Move window to previous display                            |
-| `super + .`         | Focus next display                                         |
-| `super + shift + .` | Move window to next display                                |
+| `super + ,`         | [yabai] Focus previous display                             |
+| `super + shift + ,` | [yabai] Move window to previous display                    |
+| `super + .`         | [yabai] Focus next display                                 |
+| `super + shift + .` | [yabai] Move window to next display                        |
 | `super + 0`         | Mute volume                                                |
 | `super + a`         | Open Todoist (quick **a**dd mode)                          |
 | `super + shift + a` |                                                            |
