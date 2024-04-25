@@ -8,16 +8,16 @@ super + ;:
   Go to Lock screen
 
 super + ,: |-
-  Focus previous display
+  [yabai] Focus previous display
 
 super + shift + ,: |-
-  Move window to previous display
+  [yabai] Move window to previous display
 
 super + .: |-
-  Focus next display
+  [yabai] Focus next display
 
 super + shift + .: |-
-  Move window to next display
+  [yabai] Move window to next display
 
 super + 0:
   Mute volume
