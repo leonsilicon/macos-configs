@@ -52,9 +52,11 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 `<Super+A>` Opens Todoist (quick **a**dd mode)\
 `<Super+B>` Opens Qute**b**rowser\
+`<Super+Shift+B>` Show/Hide hidden menu bar items in Bartender\
 `<Super+C>` Opens Clean**S**hot X (all-in-one mode)\
 `<Super+E>` Toggles K**e**yCastr\
 `<Super+G>` Play/Pause Lofi **G**arden\
+`<Super+Shift+G>` Toggle Lun**g**o\
 `<Super+N>` Show **N**otion Calendar\
 `<Super+Shift+N>` Join upcoming meeting in **N**otion Calendar\
 `<Super+P>` Opens 1**P**assword (quick access mode)\
@@ -65,7 +67,9 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+T>` Opens **T**oggl Track\
 `<Super+Shift+T>` Start/Stop Timer in **T**oggl Track\
 `<Super+U>` Toggle [N**u**mi](https://numi.app)\
+`<Super+Shift+U>` Show/Hide **u**Bar\
 `<Super+V>` Toggle [**P**aste](https://pasteapp.io/)\
+`<Super+Shift+V>` Show webcam **v**ideo preview with Hand Mirror\
 `<Super+W>` Opens **W**arp\
 `<Super+Shift+W>` Opens **W**arp in a new window\
 `<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)\
