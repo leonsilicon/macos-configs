@@ -36,6 +36,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+source $HOME/.cargo/env
 
 alias clear="printf '\33c\e[3J'"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
