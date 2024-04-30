@@ -14,36 +14,36 @@
 		{:des "Remap layout to Programmer Dvorak on MacBook Keyboard" :rules [
 			;; number row
 			[:grave_accent_and_tilde :!S4 :macbook-keyboard]
-			[:##1 :!S7 :macbook-keyboard]
 			[:!S1 :!S5 :macbook-keyboard]
-			[:##2 :open_bracket :macbook-keyboard]
+			[:##1 :!S7 :macbook-keyboard]
 			[:!S2 :7 :macbook-keyboard]
-			[:##3 :!Sopen_bracket :macbook-keyboard]
+			[:##2 [:open_bracket :vk_none] :macbook-keyboard {:held :open_bracket}]
 			[:!S3 :5 :macbook-keyboard]
-			[:##4 :!Sclose_bracket :macbook-keyboard]
+			[:##3 [:!Sopen_bracket :vk_none] :macbook-keyboard {:held :!Sopen_bracket}]
 			[:!S4 :3 :macbook-keyboard]
-			[:##5 :!S9 :macbook-keyboard]
+			[:##4 [:!Sclose_bracket :vk_none] :macbook-keyboard {:held :!Sclose_bracket}]
 			[:!S5 :1 :macbook-keyboard]
-			[:##6 [:equal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:##5 :!S9 :macbook-keyboard]
 			[:!S6 :9 :macbook-keyboard]
-			[:##7 :!S8 :macbook-keyboard]
+			[:##6 [:equal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
 			[:!S7, :0 :macbook-keyboard]
-			[:##8 :!S0 :macbook-keyboard]
+			[:##7 :!S8 :macbook-keyboard]
 			[:!S8, :2 :macbook-keyboard]
-			[:##9 [:!Sequal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:##8 :!S0 :macbook-keyboard]
 			[:!S9 :8 :macbook-keyboard]
-			[:##0 :close_bracket :macbook-keyboard]
+			[:##9 [:!Sequal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
 			[:!S0 :6 :macbook-keyboard]
-			[:##hyphen :!S1 :macbook-keyboard]
+			[:##0 [:close_bracket :vk_none] :macbook-keyboard {:held :close_bracket}]
 			[:!Shyphen :8 :macbook-keyboard]
-			[:##equal_sign :!S3 :macbook-keyboard]
+			[:##hyphen :!S1 :macbook-keyboard]
 			[:!Sequal_sign :grave_accent_and_tilde :macbook-keyboard]
+			[:##equal_sign :!S3 :macbook-keyboard]
 
 			;; top row
-			[:##q :semicolon :macbook-keyboard]
 			[:##w :comma :macbook-keyboard]
-			[:##e :period :macbook-keyboard]
+			[:##q :semicolon :macbook-keyboard]
 			[:##r :p :macbook-keyboard]
+			[:##e :period :macbook-keyboard]
 			[:##t :y :macbook-keyboard]
 			[:##y :f :macbook-keyboard]
 			[:##u :g :macbook-keyboard]
@@ -51,8 +51,8 @@
 			[:##o :r :macbook-keyboard]
 			[:##p :l :macbook-keyboard]
 			[:##open_bracket :slash :macbook-keyboard]
-			[:##close_bracket :!S2 :macbook-keyboard]
 			[:!Sclose_bracket :!S6 :macbook-keyboard]
+			[:##close_bracket :!S2 :macbook-keyboard]
 
 			;; home row
 			[:##a :a :macbook-keyboard]
@@ -78,16 +78,6 @@
 		]}
 
 		{:des "Configure modifier keys on macbook keyboard" :rules [
-			;; left cmd -> left super (left cmd + left ctrl)
-			[:##left_command :!CTleft_option :macbook-keyboard]
-			;; right cmd -> right super (right cmd + right ctrl)
-			[:##right_command :!QWright_option :macbook-keyboard]
-
-			;; left ctrl -> left cmd
-			[:##left_control :left_command :macbook-keyboard]
-			;; right ctrl -> right cmd
-			[:##right_control :right_command :macbook-keyboard]
-
 			;; fn -> left ctrl
 			{
 				:from {:apple_vendor_top_case_key_code :keyboard_fn}
@@ -99,14 +89,28 @@
 				:type :basic
 			}
 
-			;; left arrow -> right cmd
-			[:##left_arrow :right_command :macbook-keyboard]
+			;; left ctrl -> left cmd
+			[:##left_control :left_command :macbook-keyboard]
 
-			;; up arrow -> right ctrl
-			;; down arrow -> right ctrl
-			[:##up_arrow :right_control :macbook-keyboard]
-			[:##down_arrow :right_control :macbook-keyboard]
+			;; left opt -> left opt
+			[:##left_option :left_option :macbook-keyboard]
 
+			;; left cmd -> super
+			[:##left_command :!TOleft_command :macbook-keyboard]
+
+                        ;; right cmd -> super
+			[:##right_command :!TOleft_command :macbook-keyboard]
+
+                        ;; right opt -> left opt
+			[:##right_option :left_option :macbook-keyboard]
+
+			;; left arrow -> left cmd
+			[:##left_arrow :left_command :macbook-keyboard]
+
+			;; up arrow -> left ctrl
+			;; down arrow -> left ctrl
+			[:##up_arrow :left_control :macbook-keyboard]
+			[:##down_arrow :left_control :macbook-keyboard]
 
 			;; right arrow -> fn
 			{
