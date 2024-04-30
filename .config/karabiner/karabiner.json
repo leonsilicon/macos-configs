@@ -543,7 +543,7 @@
             }
           },
           "to" : [ {
-            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"
           } ],
           "type" : "basic"
         }, {
