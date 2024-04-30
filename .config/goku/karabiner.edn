@@ -91,7 +91,7 @@
 			[:!CTO#QWEd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
 			[:!QWE#CTOd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
 			;; super + shift + j: move window down
-			[:!CTOS#QWERj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebre/bin/yabai -m window --swap first"]
+			[:!CTOS#QWERj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
 			[:!QWER#CTOSj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
 			;; super + shift + k: move window up
 			[:!CTOS#QWERk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
