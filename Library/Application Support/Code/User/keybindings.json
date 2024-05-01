@@ -363,10 +363,6 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "cmd+numpad4",
-		"command": "workbench.action.zoomIn"
-	},
-	{
 		"key": "cmd+6",
 		"command": "-workbench.action.zoomIn"
 	},
@@ -3274,5 +3270,9 @@
 	{
 		"key": "alt+o s",
 		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "cmd+=",
+		"command": "-workbench.action.zoomIn"
 	}
 ]

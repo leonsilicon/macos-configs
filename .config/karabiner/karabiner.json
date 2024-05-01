@@ -1181,215 +1181,6 @@
       }, {
         "description" : "Remap Moonlander's numbers row (numpad keys) to correct keys",
         "manipulators" : [ {
-          "to_if_held_down" : [ {
-            "key_code" : "grave_accent_and_tilde",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "from" : {
-            "key_code" : "keypad_slash",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "grave_accent_and_tilde",
-            "modifiers" : [ "left_shift" ]
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_slash",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "4",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_asterisk",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "5",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_asterisk",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "7",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_7",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "7"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "to_if_held_down" : [ {
-            "key_code" : "open_bracket"
-          } ],
-          "from" : {
-            "key_code" : "keypad_7",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "open_bracket"
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_5",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "5"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "to_if_held_down" : [ {
-            "key_code" : "open_bracket",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "from" : {
-            "key_code" : "keypad_5",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "open_bracket",
-            "modifiers" : [ "left_shift" ]
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_3",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "3"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "to_if_held_down" : [ {
-            "key_code" : "close_bracket",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "from" : {
-            "key_code" : "keypad_3",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "close_bracket",
-            "modifiers" : [ "left_shift" ]
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
           "from" : {
             "key_code" : "keypad_1",
             "modifiers" : {
@@ -1398,103 +1189,6 @@
           },
           "to" : [ {
             "key_code" : "1"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_1",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "9",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_9",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "9"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "to_if_held_down" : [ {
-            "key_code" : "equal_sign"
-          } ],
-          "from" : {
-            "key_code" : "keypad_9",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "equal_sign"
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_0",
-            "modifiers" : {
-              "mandatory" : [ "left_shift" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "0"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_0",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "7",
-            "modifiers" : [ "left_shift" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1524,14 +1218,13 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "keypad_2",
+            "key_code" : "keypad_3",
             "modifiers" : {
-              "optional" : [ "any" ]
+              "mandatory" : [ "left_shift" ]
             }
           },
           "to" : [ {
-            "key_code" : "0",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "3"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1560,21 +1253,14 @@
           } ],
           "type" : "basic"
         }, {
-          "to_if_held_down" : [ {
-            "key_code" : "equal_sign",
-            "modifiers" : [ "left_shift" ]
-          } ],
           "from" : {
-            "key_code" : "keypad_4",
+            "key_code" : "keypad_5",
             "modifiers" : {
-              "optional" : [ "any" ]
+              "mandatory" : [ "left_shift" ]
             }
           },
           "to" : [ {
-            "key_code" : "equal_sign",
-            "modifiers" : [ "left_shift" ]
-          }, {
-            "key_code" : "vk_none"
+            "key_code" : "5"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1603,19 +1289,14 @@
           } ],
           "type" : "basic"
         }, {
-          "to_if_held_down" : [ {
-            "key_code" : "close_bracket"
-          } ],
           "from" : {
-            "key_code" : "keypad_6",
+            "key_code" : "keypad_7",
             "modifiers" : {
-              "optional" : [ "any" ]
+              "mandatory" : [ "left_shift" ]
             }
           },
           "to" : [ {
-            "key_code" : "close_bracket"
-          }, {
-            "key_code" : "vk_none"
+            "key_code" : "7"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1645,33 +1326,13 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "keypad_8",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "1",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_hyphen",
+            "key_code" : "keypad_9",
             "modifiers" : {
               "mandatory" : [ "left_shift" ]
             }
           },
           "to" : [ {
-            "key_code" : "6",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "9"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1683,56 +1344,13 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "keypad_hyphen",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "2",
-            "modifiers" : [ "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "to_if_held_down" : [ {
-            "key_code" : "grave_accent_and_tilde"
-          } ],
-          "from" : {
-            "key_code" : "keypad_plus",
+            "key_code" : "keypad_0",
             "modifiers" : {
               "mandatory" : [ "left_shift" ]
             }
           },
           "to" : [ {
-            "key_code" : "grave_accent_and_tilde"
-          }, {
-            "key_code" : "vk_none"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 12951,
-              "product_id" : 6505
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "keypad_plus",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "3",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "0"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
