@@ -20,8 +20,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "right_command", "right_control", "right_option", "right_shift" ],
-              "optional" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -33,7 +33,8 @@
           "from" : {
             "key_code" : "v",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -45,8 +46,36 @@
       }, {
         "description" : "Remap layout to Programmer Dvorak on MacBook Keyboard",
         "manipulators" : [ {
+          "to_if_held_down" : [ {
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : [ "left_shift" ]
+          } ],
           "from" : {
-            "key_code" : "grave_accent_and_tilde"
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : [ "left_shift" ]
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
           },
           "to" : [ {
             "key_code" : "4",
@@ -536,24 +565,6 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "w",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "comma"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
             "key_code" : "q",
             "modifiers" : {
               "optional" : [ "any" ]
@@ -572,13 +583,13 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "r",
+            "key_code" : "w",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "p"
+            "key_code" : "comma"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -597,6 +608,24 @@
           },
           "to" : [ {
             "key_code" : "period"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "r",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "p"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1094,6 +1123,625 @@
             "type" : "device_if"
           } ],
           "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "w"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "period",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "v"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "slash",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "z"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        } ]
+      }, {
+        "description" : "Remap Moonlander's numbers row (numpad keys) to correct keys",
+        "manipulators" : [ {
+          "to_if_held_down" : [ {
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "from" : {
+            "key_code" : "keypad_slash",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "grave_accent_and_tilde",
+            "modifiers" : [ "left_shift" ]
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_slash",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "4",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_asterisk",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "5",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_asterisk",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "7",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_7",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "7"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "open_bracket"
+          } ],
+          "from" : {
+            "key_code" : "keypad_7",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "open_bracket"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_5",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "5"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "open_bracket",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "from" : {
+            "key_code" : "keypad_5",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "open_bracket",
+            "modifiers" : [ "left_shift" ]
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_3",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "3"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "close_bracket",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "from" : {
+            "key_code" : "keypad_3",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "close_bracket",
+            "modifiers" : [ "left_shift" ]
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_1",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "1"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_1",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "9",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_9",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "9"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "equal_sign"
+          } ],
+          "from" : {
+            "key_code" : "keypad_9",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "equal_sign"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_0",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "0"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_0",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "7",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_2",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "2"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_2",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "0",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_4",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "4"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "equal_sign",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "from" : {
+            "key_code" : "keypad_4",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "equal_sign",
+            "modifiers" : [ "left_shift" ]
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_6",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "6"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "close_bracket"
+          } ],
+          "from" : {
+            "key_code" : "keypad_6",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "close_bracket"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_8",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "8"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_8",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "1",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_hyphen",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "6",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_hyphen",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "2",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "to_if_held_down" : [ {
+            "key_code" : "grave_accent_and_tilde"
+          } ],
+          "from" : {
+            "key_code" : "keypad_plus",
+            "modifiers" : {
+              "mandatory" : [ "left_shift" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "grave_accent_and_tilde"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "keypad_plus",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "3",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 12951,
+              "product_id" : 6505
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
         } ]
       }, {
         "description" : "Configure modifier keys on macbook keyboard",
@@ -1395,7 +2043,20 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "j",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1406,7 +2067,20 @@
           "from" : {
             "key_code" : "k",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "k",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1417,7 +2091,8 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1428,7 +2103,32 @@
           "from" : {
             "key_code" : "m",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --focus east"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "m",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap east"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "m",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1439,7 +2139,20 @@
           "from" : {
             "key_code" : "i",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "i",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1450,7 +2163,20 @@
           "from" : {
             "key_code" : "d",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "d",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1461,7 +2187,20 @@
           "from" : {
             "key_code" : "j",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "j",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1472,7 +2211,20 @@
           "from" : {
             "key_code" : "k",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "k",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1483,7 +2235,20 @@
           "from" : {
             "key_code" : "h",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "h",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1494,7 +2259,8 @@
           "from" : {
             "key_code" : "l",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1503,9 +2269,22 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "k",
+            "key_code" : "l",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "l",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1514,9 +2293,34 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "j",
+            "key_code" : "l",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "h",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "h",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1527,7 +2331,20 @@
           "from" : {
             "key_code" : "f",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "f",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1538,7 +2355,20 @@
           "from" : {
             "key_code" : "q",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "q",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1549,7 +2379,8 @@
           "from" : {
             "key_code" : "period",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1560,7 +2391,32 @@
           "from" : {
             "key_code" : "period",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "period",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "period",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1571,7 +2427,8 @@
           "from" : {
             "key_code" : "comma",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1582,7 +2439,32 @@
           "from" : {
             "key_code" : "comma",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1593,7 +2475,20 @@
           "from" : {
             "key_code" : "z",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "/opt/homebrew/bin/yabai -m window --minimize"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "z",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1604,7 +2499,8 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
             }
           },
           "to" : [ {
@@ -1615,7 +2511,32 @@
           "from" : {
             "key_code" : "w",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ]
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "open -a /Applications/Warp.app"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "w",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "open -na /Applications/Warp.app"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "w",
+            "modifiers" : {
+              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {
@@ -1626,7 +2547,20 @@
           "from" : {
             "key_code" : "b",
             "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option" ]
+              "mandatory" : [ "left_command", "left_control", "left_option" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "shell_command" : "open -na /Applications/Qutebrowser.app"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "b",
+            "modifiers" : {
+              "mandatory" : [ "right_command", "right_control", "right_option" ],
+              "optional" : [ "left_command", "left_control", "left_option" ]
             }
           },
           "to" : [ {

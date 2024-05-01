@@ -1,19 +1,21 @@
-;; note: super key is cmd + ctrl + opt (CTO); we can't use fn because that isn't recognized as a modifier key on macOS apps
+; note: super key is cmd + ctrl + opt (CTO/QWE); we can't use fn because that isn't recognized as a modifier key on macOS apps
 {
 	:devices {
 		:macbook-keyboard [{:vendor_id 0 :product_id 0}]
+		:moonlander [{:vendor_id 12951 :product_id 6505}]
 	}
 	:main, [
-		;; Disable super + shift + v (period on QWERTY) as it triggers sysdiagnose
-		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
+		; Disable super + shift + v (period on QWERTY) as it triggers sysdiagnose
+		; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
 		{:des "Disable <Super+Shift+V> (sysdiagnose)" :rules [
-			[:!QWER#CTOSv :!Cf19]
-			[:!CTOSv :!Cf19]
+			[:!QWES#CTOv :!Cf19]
+			[:!CTOS#QWEv :!Cf19]
 		]},
 
 		{:des "Remap layout to Programmer Dvorak on MacBook Keyboard" :rules [
-			;; number row
-			[:grave_accent_and_tilde :!S4 :macbook-keyboard]
+			;; numbers row
+			[:!Sgrave_accent_and_tilde [:!Sgrave_accent_and_tilde :vk_none] :macbook-keyboard {:held :!Sgrave_accent_and_tilde}]
+			[:##grave_accent_and_tilde :!S4 :macbook-keyboard]
 			[:!S1 :!S5 :macbook-keyboard]
 			[:##1 :!S7 :macbook-keyboard]
 			[:!S2 :7 :macbook-keyboard]
@@ -40,10 +42,10 @@
 			[:##equal_sign :!S3 :macbook-keyboard]
 
 			;; top row
-			[:##w :comma :macbook-keyboard]
 			[:##q :semicolon :macbook-keyboard]
-			[:##r :p :macbook-keyboard]
+			[:##w :comma :macbook-keyboard]
 			[:##e :period :macbook-keyboard]
+			[:##r :p :macbook-keyboard]
 			[:##t :y :macbook-keyboard]
 			[:##y :f :macbook-keyboard]
 			[:##u :g :macbook-keyboard]
@@ -75,6 +77,44 @@
 			[:##b :x :macbook-keyboard]
 			[:##n :b :macbook-keyboard]
 			[:##m :m :macbook-keyboard]
+			[:##comma :w :macbook-keyboard]
+			[:##period :v :macbook-keyboard]
+			[:##slash :z :macbook-keyboard]
+		]}
+
+		;; Even though this is already done with the keyboard layout from Ukelele
+		;; We should do it via Karabiner as well so that shortcuts display the
+		;; correctly mapped key (otherwise <Cmd+Plus> is saved as <Cmd+NumPad4> on
+		;; certain applications, such as VSCode)
+		{:des "Remap Moonlander's numbers row (numpad keys) to correct keys" :rules [
+			[:!Skeypad_slash [:!Sgrave_accent_and_tilde :vk_none] :moonlander {:held :!Sgrave_accent_and_tilde}]
+			[:##keypad_slash :!S4 :moonlander]
+			[:!Skeypad_asterisk :!S5 :moonlander]
+			[:##keypad_asterisk :!S7 :moonlander]
+			[:!Skeypad_7 :7 :moonlander]
+			[:##keypad_7 [:open_bracket :vk_none] :moonlander {:held :open_bracket}]
+			[:!Skeypad_5 :5 :moonlander]
+			[:##keypad_5 [:!Sopen_bracket :vk_none] :moonlander {:held :!Sopen_bracket}]
+			[:!Skeypad_3 :3 :moonlander]
+			[:##keypad_3 [:!Sclose_bracket :vk_none] :moonlander {:held :!Sclose_bracket}]
+			[:!Skeypad_1 :1 :moonlander]
+			[:##keypad_1 :!S9 :moonlander]
+			[:!Skeypad_9 :9 :moonlander]
+			[:##keypad_9 [:equal_sign :vk_none] :moonlander {:held :equal_sign}]
+			[:!Skeypad_0 :0 :moonlander]
+			[:##keypad_0 :!S7 :moonlander]
+			[:!Skeypad_2 :2 :moonlander]
+			[:##keypad_2 :!S0 :moonlander]
+			[:!Skeypad_4 :4 :moonlander]
+			[:##keypad_4 [:!Sequal_sign :vk_none] :moonlander {:held :!Sequal_sign}]
+			[:!Skeypad_6 :6 :moonlander]
+			[:##keypad_6 [:close_bracket :vk_none] :moonlander {:held :close_bracket}]
+			[:!Skeypad_8 :8 :moonlander]
+			[:##keypad_8 :!S1 :moonlander]
+			[:!Skeypad_hyphen :!S6 :moonlander]
+			[:##keypad_hyphen :!S2 :moonlander]
+			[:!Skeypad_plus [:grave_accent_and_tilde :vk_none] :moonlander {:held :grave_accent_and_tilde}]
+			[:##keypad_plus :!S3 :moonlander]
 		]}
 
 		{:des "Configure modifier keys on macbook keyboard" :rules [
@@ -95,7 +135,7 @@
 			;; left opt -> left opt
 			[:##left_option :left_option :macbook-keyboard]
 
-			;; left cmd -> super
+			;; left cmd -> left opt
 			[:##left_command :!TOleft_command :macbook-keyboard]
 
                         ;; right cmd -> super
@@ -137,52 +177,74 @@
 
 		{:des, "Yabai keybinds", :rules [
 			;; super + j: focus down
-			[:!CTOj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
+			[:!CTO#QWEj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
+			[:!QWE#CTOj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
 			;; super + k: focus up
-			[:!CTOk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
+			[:!CTO#QWEk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
+			[:!QWE#CTOk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
 			;; super + m: focus on master
-			[:!CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
 			;; super + shift + m: move window to master
-			[:!CTOSm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!CTOS#QWEm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!QWES#CTOm "/opt/homebrew/bin/yabai -m window --swap east"]
 			;; super + i: increase number of master windows
-			[:!CTOi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
-			;; super +  d: decrease number of master windows
-			[:!CTOd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
+			[:!CTO#QWEi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
+			[:!QWE#CTOi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
+			;; super + d: decrease number of master windows
+			[:!CTO#QWEd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
+			[:!QWE#CTOd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
 			;; super + shift + j: move window down
-			[:!CTOSj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
+			[:!CTOS#QWEj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
+			[:!QWES#CTOj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
 			;; super + shift + k: move window up
-			[:!CTOSk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!CTOS#QWEk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!QWES#CTOk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
 			;; super + h: resize window left
-			[:!CTOh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!CTO#QWEh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!QWE#CTOh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
 			;; super + l: resize window right
-			[:!CTOl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
-			;; super + alt + k: resize window top
-			[:!CTOSk "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
-			;; super + alt + j: resize window bottom
-			[:!CTOSj "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!CTO#QWEl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			[:!QWE#CTOl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			;; super + shift + k: resize window top
+			[:!CTOS#QWEl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			[:!QWES#CTOl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			;; super + shift + h: resize window bottom
+			[:!CTOS#QWEh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!QWES#CTOh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
 			;; super + f: toggle window fullscreen
-			[:!CTOf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
+			[:!CTO#QWEf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
+			[:!QWE#CTOf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
 			;; super + q: close focused window
-			[:!CTOq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
+			[:!CTO#QWEq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
+			[:!QWE#CTOq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
 			;; super + period: focus next display
-			[:!CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
+			[:!CTO#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
+			[:!QWE#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
 			;; super + shift + period: move window to next display
-			[:!CTOSperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+			[:!CTOS#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+			[:!QWES#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
 			;; super + comma: focus previous display
-			[:!CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
+			[:!CTO#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
+			[:!QWE#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
 			;; super + shift + comma: move window to previous display
-			[:!CTOScomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+			[:!CTOS#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+			[:!QWES#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
 			;; super + z: minimize window
-			[:!CTOz "/opt/homebrew/bin/yabai -m window --minimize"]
+			[:!CTO#QWEz "/opt/homebrew/bin/yabai -m window --minimize"]
+			[:!QWE#CTOz "/opt/homebrew/bin/yabai -m window --minimize"]
 
 			;; applications
 
 			;; super + w: open Warp Terminal
-			[:!CTOw "open -a /Applications/Warp.app"]
+			[:!CTO#QWEw "open -a /Applications/Warp.app"]
+			[:!QWE#CTOw "open -a /Applications/Warp.app"]
 			;; super + shift + w: open Warp Terminal in a new window
-			[:!CTOSw "open -na /Applications/Warp.app"]
+			[:!CTOS#QWEw "open -na /Applications/Warp.app"]
+			[:!QWES#CTOw "open -na /Applications/Warp.app"]
 			;; super + b: open Qutebrowser
-			[:!CTOb "open -na /Applications/Qutebrowser.app"]
+			[:!CTO#QWEb "open -na /Applications/Qutebrowser.app"]
+			[:!QWE#CTOb "open -na /Applications/Qutebrowser.app"]
 		]}
 		{:des "F22 to Fn key", :rules [
 			[:##f22, :fn]
