@@ -12,6 +12,83 @@
 			[:!CTOS#QWEv :!Cf19]
 		]},
 
+		{:des "Swap caps lock to backspace on macbook keyboard" :rules [
+			[:##caps_lock :delete_or_backspace :macbook-keyboard]
+			[:##delete_or_backspace :caps_lock :macbook-keyboard]
+		]}
+
+		{:des, "Yabai keybinds", :rules [
+			;; super + j: focus down
+			[:!CTO#QWEj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
+			[:!QWE#CTOj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
+			;; super + k: focus up
+			[:!CTO#QWEk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
+			[:!QWE#CTOk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
+			;; super + m: focus on master
+			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
+			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
+			;; super + shift + m: move window to master
+			[:!CTOS#QWEm "/opt/homebrew/bin/yabai -m window --swap east"]
+			[:!QWES#CTOm "/opt/homebrew/bin/yabai -m window --swap east"]
+			;; super + i: increase number of master windows
+			[:!CTO#QWEi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
+			[:!QWE#CTOi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
+			;; super + d: decrease number of master windows
+			[:!CTO#QWEd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
+			[:!QWE#CTOd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
+			;; super + shift + j: move window down
+			[:!CTOS#QWEj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
+			[:!QWES#CTOj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
+			;; super + shift + k: move window up
+			[:!CTOS#QWEk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			[:!QWES#CTOk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
+			;; super + h: resize window left
+			[:!CTO#QWEh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			[:!QWE#CTOh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
+			;; super + l: resize window right
+			[:!CTO#QWEl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			[:!QWE#CTOl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
+			;; super + shift + k: resize window top
+			[:!CTOS#QWEl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			[:!QWES#CTOl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
+			;; super + shift + h: resize window bottom
+			[:!CTOS#QWEh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			[:!QWES#CTOh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
+			;; super + f: toggle window fullscreen
+			[:!CTO#QWEf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
+			[:!QWE#CTOf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
+			;; super + q: close focused window
+			[:!CTO#QWEq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
+			[:!QWE#CTOq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
+			;; super + period: focus next display
+			[:!CTO#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
+			[:!QWE#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
+			;; super + shift + period: move window to next display
+			[:!CTOS#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+			[:!QWES#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
+			;; super + comma: focus previous display
+			[:!CTO#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
+			[:!QWE#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
+			;; super + shift + comma: move window to previous display
+			[:!CTOS#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+			[:!QWES#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
+			;; super + z: minimize window
+			[:!CTO#QWEz "/opt/homebrew/bin/yabai -m window --minimize"]
+			[:!QWE#CTOz "/opt/homebrew/bin/yabai -m window --minimize"]
+
+			;; applications
+
+			;; super + w: open Warp Terminal
+			[:!CTO#QWEw "open -a /Applications/Warp.app"]
+			[:!QWE#CTOw "open -a /Applications/Warp.app"]
+			;; super + shift + w: open Warp Terminal in a new window
+			[:!CTOS#QWEw "open -na /Applications/Warp.app"]
+			[:!QWES#CTOw "open -na /Applications/Warp.app"]
+			;; super + b: open Qutebrowser
+			[:!CTO#QWEb "open -na /Applications/Qutebrowser.app"]
+			[:!QWE#CTOb "open -na /Applications/Qutebrowser.app"]
+		]}
+
 		{:des "Remap layout to Programmer Dvorak on MacBook Keyboard" :rules [
 			;; numbers row
 			[:!Sgrave_accent_and_tilde [:!Sgrave_accent_and_tilde :vk_none] :macbook-keyboard {:held :!Sgrave_accent_and_tilde}]
@@ -112,28 +189,28 @@
 				:type :basic
 			}
 
-			;; left ctrl -> left cmd
+			;; left control -> left option
 			[:##left_control :left_command :macbook-keyboard]
 
-			;; left opt -> left opt
-			[:##left_option :left_option :macbook-keyboard]
+			;; left option -> left command
+			[:##left_option :left_command :macbook-keyboard]
 
-			;; left cmd -> left opt
+			;; left cmd -> super
 			[:##left_command :!TOleft_command :macbook-keyboard]
 
-                        ;; right cmd -> super
-			[:##right_command :!TOleft_command :macbook-keyboard]
+			;; right cmd -> super
+			[:##right_command :!WEright_command :macbook-keyboard]
 
-                        ;; right opt -> left opt
-			[:##right_option :left_option :macbook-keyboard]
+			;; right opt -> right cmd
+			[:##right_option :right_command :macbook-keyboard]
 
-			;; left arrow -> left cmd
-			[:##left_arrow :left_command :macbook-keyboard]
+			;; left arrow -> right control
+			[:##left_arrow :right_control :macbook-keyboard]
 
-			;; up arrow -> left ctrl
-			;; down arrow -> left ctrl
-			[:##up_arrow :left_control :macbook-keyboard]
-			[:##down_arrow :left_control :macbook-keyboard]
+			;; up arrow -> right option
+			;; down arrow -> right option
+			[:##up_arrow :right_option :macbook-keyboard]
+			[:##down_arrow :right_option :macbook-keyboard]
 
 			;; right arrow -> fn
 			{
@@ -153,82 +230,7 @@
 			[:!F##f :right_arrow :macbook-keyboard]
 		]}
 
-		{:des "Swap caps lock to backspace on macbook keyboard" :rules [
-			[:##caps_lock :delete_or_backspace :macbook-keyboard]
-			[:##delete_or_backspace :caps_lock :macbook-keyboard]
-		]}
 
-		{:des, "Yabai keybinds", :rules [
-			;; super + j: focus down
-			[:!CTO#QWEj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
-			[:!QWE#CTOj "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-down-window"]
-			;; super + k: focus up
-			[:!CTO#QWEk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
-			[:!QWE#CTOk "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window"]
-			;; super + m: focus on master
-			[:!CTO#QWEm "/opt/homebrew/bin/yabai -m window --focus east"]
-			[:!QWE#CTOm "/opt/homebrew/bin/yabai -m window --focus east"]
-			;; super + shift + m: move window to master
-			[:!CTOS#QWEm "/opt/homebrew/bin/yabai -m window --swap east"]
-			[:!QWES#CTOm "/opt/homebrew/bin/yabai -m window --swap east"]
-			;; super + i: increase number of master windows
-			[:!CTO#QWEi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
-			[:!QWE#CTOi "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count"]
-			;; super + d: decrease number of master windows
-			[:!CTO#QWEd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
-			[:!QWE#CTOd "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp decrease-master-window-count"]
-			;; super + shift + j: move window down
-			[:!CTOS#QWEj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
-			[:!QWES#CTOj "/opt/homebrew/bin/yabai -m window --swap next || /opt/homebrew/bin/yabai -m window --swap first"]
-			;; super + shift + k: move window up
-			[:!CTOS#QWEk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
-			[:!QWES#CTOk "/opt/homebrew/bin/yabai -m window --swap prev || /opt/homebrew/bin/yabai -m window --swap last"]
-			;; super + h: resize window left
-			[:!CTO#QWEh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
-			[:!QWE#CTOh "/opt/homebrew/bin/yabai -m window --resize right:-50:0; /opt/homebrew/bin/yabai -m window --resize left:-50:0"]
-			;; super + l: resize window right
-			[:!CTO#QWEl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
-			[:!QWE#CTOl "/opt/homebrew/bin/yabai -m window --resize right:50:0; /opt/homebrew/bin/yabai -m window --resize left:50:0"]
-			;; super + shift + k: resize window top
-			[:!CTOS#QWEl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
-			[:!QWES#CTOl "/opt/homebrew/bin/yabai -m window --resize top:0:-50; /opt/homebrew/bin/yabai -m window --resize bottom:0:-50"]
-			;; super + shift + h: resize window bottom
-			[:!CTOS#QWEh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
-			[:!QWES#CTOh "/opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50"]
-			;; super + f: toggle window fullscreen
-			[:!CTO#QWEf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
-			[:!QWE#CTOf "/opt/homebrew/bin/yabai -m window --toggle native-fullscreen"]
-			;; super + q: close focused window
-			[:!CTO#QWEq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
-			[:!QWE#CTOq "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window"]
-			;; super + period: focus next display
-			[:!CTO#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
-			[:!QWE#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display"]
-			;; super + shift + period: move window to next display
-			[:!CTOS#QWEperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
-			[:!QWES#CTOperiod "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display"]
-			;; super + comma: focus previous display
-			[:!CTO#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
-			[:!QWE#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display"]
-			;; super + shift + comma: move window to previous display
-			[:!CTOS#QWEcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
-			[:!QWES#CTOcomma "/opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display"]
-			;; super + z: minimize window
-			[:!CTO#QWEz "/opt/homebrew/bin/yabai -m window --minimize"]
-			[:!QWE#CTOz "/opt/homebrew/bin/yabai -m window --minimize"]
-
-			;; applications
-
-			;; super + w: open Warp Terminal
-			[:!CTO#QWEw "open -a /Applications/Warp.app"]
-			[:!QWE#CTOw "open -a /Applications/Warp.app"]
-			;; super + shift + w: open Warp Terminal in a new window
-			[:!CTOS#QWEw "open -na /Applications/Warp.app"]
-			[:!QWES#CTOw "open -na /Applications/Warp.app"]
-			;; super + b: open Qutebrowser
-			[:!CTO#QWEb "open -na /Applications/Qutebrowser.app"]
-			[:!QWE#CTOb "open -na /Applications/Qutebrowser.app"]
-		]}
 		{:des "F22 to Fn key", :rules [
 			[:##f22, :fn]
 		]}
