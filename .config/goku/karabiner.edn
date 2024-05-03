@@ -228,6 +228,9 @@
 			[:!F##s :left_arrow :macbook-keyboard]
 			[:!F##d :down_arrow :macbook-keyboard]
 			[:!F##f :right_arrow :macbook-keyboard]
+
+			;; right shift -> left shift
+			[:##right_shift :left_shift]
 		]}
 
 
