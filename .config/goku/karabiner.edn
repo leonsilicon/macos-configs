@@ -109,7 +109,7 @@
 			[:##7 :!S8 :macbook-keyboard]
 			[:!S8, :2 :macbook-keyboard]
 			[:##8 :!S0 :macbook-keyboard]
-			[:!S9 :8 :macbook-keyboard]
+			[:!S9 :4 :macbook-keyboard]
 			[:##9 [:!Sequal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
 			[:!S0 :6 :macbook-keyboard]
 			[:##0 [:close_bracket :vk_none] :macbook-keyboard {:held :close_bracket}]
@@ -224,10 +224,10 @@
 			}
 
 			;; fn + esdf -> arrow keys
-			[:!F##e :up_arrow :macbook-keyboard]
-			[:!F##s :left_arrow :macbook-keyboard]
-			[:!F##d :down_arrow :macbook-keyboard]
-			[:!F##f :right_arrow :macbook-keyboard]
+			[:!F##period :up_arrow :macbook-keyboard]
+			[:!F##o :left_arrow :macbook-keyboard]
+			[:!F##e :down_arrow :macbook-keyboard]
+			[:!F##u :right_arrow :macbook-keyboard]
 
 			;; right shift -> left shift
 			[:##right_shift :left_shift]

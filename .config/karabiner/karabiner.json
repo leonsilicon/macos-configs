@@ -984,7 +984,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "8"
+            "key_code" : "4"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -2111,7 +2111,7 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "e",
+            "key_code" : "period",
             "modifiers" : {
               "mandatory" : [ "fn" ],
               "optional" : [ "any" ]
@@ -2130,7 +2130,7 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "s",
+            "key_code" : "o",
             "modifiers" : {
               "mandatory" : [ "fn" ],
               "optional" : [ "any" ]
@@ -2149,7 +2149,7 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "d",
+            "key_code" : "e",
             "modifiers" : {
               "mandatory" : [ "fn" ],
               "optional" : [ "any" ]
@@ -2168,7 +2168,7 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "f",
+            "key_code" : "u",
             "modifiers" : {
               "mandatory" : [ "fn" ],
               "optional" : [ "any" ]
