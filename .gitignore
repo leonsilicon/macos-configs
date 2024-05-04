@@ -70,18 +70,13 @@ repos/*
 
 # launchctl
 !Library/LaunchAgents
-!Library/LaunchAgents/leondreamed.yabai.plist
-!Library/LaunchAgents/deepwork.yabai.plist
 !Library/LaunchAgents/com.federicoterzi.espanso.plist
 
 # brew
 !.config/brewfile
 !.config/brewfile/*
 
-# Keyboard layout
-!Library/Keyboard Layouts
-!Library/Keyboard Layouts/Programmer Dvorak.keylayout
-!Library/Preferences
+# espanso
 !Library/Application Support/espanso
 Library/Application Support/espanso/*
 !Library/Application Support/espanso/match
@@ -96,11 +91,5 @@ Developer/github/*
 Developer/github/leonsilicon/*
 !Developer/github/leonsilicon/macos-configs
 !Developer/github/leonsilicon/macos-configs/**
-
-# Repos
-!code
-!code/install.sh
-!code/zsh-autocomplete
-!code/zsh-autocomplete/*
 
 .DS_Store
