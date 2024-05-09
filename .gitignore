@@ -48,9 +48,8 @@ repos/*
 !.config/karabiner/karabiner.json
 !.config/goku
 !.config/goku/*
-
-!.config/git
-!.config/git/gitignore
+!.config/skhd
+!.config/skhd/*
 
 # VSCode
 !Library
