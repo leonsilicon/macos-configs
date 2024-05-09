@@ -5,12 +5,20 @@
 		:moonlander [{:vendor_id 12951 :product_id 6505}]
 	}
 	:main, [
-		;; Disable super + shift + v (period on QWERTY) as it triggers sysdiagnose
+		;; Rebind super + shift + period as it triggers sysdiagnose
 		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
-		{:des "Disable <Super+Shift+V> (sysdiagnose)" :rules [
-			[:!QWES#CTOv :!Cf19]
-			[:!CTOS#QWEv :!Cf19]
+		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
+			[:!QWES#CTOperiod :f18]
+			[:!CTOS#QWEperiod :f18]
 		]},
+
+		;; Rebind super + shift + comma as it triggers sysdiagnose
+		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
+		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
+			[:!QWES#CTOcomma :f19]
+			[:!CTOS#QWEcomma :f19]
+		]},
+
 
 		{:des "Swap caps lock to backspace on macbook keyboard" :rules [
 			[:##caps_lock :delete_or_backspace :macbook-keyboard]
