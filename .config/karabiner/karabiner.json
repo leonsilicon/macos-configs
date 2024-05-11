@@ -91,7 +91,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "left_option"
+            "key_code" : "left_control"
           } ],
           "conditions" : [ {
             "identifiers" : [ {

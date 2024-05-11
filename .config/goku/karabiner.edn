@@ -32,7 +32,7 @@
 			}
 
 			;; left control -> left control
-			[:##left_control :left_option :macbook-keyboard]
+			[:##left_control :left_control :macbook-keyboard]
 
 			;; left option -> left command
 			[:##left_option :left_command :macbook-keyboard]
