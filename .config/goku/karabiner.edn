@@ -10,15 +10,81 @@
 		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
 			[:!QWES#CTOperiod :f18]
 			[:!CTOS#QWEperiod :f18]
-		]},
+		]}
 
 		;; Rebind super + shift + comma as it triggers sysdiagnose
 		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
 		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
 			[:!QWES#CTOcomma :f19]
 			[:!CTOS#QWEcomma :f19]
-		]},
+		]}
 
+		{:des "Configure modifier keys on macbook keyboard" :rules [
+			;; left control -> left control
+			[:##left_control :left_option :macbook-keyboard]
+
+			;; left option -> left command
+			[:##left_option :left_command :macbook-keyboard]
+
+                        ;; left command (mapped to option) + caps lock (backspace) -> super
+                        [[:left_command :caps_lock] :!TOleft_command :macbook-keyboard]
+
+			;; left command -> left option
+			; [:##left_command :left_option :macbook-keyboard]
+
+			;; right command + enter -> super
+			[[:right_command :return_or_enter] :!WEright_command :macbook-keyboard]
+
+			;; right command -> right option
+			[:##right_command :right_option :macbook-keyboard]
+
+			;; right option -> right command
+			[:##right_option :right_command :macbook-keyboard]
+
+			;; left arrow -> right control
+			[:##left_arrow :right_control :macbook-keyboard]
+
+			;; up arrow -> right option
+			;; down arrow -> right option
+			;; [:##up_arrow :right_option :macbook-keyboard]
+			;; [:##down_arrow :right_option :macbook-keyboard]
+
+			;; up arrow -> fn
+			{
+				:from {:key_code :up_arrow}
+				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
+				:conditions [{
+					:identifiers [{:vendor_id 0 :product_id 0}]
+					:type :device_if
+				}]
+				:type :basic
+			}
+
+			;; down arrow -> fn
+			{
+				:from {:key_code :down_arrow}
+				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
+				:conditions [{
+					:identifiers [{:vendor_id 0 :product_id 0}]
+					:type :device_if
+				}]
+				:type :basic
+			}
+
+			;; right arrow -> fn
+			{
+				:from {:key_code :right_arrow}
+				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
+				:conditions [{
+					:identifiers [{:vendor_id 0 :product_id 0}]
+					:type :device_if
+				}]
+				:type :basic
+			}
+
+			;; right shift -> left shift
+			[:##right_shift :left_shift]
+		]}
 
 		{:des "Swap caps lock to backspace on macbook keyboard" :rules [
 			[:##caps_lock :delete_or_backspace :macbook-keyboard]
@@ -120,57 +186,6 @@
 			[:!Skeypad_9 :9 :moonlander]
 			[:!Skeypad_0 :0 :moonlander]
 		]}
-
-		{:des "Configure modifier keys on macbook keyboard" :rules [
-			;; fn -> left ctrl
-			{
-				:from {:apple_vendor_top_case_key_code :keyboard_fn}
-				:to [{:key_code :left_control}]
-				:conditions [{
-					:identifiers [{:vendor_id 0 :product_id 0}]
-					:type :device_if
-				}]
-				:type :basic
-			}
-
-			;; left control -> left option
-			[:##left_control :left_option :macbook-keyboard]
-
-			;; left option -> left command
-			[:##left_option :left_command :macbook-keyboard]
-
-			;; left cmd -> super
-			[:##left_command :!TOleft_command :macbook-keyboard]
-
-			;; right cmd -> super
-			[:##right_command :!WEright_command :macbook-keyboard]
-
-			;; right opt -> right cmd
-			[:##right_option :right_command :macbook-keyboard]
-
-			;; left arrow -> right control
-			[:##left_arrow :right_control :macbook-keyboard]
-
-			;; up arrow -> right option
-			;; down arrow -> right option
-			[:##up_arrow :right_option :macbook-keyboard]
-			[:##down_arrow :right_option :macbook-keyboard]
-
-			;; right arrow -> fn
-			{
-				:from {:key_code :right_arrow}
-				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
-				:conditions [{
-					:identifiers [{:vendor_id 0 :product_id 0}]
-					:type :device_if
-				}]
-				:type :basic
-			}
-
-			;; right shift -> left shift
-			[:##right_shift :left_shift]
-		]}
-
 
 		{:des "F22 to Fn key", :rules [
 			[:##f22, :fn]

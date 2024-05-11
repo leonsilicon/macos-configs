@@ -74,8 +74,6 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+Shift+W>` Opens **W**arp in a new window\
 `<Super+X>` Toggle [PixelSnap](https://getpixelsnap.com)\
 `<Super+Space>` Opens Raycast\
-`<Super+Enter>` Open/Hide Side**N**otes \
-`<Super+Shift+Enter>` Create new note in Side**N**otes\
 `<Super+)>` Increase brightness (using [Lunar](https://lunar.fyi))\
 `<Super+(>` Decrease brightness (using [Lunar](https://lunar.fyi))
 
