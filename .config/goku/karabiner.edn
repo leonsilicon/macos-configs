@@ -26,11 +26,17 @@
 			;; left option -> left command
 			[:##left_option :left_command :macbook-keyboard]
 
-                        ;; left command (mapped to option) + caps lock (backspace) -> super
+                        ;; left command + shift + caps lock (backspace) -> super
+                        [[:left_command :shift :caps_lock] :!TOSleft_command :macbook-keyboard]
+
+                        ;; left command + caps lock -> super
                         [[:left_command :caps_lock] :!TOleft_command :macbook-keyboard]
 
 			;; left command -> left option
-			; [:##left_command :left_option :macbook-keyboard]
+			[:##left_command :left_option :macbook-keyboard]
+
+			;; right command + shift + enter -> super
+			[[:right_command :shift :return_or_enter] :!WERright_command :macbook-keyboard]
 
 			;; right command + enter -> super
 			[[:right_command :return_or_enter] :!WEright_command :macbook-keyboard]
