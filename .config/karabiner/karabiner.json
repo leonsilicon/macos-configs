@@ -69,6 +69,22 @@
         "description" : "Configure modifier keys on macbook keyboard",
         "manipulators" : [ {
           "from" : {
+            "apple_vendor_top_case_key_code" : "keyboard_fn"
+          },
+          "to" : [ {
+            "key_code" : "left_command",
+            "modifiers" : [ "left_option", "left_control" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "left_control",
             "modifiers" : {
               "optional" : [ "any" ]
@@ -108,7 +124,7 @@
             "simultaneous" : [ {
               "key_code" : "left_command"
             }, {
-              "key_code" : "shift"
+              "key_code" : "left_shift"
             }, {
               "key_code" : "caps_lock"
             } ],
@@ -180,7 +196,7 @@
             "simultaneous" : [ {
               "key_code" : "right_command"
             }, {
-              "key_code" : "shift"
+              "key_code" : "right_shift"
             }, {
               "key_code" : "return_or_enter"
             } ],
@@ -285,10 +301,14 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "up_arrow"
+            "key_code" : "up_arrow",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
           },
           "to" : [ {
-            "apple_vendor_top_case_key_code" : "keyboard_fn"
+            "key_code" : "left_command",
+            "modifiers" : [ "left_control", "left_option" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -300,10 +320,14 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "down_arrow"
+            "key_code" : "down_arrow",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
           },
           "to" : [ {
-            "apple_vendor_top_case_key_code" : "keyboard_fn"
+            "key_code" : "left_command",
+            "modifiers" : [ "left_control", "left_option" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
