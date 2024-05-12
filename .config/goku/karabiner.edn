@@ -12,8 +12,6 @@
 			[:!CTOS#QWEperiod :f18]
 		]}
 
-		;; Rebind super + shift + comma as it triggers sysdiagnose
-		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
 		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
 			[:!QWES#CTOcomma :f19]
 			[:!CTOS#QWEcomma :f19]
@@ -61,10 +59,8 @@
 			;; left arrow -> right control
 			[:##left_arrow :right_control :macbook-keyboard]
 
-			;; up arrow -> right option
-			;; down arrow -> right option
-			;; [:##up_arrow :right_option :macbook-keyboard]
-			;; [:##down_arrow :right_option :macbook-keyboard]
+                    ;; Rebind super + shift + comma as it triggers sysdiagnose
+                    ;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
 
 			;; up arrow -> super
 			[:##up_arrow :!TOleft_command :macbook-keyboard]
