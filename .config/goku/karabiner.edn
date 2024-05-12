@@ -5,18 +5,6 @@
 		:moonlander [{:vendor_id 12951 :product_id 6505}]
 	}
 	:main, [
-		;; Rebind super + shift + period as it triggers sysdiagnose
-		;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
-		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
-			[:!QWES#CTOperiod :f18]
-			[:!CTOS#QWEperiod :f18]
-		]}
-
-		{:des "Disable <Super+Shift+.> (sysdiagnose)" :rules [
-			[:!QWES#CTOcomma :f19]
-			[:!CTOS#QWEcomma :f19]
-		]}
-
 		{:des "Configure modifier keys on macbook keyboard" :rules [
 			;; fn -> super
 			[:##fn :!TOleft_command :macbook-keyboard]
@@ -45,9 +33,6 @@
 			;; down arrow -> super
 			[:##down_arrow :!TOleft_command :macbook-keyboard]
 
-			;; Rebind super + shift + comma as it triggers sysdiagnose
-			;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
-			[:!CTOS#QWEcomma :f19 :macbook-keyboard]
 
 			;; right arrow -> fn
 			{

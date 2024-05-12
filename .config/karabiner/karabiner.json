@@ -15,57 +15,6 @@
         "basic.to_if_held_down_threshold_milliseconds" : 500
       },
       "rules" : [ {
-        "description" : "Disable <Super+Shift+.> (sysdiagnose)",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "period",
-            "modifiers" : {
-              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
-              "optional" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "f18"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "period",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "f18"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "comma",
-            "modifiers" : {
-              "mandatory" : [ "left_shift", "right_command", "right_control", "right_option" ],
-              "optional" : [ "left_command", "left_control", "left_option" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "f19"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "comma",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "f19"
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
         "description" : "Configure modifier keys on macbook keyboard",
         "manipulators" : [ {
           "from" : {
@@ -77,22 +26,6 @@
           "to" : [ {
             "key_code" : "left_command",
             "modifiers" : [ "left_control", "left_option" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "apple_vendor_top_case_key_code" : "keyboard_fn"
-          },
-          "to" : [ {
-            "key_code" : "left_command",
-            "modifiers" : [ "left_option", "left_control" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -239,25 +172,6 @@
           "to" : [ {
             "key_code" : "left_command",
             "modifiers" : [ "left_control", "left_option" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "comma",
-            "modifiers" : {
-              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
-              "optional" : [ "right_command", "right_control", "right_option" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "f19"
           } ],
           "conditions" : [ {
             "identifiers" : [ {

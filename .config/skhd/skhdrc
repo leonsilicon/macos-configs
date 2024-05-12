@@ -40,17 +40,17 @@ cmd + ctrl + alt - f : /opt/homebrew/bin/yabai -m window --toggle native-fullscr
 # super + q: close focused window
 cmd + ctrl + alt - q : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window
 
-# super + period: focus next display
-cmd + ctrl + alt - 0x2F : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display
+# super + ]: focus next display
+cmd + ctrl + alt - 0x1E : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display
 
-# super + shift + period: move window to next display
-f18 : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display
+# super + shift + ]: move window to next display
+cmd + ctrl + alt + shift - 0x1E : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-next-display
 
-# super + comma: focus previous display
-cmd + ctrl + alt - 0x2B : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display
+# super + [: focus previous display
+cmd + ctrl + alt - 0x21 : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-previous-display
 
-# super + shift + comma: move window to previous display
-f19 : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display
+# super + shift + [: move window to previous display
+cmd + ctrl + alt + shift - 0x21 : /opt/homebrew/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-previous-display
 
 # super + z: minimize window
 cmd + ctrl + alt - z : /opt/homebrew/bin/yabai -m window --minimize

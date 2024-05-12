@@ -41,10 +41,10 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 `<Super+Shift+M>` _Move_ window to **m**aster\
 `<Super+I>` **I**ncrease number of master windows\
 `<Super+D>` **D**ecrease number of master windows\
-`<Super+,>` Focus previous display\
-`<Super+Shift+,>` Move window to previous display\
-`<Super+.>` Focus next display\
-`<Super+Shift+.>` Focus window to next display\
+`<Super+[>` Focus previous display\
+`<Super+Shift+[>` Move window to previous display\
+`<Super+]>` Focus next display\
+`<Super+Shift+]>` Focus window to next display\
 `<Super+Z>` Minimi**z**e focused window
 `<Super+Q>` **Q**uit focused window
 
@@ -80,8 +80,8 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 #### System
 
 `<Super+;>` Lock Screen (since `,` and `.` represent moving between displays, it seems fitting that the key `;` to the left of `,` should mean "lock screen")
-`<Super+[>` Vol**u**me Down
-`<Super+]>` Vol**u**me Up
+`<Super+,>` Vol**u**me Down
+`<Super+.>` Vol**u**me Up
 `<Super+0>` Volume Mute
 
 #### Input navigation
