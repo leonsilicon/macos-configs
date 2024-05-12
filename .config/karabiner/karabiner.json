@@ -69,6 +69,25 @@
         "description" : "Configure modifier keys on macbook keyboard",
         "manipulators" : [ {
           "from" : {
+            "key_code" : "fn",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "left_command",
+            "modifiers" : [ "left_control", "left_option" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "apple_vendor_top_case_key_code" : "keyboard_fn"
           },
           "to" : [ {
@@ -121,60 +140,6 @@
           "type" : "basic"
         }, {
           "from" : {
-            "simultaneous" : [ {
-              "key_code" : "left_command"
-            }, {
-              "key_code" : "left_shift"
-            }, {
-              "key_code" : "caps_lock"
-            } ],
-            "simultaneous_options" : {
-              "detect_key_down_uninterruptedly" : false,
-              "key_down_order" : "insensitive",
-              "key_up_order" : "insensitive",
-              "key_up_when" : "any"
-            }
-          },
-          "to" : [ {
-            "key_code" : "left_command",
-            "modifiers" : [ "left_control", "left_option", "left_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "simultaneous" : [ {
-              "key_code" : "left_command"
-            }, {
-              "key_code" : "caps_lock"
-            } ],
-            "simultaneous_options" : {
-              "detect_key_down_uninterruptedly" : false,
-              "key_down_order" : "insensitive",
-              "key_up_order" : "insensitive",
-              "key_up_when" : "any"
-            }
-          },
-          "to" : [ {
-            "key_code" : "left_command",
-            "modifiers" : [ "left_control", "left_option" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
             "key_code" : "left_command",
             "modifiers" : {
               "optional" : [ "any" ]
@@ -182,60 +147,6 @@
           },
           "to" : [ {
             "key_code" : "left_option"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "simultaneous" : [ {
-              "key_code" : "right_command"
-            }, {
-              "key_code" : "right_shift"
-            }, {
-              "key_code" : "return_or_enter"
-            } ],
-            "simultaneous_options" : {
-              "detect_key_down_uninterruptedly" : false,
-              "key_down_order" : "insensitive",
-              "key_up_order" : "insensitive",
-              "key_up_when" : "any"
-            }
-          },
-          "to" : [ {
-            "key_code" : "right_command",
-            "modifiers" : [ "right_control", "right_option", "right_shift" ]
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "simultaneous" : [ {
-              "key_code" : "right_command"
-            }, {
-              "key_code" : "return_or_enter"
-            } ],
-            "simultaneous_options" : {
-              "detect_key_down_uninterruptedly" : false,
-              "key_down_order" : "insensitive",
-              "key_up_order" : "insensitive",
-              "key_up_when" : "any"
-            }
-          },
-          "to" : [ {
-            "key_code" : "right_command",
-            "modifiers" : [ "right_control", "right_option" ]
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -328,6 +239,25 @@
           "to" : [ {
             "key_code" : "left_command",
             "modifiers" : [ "left_control", "left_option" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "comma",
+            "modifiers" : {
+              "mandatory" : [ "left_command", "left_control", "left_option", "left_shift" ],
+              "optional" : [ "right_command", "right_control", "right_option" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "f19"
           } ],
           "conditions" : [ {
             "identifiers" : [ {

@@ -19,15 +19,7 @@
 
 		{:des "Configure modifier keys on macbook keyboard" :rules [
 			;; fn -> super
-                        			{
-				:from {:apple_vendor_top_case_key_code :keyboard_fn}
-				:to [{:key_code :left_command :modifiers [:left_option :left_control]}]
-				:conditions [{
-					:identifiers [{:vendor_id 0 :product_id 0}]
-					:type :device_if
-				}]
-				:type :basic
-			}
+			[:##fn :!TOleft_command :macbook-keyboard]
 
 			;; left control -> left control
 			[:##left_control :left_control :macbook-keyboard]
@@ -35,20 +27,8 @@
 			;; left option -> left command
 			[:##left_option :left_command :macbook-keyboard]
 
-			;; left command + shift + caps lock (backspace) -> super
-			[[:left_command :left_shift :caps_lock] :!TOSleft_command :macbook-keyboard]
-
-			;; left command + caps lock -> super
-			[[:left_command :caps_lock] :!TOleft_command :macbook-keyboard]
-
 			;; left command -> left option
 			[:##left_command :left_option :macbook-keyboard]
-
-			;; right command + shift + enter -> super
-			[[:right_command :right_shift :return_or_enter] :!WERright_command :macbook-keyboard]
-
-			;; right command + enter -> super
-			[[:right_command :return_or_enter] :!WEright_command :macbook-keyboard]
 
 			;; right command -> right option
 			[:##right_command :right_option :macbook-keyboard]
@@ -59,13 +39,15 @@
 			;; left arrow -> right control
 			[:##left_arrow :right_control :macbook-keyboard]
 
-                    ;; Rebind super + shift + comma as it triggers sysdiagnose
-                    ;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
-
 			;; up arrow -> super
 			[:##up_arrow :!TOleft_command :macbook-keyboard]
+
 			;; down arrow -> super
 			[:##down_arrow :!TOleft_command :macbook-keyboard]
+
+			;; Rebind super + shift + comma as it triggers sysdiagnose
+			;; https://github.com/pqrs-org/Karabiner-Elements/issues/1107
+			[:!CTOS#QWEcomma :f19 :macbook-keyboard]
 
 			;; right arrow -> fn
 			{
