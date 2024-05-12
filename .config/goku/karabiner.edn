@@ -88,8 +88,8 @@
 			[:##0 [:close_bracket :vk_none] :macbook-keyboard {:held :close_bracket}]
 			[:!Shyphen :8 :macbook-keyboard]
 			[:##hyphen :!S1 :macbook-keyboard]
-			[:!Sequal_sign :grave_accent_and_tilde :macbook-keyboard]
-			[:##equal_sign :!S3 :macbook-keyboard]
+			[:!Sequal_sign :!S3 :macbook-keyboard]
+			[:##equal_sign :grave_accent_and_tilde :macbook-keyboard]
 
 			;; top row
 			[:##q :semicolon :macbook-keyboard]
