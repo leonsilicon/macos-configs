@@ -64,4 +64,4 @@ cmd + ctrl + alt - w : open -a /Applications/Warp.app
 cmd + ctrl + alt + shift - w : open -na /Applications/Warp.app
 
 # super + b: open Qutebrowser
-cmd + ctrl + alt - b : open -na /Applications/Qutebrowser.app
+cmd + ctrl + alt - b : open -na /Applications/Arc.app
