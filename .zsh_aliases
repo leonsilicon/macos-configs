@@ -1,4 +1,3 @@
-alias python='python3.10'
 alias v='nvim'
 alias e='eza'
 alias git-largest-files="git rev-list --objects --all |
