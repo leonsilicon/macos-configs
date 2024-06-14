@@ -361,5 +361,7 @@
 	"editor.lineNumbers": "on",
 	"editor.glyphMargin": true,
 	"workbench.colorTheme": "Gruvbox Material Light",
-	"git.openRepositoryInParentFolders": "never"
+	"git.openRepositoryInParentFolders": "never",
+	"github.copilot.editor.enableAutoCompletions": true,
+	"terminal.integrated.inheritEnv": false
 }
