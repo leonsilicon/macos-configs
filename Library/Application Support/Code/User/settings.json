@@ -324,7 +324,7 @@
 		".fiveserverrc.json": "json"
 	},
 	"github.copilot.enable": {
-		"*": false,
+		"*": true,
 		"plaintext": false,
 		"markdown": false,
 		"scminput": false
@@ -363,5 +363,6 @@
 	"workbench.colorTheme": "Gruvbox Material Light",
 	"git.openRepositoryInParentFolders": "never",
 	"github.copilot.editor.enableAutoCompletions": true,
-	"terminal.integrated.inheritEnv": false
+	"terminal.integrated.inheritEnv": false,
+	"interactiveWindow.executeWithShiftEnter": true
 }

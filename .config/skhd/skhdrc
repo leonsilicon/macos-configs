@@ -5,10 +5,10 @@ cmd + ctrl + alt - j : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/b
 cmd + ctrl + alt - k : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-up-window
 
 # super + m: focus on master
-cmd + ctrl + alt - m : /opt/homebrew/bin/yabai -m window --focus east
+cmd + ctrl + alt - m : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-master-window
 
 # super + shift + m: move window to master
-cmd + ctrl + alt + shift - m : /opt/homebrew/bin/yabai -m window --swap east
+cmd + ctrl + alt + shift - m : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp move-window-to-master
 
 # super + i: increase number of master windows
 cmd + ctrl + alt - i : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp increase-master-window-count

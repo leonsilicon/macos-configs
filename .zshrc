@@ -94,3 +94,5 @@ unset __conda_setup
 
 
 . "$HOME/.cargo/env"
+eval "$(pyenv init -)"
+

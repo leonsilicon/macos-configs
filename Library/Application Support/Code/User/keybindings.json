@@ -415,7 +415,7 @@
 		"command": "-workbench.action.zoomIn"
 	},
 	{
-		"key": "shift+cmd+c",
+		"key": "alt+cmd+c",
 		"command": "workbench.files.action.collapseExplorerFolders"
 	},
 	{
@@ -472,7 +472,7 @@
 		"when": "hasSearchResult && searchViewletFocus"
 	},
 	{
-		"key": "alt+cmd+c",
+		"key": "shift+cmd+c",
 		"command": "copyFilePath"
 	},
 	{
@@ -3274,5 +3274,19 @@
 	{
 		"key": "cmd+=",
 		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "-workbench.action.terminal.toggleFindRegex",
+		"when": "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported"
+	},
+	{
+		"key": "alt+cmd+r",
+		"command": "ruff.executeAutofix"
+	},
+	{
+		"key": "alt+cmd+c",
+		"command": "-workbench.action.terminal.toggleFindCaseSensitive",
+		"when": "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported"
 	}
 ]
