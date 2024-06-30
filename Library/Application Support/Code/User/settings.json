@@ -364,5 +364,10 @@
 	"git.openRepositoryInParentFolders": "never",
 	"github.copilot.editor.enableAutoCompletions": true,
 	"terminal.integrated.inheritEnv": false,
-	"interactiveWindow.executeWithShiftEnter": true
+	"interactiveWindow.executeWithShiftEnter": true,
+	"cmake.showOptionsMovedNotification": false,
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	]
 }
