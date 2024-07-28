@@ -369,5 +369,6 @@
 	"cmake.pinnedCommands": [
 		"workbench.action.tasks.configureTaskRunner",
 		"workbench.action.tasks.runTask"
-	]
+	],
+	"jupyter.askForKernelRestart": false
 }
