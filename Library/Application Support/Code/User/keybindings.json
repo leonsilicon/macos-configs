@@ -3296,5 +3296,57 @@
 	{
 		"key": "alt+e",
 		"command": "workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "cmd+t",
+		"command": "workbench.action.terminal.new"
+	},
+	{
+		"key": "cmd+]",
+		"command": "-editor.action.indentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+[",
+		"command": "-editor.action.outdentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+]",
+		"command": "workbench.action.terminal.switchTerminal"
+	},
+	{
+		"key": "cmd+]",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "-workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "cmd+[",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+alt+t",
+		"command": "workbench.action.terminal.focusTabs"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "workbench.action.terminal.renameActiveTab",
+		"when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
+	},
+	{
+		"key": "enter",
+		"command": "-workbench.action.terminal.renameActiveTab",
+		"when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
 	}
 ]
