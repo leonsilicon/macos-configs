@@ -3268,7 +3268,7 @@
 		"when": "breadcrumbsPossible && breadcrumbsVisible"
 	},
 	{
-		"key": "alt+o s",
+		"key": "cmd+, s",
 		"command": "workbench.action.openGlobalKeybindings"
 	},
 	{
@@ -3291,6 +3291,10 @@
 	},
 	{
 		"key": "alt+t",
+		"command": "terminal.focus"
+	},
+	{
+		"key": "alt+w t",
 		"command": "terminal.focus"
 	},
 	{
@@ -3348,5 +3352,14 @@
 		"key": "enter",
 		"command": "-workbench.action.terminal.renameActiveTab",
 		"when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
+	},
+	{
+		"key": "alt+o",
+		"command": "workbench.panel.output.focus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
 	}
 ]
