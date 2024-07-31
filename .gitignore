@@ -67,6 +67,10 @@ repos/*
 !Library/Application Support/qutebrowser/userscripts
 !Library/Application Support/qutebrowser/userscripts/qute-1pass
 
+# Keyboard Layouts
+!Library/Keyboard Layouts
+!Library/Keyboard Layouts/NoOptionSymbols.keylayout
+
 # launchctl
 !Library/LaunchAgents
 !Library/LaunchAgents/com.federicoterzi.espanso.plist

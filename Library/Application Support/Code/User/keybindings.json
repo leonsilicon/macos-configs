@@ -3288,5 +3288,13 @@
 		"key": "alt+cmd+c",
 		"command": "-workbench.action.terminal.toggleFindCaseSensitive",
 		"when": "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported"
+	},
+	{
+		"key": "alt+t",
+		"command": "terminal.focus"
+	},
+	{
+		"key": "alt+e",
+		"command": "workbench.action.focusFirstEditorGroup"
 	}
 ]

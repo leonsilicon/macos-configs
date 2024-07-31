@@ -370,5 +370,8 @@
 		"workbench.action.tasks.configureTaskRunner",
 		"workbench.action.tasks.runTask"
 	],
-	"jupyter.askForKernelRestart": false
+	"jupyter.askForKernelRestart": false,
+	"git.autofetch": true,
+	"terminal.integrated.fontSize": 14,
+	"githubPullRequests.pullBranch": "never"
 }
