@@ -2,7 +2,7 @@
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.8 on 2014-05-31 at 19:33 (GMT+3)-->
 <!--Last edited by Ukelele version 2.2.8 on 2014-06-01 at 16:00 (GMT+3)-->
-<keyboard group="0" id="6361" name="U.S. custom" maxout="1">
+<keyboard group="0" id="6361" name="U.S. - No Option Symbols" maxout="1">
     <layouts>
         <layout first="0" last="17" modifiers="f4" mapSet="16c"/>
         <layout first="18" last="18" modifiers="f4" mapSet="984"/>
