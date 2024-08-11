@@ -101,4 +101,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 alias gtc='gt m -cam'
-alias git='echo "use: gt"'
+# alias git='echo "use: gt"'

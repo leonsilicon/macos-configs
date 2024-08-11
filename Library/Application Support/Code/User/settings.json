@@ -373,5 +373,12 @@
 	"jupyter.askForKernelRestart": false,
 	"git.autofetch": true,
 	"terminal.integrated.fontSize": 14,
-	"githubPullRequests.pullBranch": "never"
+	"githubPullRequests.pullBranch": "never",
+	"html.autoClosingTags": false,
+	"javascript.autoClosingTags": false,
+	"typescript.autoClosingTags": false,
+	"editor.autoClosingComments": "never",
+	"editor.autoClosingDelete": "never",
+	"editor.autoClosingOvertype": "never",
+	"editor.autoClosingQuotes": "never"
 }

@@ -577,7 +577,7 @@
 		"command": "workbench.action.navigateRight"
 	},
 	{
-		"key": "shift+alt+j",
+		"key": "alt+j",
 		"command": "workbench.action.navigateDown"
 	},
 	{
@@ -1091,7 +1091,7 @@
 		"when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
 	},
 	{
-		"key": "shift+alt+k",
+		"key": "alt+k",
 		"command": "workbench.action.navigateUp"
 	},
 	{
@@ -2662,14 +2662,6 @@
 		"when": "editorHoverFocused"
 	},
 	{
-		"key": "alt+k",
-		"command": "editor.action.pageUpHover"
-	},
-	{
-		"key": "alt+j",
-		"command": "editor.action.pageDownHover"
-	},
-	{
 		"key": "cmd+.",
 		"command": "-editor.changePasteType",
 		"when": "pasteWidgetVisible"
@@ -3361,5 +3353,18 @@
 		"key": "ctrl+`",
 		"command": "-workbench.action.terminal.toggleTerminal",
 		"when": "terminal.active"
+	},
+	{
+		"key": "alt+k",
+		"command": "-editor.action.accessibilityHelpConfigureKeybindings",
+		"when": "accessibilityHelpIsShown && accessibleViewHasUnassignedKeybindings"
+	},
+	{
+		"key": "shift+alt+k",
+		"command": "workbench.action.terminal.resizePaneUp"
+	},
+	{
+		"key": "shift+alt+j",
+		"command": "workbench.action.terminal.resizePaneDown"
 	}
 ]
