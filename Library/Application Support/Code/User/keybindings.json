@@ -424,10 +424,6 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "cmd+k",
-		"command": "workbench.action.showCommands"
-	},
-	{
 		"key": "cmd+shift+p",
 		"command": "-workbench.action.showCommands"
 	},
@@ -3365,7 +3361,8 @@
 	},
 	{
 		"key": "cmd+d",
-		"command": "workbench.action.terminal.split"
+		"command": "workbench.action.terminal.split",
+		"when": "terminalFocus"
 	},
 	{
 		"key": "ctrl+shift+5",
@@ -3394,7 +3391,8 @@
 	},
 	{
 		"key": "cmd+d",
-		"command": "workbench.action.splitEditor"
+		"command": "workbench.action.splitEditor",
+		"when": "!terminalFocus"
 	},
 	{
 		"key": "shift+cmd+d",
@@ -3437,5 +3435,59 @@
 		"key": "alt+cmd+down",
 		"command": "-quickInput.nextSeparator",
 		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.clear",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+k cmd+[",
+		"command": "-editor.foldRecursively",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "cmd+k shift+cmd+l",
+		"command": "-editor.toggleFoldRecursively",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "cmd+k cmd+=",
+		"command": "-editor.unfoldAllExcept",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "cmd+k cmd+]",
+		"command": "-editor.unfoldRecursively",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "cmd+k cmd+i",
+		"command": "-list.showHover",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "cmd+k i",
+		"command": "-notebook.cell.chat.start",
+		"when": "config.notebook.experimental.cellChat && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus || config.notebook.experimental.generate && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus"
+	},
+	{
+		"key": "cmd+w",
+		"command": "-workbench.action.closeGroup",
+		"when": "activeEditorGroupEmpty && multipleEditorGroups"
+	},
+	{
+		"key": "cmd+w",
+		"command": "workbench.action.closeActiveEditor",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "cmd+w",
+		"command": "-workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "cmd+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
 	}
 ]
