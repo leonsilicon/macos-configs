@@ -3309,10 +3309,6 @@
 	},
 	{
 		"key": "cmd+]",
-		"command": "workbench.action.terminal.switchTerminal"
-	},
-	{
-		"key": "cmd+]",
 		"command": "workbench.action.terminal.focusNext",
 		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
 	},
@@ -3366,5 +3362,80 @@
 	{
 		"key": "shift+alt+j",
 		"command": "workbench.action.terminal.resizePaneDown"
+	},
+	{
+		"key": "cmd+d",
+		"command": "workbench.action.terminal.split"
+	},
+	{
+		"key": "ctrl+shift+5",
+		"command": "-workbench.action.terminal.splitActiveTab",
+		"when": "terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "-workbench.action.terminal.splitActiveTab",
+		"when": "terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"key": "alt+cmd+left",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-quickInput.acceptInBackground",
+		"when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "cmd+d",
+		"command": "workbench.action.splitEditor"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "workbench.action.splitEditorDown"
+	},
+	{
+		"key": "cmd+w",
+		"command": "-workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "alt+cmd+left",
+		"command": "workbench.action.focusLeftGroup",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "workbench.action.focusRightGroup",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "alt+cmd+k",
+		"command": "-keybindings.editor.recordSearchKeys",
+		"when": "inKeybindings && inKeybindingsSearch"
+	},
+	{
+		"key": "alt+cmd+up",
+		"command": "workbench.action.focusAboveGroup"
+	},
+	{
+		"key": "alt+cmd+up",
+		"command": "-quickInput.previousSeparator",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "alt+cmd+down",
+		"command": "workbench.action.focusBelowGroup"
+	},
+	{
+		"key": "alt+cmd+down",
+		"command": "-quickInput.nextSeparator",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
 	}
 ]
