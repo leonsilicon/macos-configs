@@ -2083,11 +2083,6 @@
 		"when": "editorTextFocus"
 	},
 	{
-		"key": "cmd+k",
-		"command": "-workbench.action.terminal.clear",
-		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
-	},
-	{
 		"key": "cmd+k cmd+i",
 		"command": "-workbench.action.terminal.focusHover",
 		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
@@ -3352,11 +3347,11 @@
 		"when": "accessibilityHelpIsShown && accessibleViewHasUnassignedKeybindings"
 	},
 	{
-		"key": "shift+alt+k",
+		"key": "alt+cmd+k",
 		"command": "workbench.action.terminal.resizePaneUp"
 	},
 	{
-		"key": "shift+alt+j",
+		"key": "alt+cmd+j",
 		"command": "workbench.action.terminal.resizePaneDown"
 	},
 	{
@@ -3437,11 +3432,6 @@
 		"when": "inQuickInput && quickInputType == 'quickPick'"
 	},
 	{
-		"key": "cmd+k",
-		"command": "workbench.action.terminal.clear",
-		"when": "terminalFocus"
-	},
-	{
 		"key": "cmd+k cmd+[",
 		"command": "-editor.foldRecursively",
 		"when": "editorTextFocus && foldingEnabled"
@@ -3489,5 +3479,19 @@
 		"key": "cmd+w",
 		"command": "workbench.action.terminal.kill",
 		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+cmd+j",
+		"command": "-liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-workbench.action.terminal.clear",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
 	}
 ]
