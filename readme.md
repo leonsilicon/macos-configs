@@ -11,6 +11,10 @@ git remote add origin https://github.com/leonsilicon/macos-configs
 git pull origin main
 ```
 
+## Keyboard Layout
+
+<https://configure.zsa.io/embed/moonlander/layouts/XYYQy/latest/0>
+
 ## Keymappings
 
 My Karabiner-Elements keymaps, which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn), is defined using [GokuRakuJoudo](https://github.com/yqrashawn/GokuRakuJoudo) which uses it to generate a `karabiner.json` file.
