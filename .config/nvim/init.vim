@@ -1,1 +1,1 @@
-set notermguicolors
+" set notermguicolors

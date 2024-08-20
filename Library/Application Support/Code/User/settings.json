@@ -380,5 +380,8 @@
 	"editor.autoClosingComments": "never",
 	"editor.autoClosingDelete": "never",
 	"editor.autoClosingOvertype": "never",
-	"editor.autoClosingQuotes": "never"
+	"editor.autoClosingQuotes": "never",
+	"supermaven.enable": {
+		"*": true
+	}
 }
