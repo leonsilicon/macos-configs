@@ -67,5 +67,5 @@ cmd + ctrl + alt + shift - w : open -na /Applications/Warp.app
 cmd + ctrl + alt - b : open /Applications/Arc.app
 
 # super + enter: toggle Scratchpad
-cmd + ctrl + alt - 0x24 : open -a Zed
+cmd + ctrl + alt - 0x24 : open -a 'Visual Studio Code'
 

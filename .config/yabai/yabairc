@@ -8,5 +8,3 @@ yabai -m config mouse_modifier fn
 yabai -m signal --add event=window_created action='ymsp window-created'
 yabai -m signal --add event=application_launched action='ymsp window-created'
 
-yabai -m rule --add app="^Zed$" grid=11:11:1:1:9:9 manage=off
-
