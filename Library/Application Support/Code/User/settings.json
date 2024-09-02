@@ -360,7 +360,6 @@
 	"typescript.preferences.importModuleSpecifierEnding": "js",
 	"editor.lineNumbers": "on",
 	"editor.glyphMargin": true,
-	"workbench.colorTheme": "Gruvbox Material Light",
 	"git.openRepositoryInParentFolders": "never",
 	"github.copilot.editor.enableAutoCompletions": true,
 	"terminal.integrated.inheritEnv": false,
@@ -383,5 +382,9 @@
 	"editor.autoClosingQuotes": "never",
 	"supermaven.enable": {
 		"*": true
-	}
+	},
+	"workbench.colorTheme": "Gruvbox Light Medium",
+	"window.autoDetectColorScheme": true,
+	"workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
+	"workbench.preferredLightColorTheme": "Gruvbox Material Light"
 }

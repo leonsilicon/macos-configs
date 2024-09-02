@@ -59,6 +59,15 @@ repos/*
 !Library/Application Support/Code/User/keybindings.json
 !Library/Application Support/Code/User/settings.json
 
+# Cursor
+!Library
+!Library/Application Support
+!Library/Application Support/Cursor
+!Library/Application Support/Cursor/User
+!Library/Application Support/Cursor/User/keybindings.json
+!Library/Application Support/Cursor/User/settings.json
+
+
 # Qutebrowser
 !Library/Preferences
 !Library/Preferences/qutebrowser
