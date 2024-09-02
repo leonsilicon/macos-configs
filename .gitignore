@@ -80,6 +80,10 @@ repos/*
 !Library/Keyboard Layouts
 !Library/Keyboard Layouts/NoOptionSymbols.keylayout
 
+# Input Sources
+!Library/Preferences
+!Library/Preferences/com.apple.HIToolbox.plist
+
 # launchctl
 !Library/LaunchAgents
 !Library/LaunchAgents/com.federicoterzi.espanso.plist
