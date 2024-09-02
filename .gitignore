@@ -78,7 +78,7 @@ repos/*
 
 # Keyboard Layouts
 !Library/Keyboard Layouts
-!Library/Keyboard Layouts/NoOptionSymbols.keylayout
+!Library/Keyboard Layouts/NoOptionCodes.keylayout
 
 # Input Sources
 !Library/Preferences
