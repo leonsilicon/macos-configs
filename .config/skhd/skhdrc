@@ -69,3 +69,6 @@ cmd + ctrl + alt - b : open /Applications/Arc.app
 # super + enter: toggle Scratchpad
 cmd + ctrl + alt - 0x24 : open -a 'Visual Studio Code'
 
+# super + t: Toggl Track scratchpa
+cmd + ctrl + alt - t: yabai -m window --toggle toggltrack || open -a 'Toggl Track'
+
