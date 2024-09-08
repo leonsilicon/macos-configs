@@ -66,9 +66,6 @@ cmd + ctrl + alt + shift - w : open -na /Applications/Warp.app
 # super + b: open Arc Browser
 cmd + ctrl + alt - b : open /Applications/Arc.app
 
-# super + enter: toggle Scratchpad
-cmd + ctrl + alt - 0x24 : open -a 'Visual Studio Code'
-
-# super + t: Toggl Track scratchpa
-cmd + ctrl + alt - t: yabai -m window --toggle toggltrack || open -a 'Toggl Track'
+# super + t: Toggl Track scratchpad
+cmd + ctrl + alt - t : yabai -m window --toggle toggltrack || open -a 'Toggl Track'
 
