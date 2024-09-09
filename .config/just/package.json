@@ -1,0 +1,7 @@
+{
+	"name": "@-leonsilicon/scripts",
+	"type": "module",
+	"dependencies": {
+		"whisper-node": "1.1.1"
+	}
+}
