@@ -1,0 +1,7 @@
+default:
+    @echo "Please specify a command to run. Available commands:"
+    @just -g --list
+
+hello:
+    @echo 'Hello, world!'
+

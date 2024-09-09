@@ -20,6 +20,10 @@ repos/*
 !.config
 .config/*
 
+# Just
+!.config/just
+!.config/just/justfile
+
 # Qutebrowser
 !.qutebrowser
 !.qutebrowser/autoconfig.yml
