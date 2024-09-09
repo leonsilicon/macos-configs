@@ -25,10 +25,6 @@
 !.config/refined-github
 !.config/refined-github/*
 
-# Alacritty
-!.config/alacritty
-!.config/alacritty/alacritty.yml
-
 # Yabai
 !.config/yabai
 !.config/yabai/*
