@@ -23,6 +23,7 @@ repos/*
 # Just
 !.config/just
 !.config/just/justfile
+!.config/just/*
 
 # Qutebrowser
 !.qutebrowser

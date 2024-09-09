@@ -2,6 +2,6 @@ default:
     @echo "Please specify a command to run. Available commands:"
     @just -g --list
 
-hello:
-    @echo 'Hello, world!'
+super-f1:
+		@{{justfile_directory()}}/scripts/super-f1.ts
 
