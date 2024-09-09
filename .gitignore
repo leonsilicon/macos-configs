@@ -7,11 +7,6 @@
 !.zshrc
 !.zsh_aliases
 
-# File Structure
-!repos
-repos/*
-!repos/.gitkeep
-
 # Config files
 !.config
 .config/*
