@@ -846,10 +846,6 @@
 		"when": "workbench.panel.markers.view.active"
 	},
 	{
-		"key": "ctrl+alt+p",
-		"command": "workbench.action.togglePanel"
-	},
-	{
 		"key": "cmd+j",
 		"command": "-workbench.action.togglePanel"
 	},
@@ -3493,5 +3489,14 @@
 		"key": "cmd+k",
 		"command": "-workbench.action.terminal.clear",
 		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "alt+b",
+		"command": "-gitlens.toggleFileBlame",
+		"when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+	},
+	{
+		"key": "alt+p",
+		"command": "workbench.action.togglePanel"
 	}
 ]
