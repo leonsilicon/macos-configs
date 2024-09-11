@@ -3496,7 +3496,7 @@
 		"when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
 	},
 	{
-		"key": "alt+p",
+		"key": "alt+b",
 		"command": "workbench.action.togglePanel"
 	}
 ]
