@@ -2,6 +2,7 @@
 	"name": "@-leonsilicon/scripts",
 	"type": "module",
 	"dependencies": {
+		"@nut-tree-fork/nut-js": "^4.2.2",
 		"whisper-node": "1.1.1"
 	}
 }

@@ -442,10 +442,6 @@
 		"command": "-workbench.action.moveEditorToPreviousGroup"
 	},
 	{
-		"key": "shift+alt+l",
-		"command": "workbench.action.decreaseViewWidth"
-	},
-	{
 		"key": "cmd+alt+right",
 		"command": "-workbench.action.moveEditorToNextGroup"
 	},
@@ -564,7 +560,7 @@
 		"command": "workbench.action.navigateLeft"
 	},
 	{
-		"key": "alt+l",
+		"key": "alt+right",
 		"command": "workbench.action.navigateRight"
 	},
 	{
@@ -1465,10 +1461,6 @@
 		"key": "shift+f12",
 		"command": "-goToPreviousReference",
 		"when": "inReferenceSearchEditor || referenceSearchVisible"
-	},
-	{
-		"key": "alt+c",
-		"command": "editor.action.revealDeclaration"
 	},
 	{
 		"key": "alt+c",
@@ -3558,5 +3550,47 @@
         "key": "cmd+k",
         "command": "-aipopup.action.modal.generate",
         "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
-    }
+	},
+	{
+		"key": "alt+c",
+		"command": "-gitlens.showQuickCommitFileDetails",
+		"when": "editorTextFocus && !gitlens:disabled && config.gitlens.keymap == 'alternate'"
+	},
+	{
+		"key": "alt+right",
+		"command": "-breadcrumbs.focusNext",
+		"when": "breadcrumbsActive && breadcrumbsVisible"
+	},
+	{
+		"key": "alt+right",
+		"command": "-breadcrumbs.focusNextWithPicker",
+		"when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "alt+right",
+		"command": "-cursorWordEndRight",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+right",
+		"command": "-gitlens.key.alt+right",
+		"when": "gitlens:key:alt+right"
+	},
+	{
+		"key": "alt+right",
+		"command": "-quickInput.acceptInBackground",
+		"when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "alt+l",
+		"command": "aichat.focus"
+	},
+	{
+		"key": "alt+c",
+		"command": "aichat.show-ai-chat"
+	},
+	{
+		"key": "shift+alt+c",
+		"command": "aichat.close-sidebar"
+	}
 ]

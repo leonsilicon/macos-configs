@@ -365,5 +365,7 @@
         "jupyter.askForKernelRestart": false,
         "gitlens.ai.experimental.model": "openai:gpt-4o",
         "window.systemColorTheme": "auto",
-        "window.autoDetectColorScheme": true
+        "window.autoDetectColorScheme": true,
+        "workbench.preferredLightColorTheme": "Gruvbox Material Light",
+        "workbench.preferredDarkColorTheme": "Gruvbox Material Dark"
 }
