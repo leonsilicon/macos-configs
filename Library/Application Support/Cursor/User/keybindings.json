@@ -3592,5 +3592,13 @@
 	{
 		"key": "shift+alt+c",
 		"command": "aichat.close-sidebar"
-	}
+    },
+    {
+        "key": "cmd+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "-workbench.action.zoomIn"
+    }
 ]
