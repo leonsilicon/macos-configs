@@ -92,7 +92,7 @@
 			[:##equal_sign :grave_accent_and_tilde :macbook-keyboard]
 
 			;; top row
-			[:##q :semicolon :macbook-keyboard]
+			[:##q :quote :macbook-keyboard]
 			[:##w :comma :macbook-keyboard]
 			[:##e :period :macbook-keyboard]
 			[:##r :p :macbook-keyboard]
@@ -120,7 +120,7 @@
 			[:##quote :hyphen :macbook-keyboard]
 
 			;; bottom row
-			[:##z :quote :macbook-keyboard]
+			[:##z :semicolon :macbook-keyboard]
 			[:##x :q :macbook-keyboard]
 			[:##v :k :macbook-keyboard]
 			[:##c :j :macbook-keyboard]
