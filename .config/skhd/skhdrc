@@ -69,3 +69,5 @@ cmd + ctrl + alt - b : open /Applications/Arc.app
 # super + t: Toggl Track scratchpad
 cmd + ctrl + alt - t : yabai -m window --toggle toggltrack || open -a 'Toggl Track'
 
+cmd + ctrl + alt - f1 : /Users/leonsilicon/.config/just/commands/super-f1.ts
+

@@ -6,5 +6,5 @@ http-server:
     http-server -S -C ~/.config/mkcert/localhost.pem -K ~/.config/mkcert/localhost-key.pem
 
 super-f1:
-		@{{justfile_directory()}}/scripts/super-f1.ts
+		@{{justfile_directory()}}/commands/super-f1.ts
 
