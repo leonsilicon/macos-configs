@@ -202,45 +202,6 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "Swap caps lock to backspace on macbook keyboard",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "caps_lock",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "delete_or_backspace"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        }, {
-          "from" : {
-            "key_code" : "delete_or_backspace",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "caps_lock"
-          } ],
-          "conditions" : [ {
-            "identifiers" : [ {
-              "vendor_id" : 0,
-              "product_id" : 0
-            } ],
-            "type" : "device_if"
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
         "description" : "Arrow keys on MacBook keyboard",
         "manipulators" : [ {
           "from" : {

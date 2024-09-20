@@ -49,11 +49,6 @@
 			[:##right_shift :left_shift]
 		]}
 
-		{:des "Swap caps lock to backspace on macbook keyboard" :rules [
-			[:##caps_lock :delete_or_backspace :macbook-keyboard]
-			[:##delete_or_backspace :caps_lock :macbook-keyboard]
-		]}
-
 		{:des "Arrow keys on MacBook keyboard" :rules [
 			;; fn + esdf -> arrow keys
 			[:!F##e :up_arrow :macbook-keyboard]
