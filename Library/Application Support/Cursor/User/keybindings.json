@@ -1688,7 +1688,7 @@
 		"when": "editorTextFocus && foldingEnabled"
 	},
 	{
-		"key": "ctrl+alt+/",
+		"key": "cmd+/",
 		"command": "editor.action.commentLine",
 		"when": "editorTextFocus && !editorReadonly"
 	},
@@ -3600,5 +3600,15 @@
     {
         "key": "shift+cmd+=",
         "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+i",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     }
 ]

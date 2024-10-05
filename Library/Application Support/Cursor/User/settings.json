@@ -368,5 +368,7 @@
         "window.autoDetectColorScheme": true,
         "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
         "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-        "cursor.cpp.enablePartialAccepts": true
+        "cursor.cpp.enablePartialAccepts": true,
+        "cursor.chat.smoothStreaming": true,
+        "cursor.cmdk.useThemedDiffBackground": true
 }
