@@ -145,8 +145,9 @@
 			[:!Skeypad_0 :0 :moonlander]
 		]}
 
-		{:des "F22 to Fn key", :rules [
-			[:##f22, :fn]
+		;; F14 because 14 = N so it translates to "FN"
+		{:des "F14 to Fn key", :rules [
+			[:##f14, :fn]
 		]}
 	]
 }

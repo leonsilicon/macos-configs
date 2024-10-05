@@ -1599,10 +1599,10 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "F22 to Fn key",
+        "description" : "F14 to Fn key",
         "manipulators" : [ {
           "from" : {
-            "key_code" : "f22",
+            "key_code" : "f14",
             "modifiers" : {
               "optional" : [ "any" ]
             }
