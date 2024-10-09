@@ -33,6 +33,8 @@
 			;; down arrow -> super
 			[:##down_arrow :!TOleft_command :macbook-keyboard]
 
+			;; caps lock -> escape
+			[:##caps_lock :escape :macbook-keyboard]
 
 			;; right arrow -> fn
 			{
