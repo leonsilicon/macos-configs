@@ -370,5 +370,6 @@
         "workbench.preferredLightColorTheme": "Gruvbox Material Light",
         "cursor.cpp.enablePartialAccepts": true,
         "cursor.chat.smoothStreaming": true,
-        "cursor.cmdk.useThemedDiffBackground": true
+        "cursor.cmdk.useThemedDiffBackground": true,
+        "database-client.autoSync": true
 }
