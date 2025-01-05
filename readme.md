@@ -27,7 +27,7 @@ Shortcuts for system-wide utilities such as controlling Yabai (the window manage
 
 > We don't use the `Fn` key because it's not detectable when setting shortcuts in certain applications.
 
-#### Yabai
+#### Window Management
 
 Karabiner is used for the keybinds which can be found at [`.config/goku/karabiner.edn`](./.config/goku/karabiner.edn)
 
@@ -83,10 +83,13 @@ Karabiner is used for the keybinds which can be found at [`.config/goku/karabine
 
 #### System
 
-`<Super+;>` Lock Screen (since `,` and `.` represent moving between displays, it seems fitting that the key `;` to the left of `,` should mean "lock screen")
-`<Super+,>` Vol**u**me Down
-`<Super+.>` Vol**u**me Up
-`<Super+0>` Volume Mute
+`Super` `-` Vol**u**me Down
+`Super` `+` Vol**u**me Up
+`Super` `0` Volume Mute
+`Super` `/` Scroll Up
+`Super` `\` Scroll Down
+`Super` `,` Scroll Left
+`Super` `.` Scroll Right
 
 #### Input navigation
 
