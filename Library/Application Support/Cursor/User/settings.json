@@ -163,7 +163,7 @@
         "editor.defaultFormatter": "hashicorp.terraform"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dprint.dprint"
     },
     "explorer.confirmDelete": false,
     "redhat.telemetry.enabled": false,
@@ -371,5 +371,6 @@
         "cursor.cpp.enablePartialAccepts": true,
         "cursor.chat.smoothStreaming": true,
         "cursor.cmdk.useThemedDiffBackground": true,
-        "database-client.autoSync": true
+        "database-client.autoSync": true,
+        "gitlens.plusFeatures.enabled": false
 }

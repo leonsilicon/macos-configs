@@ -3585,11 +3585,7 @@
 		"key": "alt+l",
 		"command": "aichat.focus"
 	},
-	{
-		"key": "alt+c",
-		"command": "aichat.show-ai-chat"
-	},
-	{
+    {
 		"key": "shift+alt+c",
 		"command": "aichat.close-sidebar"
     },
@@ -3610,5 +3606,9 @@
         "key": "cmd+k",
         "command": "-cursorai.action.generateInTerminal",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+c",
+        "command": "aichat.focuschatpaneaction"
     }
 ]
