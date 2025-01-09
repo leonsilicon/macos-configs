@@ -62,30 +62,55 @@
 		{:des "Remap layout to Programmer Dvorak on MacBook Keyboard" :rules [
 			;; numbers row
 			[:!Sgrave_accent_and_tilde [:!Sgrave_accent_and_tilde :vk_none] :macbook-keyboard {:held :!Sgrave_accent_and_tilde}]
-			[:##grave_accent_and_tilde :!S4 :macbook-keyboard]
+			[:grave_accent_and_tilde :!S4 :macbook-keyboard]
+			[:##grave_accent_and_tilde :grave_accent_and_tilde :macbook-keyboard]
+
 			[:!S1 :!S5 :macbook-keyboard]
-			[:##1 :!S7 :macbook-keyboard]
+			[:1 :!S7 :macbook-keyboard]
+			[:##1 :1 :macbook-keyboard]
+
 			[:!S2 :7 :macbook-keyboard]
-			[:##2 [:open_bracket :vk_none] :macbook-keyboard {:held :open_bracket}]
+			[:2 [:open_bracket :vk_none] :macbook-keyboard {:held :open_bracket}]
+			[:##2 :2 :macbook-keyboard]
+
 			[:!S3 :5 :macbook-keyboard]
-			[:##3 [:!Sopen_bracket :vk_none] :macbook-keyboard {:held :!Sopen_bracket}]
+			[:3 [:!Sopen_bracket :vk_none] :macbook-keyboard {:held :!Sopen_bracket}]
+			[:##3 :3 :macbook-keyboard]
+
 			[:!S4 :3 :macbook-keyboard]
-			[:##4 [:!Sclose_bracket :vk_none] :macbook-keyboard {:held :!Sclose_bracket}]
+			[:##4 :4 :macbook-keyboard]
+			[:4 [:!Sclose_bracket :vk_none] :macbook-keyboard {:held :!Sclose_bracket}]
+
 			[:!S5 :1 :macbook-keyboard]
-			[:##5 :!S9 :macbook-keyboard]
+			[:5 :!S9 :macbook-keyboard]
+			[:##5 :5 :macbook-keyboard]
+
 			[:!S6 :9 :macbook-keyboard]
-			[:##6 [:equal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:6 [:equal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:##6 :6 :macbook-keyboard]
+
 			[:!S7, :0 :macbook-keyboard]
-			[:##7 :!S8 :macbook-keyboard]
+			[:7 :!S8 :macbook-keyboard]
+			[:##7 :7 :macbook-keyboard]
+
 			[:!S8, :2 :macbook-keyboard]
-			[:##8 :!S0 :macbook-keyboard]
+			[:8 :!S0 :macbook-keyboard]
+			[:##8 :8 :macbook-keyboard]
+
 			[:!S9 :4 :macbook-keyboard]
-			[:##9 [:!Sequal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:9 [:!Sequal_sign :vk_none] :macbook-keyboard {:held :equal_sign}]
+			[:##9 :9 :macbook-keyboard]
+
 			[:!S0 :6 :macbook-keyboard]
+			[:0 :0 :macbook-keyboard]
 			[:##0 [:close_bracket :vk_none] :macbook-keyboard {:held :close_bracket}]
+
 			[:!Shyphen :8 :macbook-keyboard]
-			[:##hyphen :!S1 :macbook-keyboard]
+			[:hyphen :!S1 :macbook-keyboard]
+			[:##hyphen :hyphen :macbook-keyboard]
+
 			[:!Sequal_sign :!S3 :macbook-keyboard]
+			[:equal_sign :equal_sign :macbook-keyboard]
 			[:##equal_sign :grave_accent_and_tilde :macbook-keyboard]
 
 			;; top row

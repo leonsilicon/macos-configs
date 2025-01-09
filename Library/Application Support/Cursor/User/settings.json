@@ -372,5 +372,7 @@
         "cursor.chat.smoothStreaming": true,
         "cursor.cmdk.useThemedDiffBackground": true,
         "database-client.autoSync": true,
-        "gitlens.plusFeatures.enabled": false
+        "gitlens.plusFeatures.enabled": false,
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false
 }
