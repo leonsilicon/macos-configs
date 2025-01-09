@@ -435,15 +435,30 @@
             "key_code" : "open_bracket"
           } ],
           "from" : {
+            "key_code" : "2"
+          },
+          "to" : [ {
+            "key_code" : "open_bracket"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "2",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "open_bracket"
-          }, {
-            "key_code" : "vk_none"
+            "key_code" : "2"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -477,16 +492,31 @@
             "modifiers" : [ "left_shift" ]
           } ],
           "from" : {
-            "key_code" : "3",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
+            "key_code" : "3"
           },
           "to" : [ {
             "key_code" : "open_bracket",
             "modifiers" : [ "left_shift" ]
           }, {
             "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "3",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "3"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -520,16 +550,31 @@
             "modifiers" : [ "left_shift" ]
           } ],
           "from" : {
-            "key_code" : "4",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
+            "key_code" : "4"
           },
           "to" : [ {
             "key_code" : "close_bracket",
             "modifiers" : [ "left_shift" ]
           }, {
             "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "4",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "4"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -559,14 +604,29 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "5"
+          },
+          "to" : [ {
+            "key_code" : "9",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "5",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "9",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "5"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -599,15 +659,30 @@
             "key_code" : "equal_sign"
           } ],
           "from" : {
+            "key_code" : "6"
+          },
+          "to" : [ {
+            "key_code" : "equal_sign"
+          }, {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "6",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "equal_sign"
-          }, {
-            "key_code" : "vk_none"
+            "key_code" : "6"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -637,14 +712,29 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "7"
+          },
+          "to" : [ {
+            "key_code" : "8",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "7",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "8",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "7"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -674,14 +764,29 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "8"
+          },
+          "to" : [ {
+            "key_code" : "0",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "8",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "0",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "8"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -714,16 +819,31 @@
             "key_code" : "equal_sign"
           } ],
           "from" : {
-            "key_code" : "9",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
+            "key_code" : "9"
           },
           "to" : [ {
             "key_code" : "equal_sign",
             "modifiers" : [ "left_shift" ]
           }, {
             "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "9",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "9"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -742,6 +862,21 @@
           },
           "to" : [ {
             "key_code" : "6"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "0"
+          },
+          "to" : [ {
+            "key_code" : "0"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -794,14 +929,29 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "hyphen"
+          },
+          "to" : [ {
+            "key_code" : "1",
+            "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "hyphen",
             "modifiers" : {
               "optional" : [ "any" ]
             }
           },
           "to" : [ {
-            "key_code" : "1",
-            "modifiers" : [ "left_shift" ]
+            "key_code" : "hyphen"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -821,6 +971,21 @@
           "to" : [ {
             "key_code" : "3",
             "modifiers" : [ "left_shift" ]
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
+            "key_code" : "equal_sign"
+          },
+          "to" : [ {
+            "key_code" : "equal_sign"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
