@@ -458,7 +458,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "2"
+            "key_code" : "7"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -516,7 +516,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "3"
+            "key_code" : "5"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -574,7 +574,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "4"
+            "key_code" : "3"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -626,7 +626,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "5"
+            "key_code" : "1"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -682,7 +682,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "6"
+            "key_code" : "9"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -786,7 +786,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "8"
+            "key_code" : "2"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -843,7 +843,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "9"
+            "key_code" : "4"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -872,11 +872,16 @@
           } ],
           "type" : "basic"
         }, {
+          "to_if_held_down" : [ {
+            "key_code" : "close_bracket"
+          } ],
           "from" : {
             "key_code" : "0"
           },
           "to" : [ {
-            "key_code" : "0"
+            "key_code" : "close_bracket"
+          }, {
+            "key_code" : "vk_none"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -887,9 +892,6 @@
           } ],
           "type" : "basic"
         }, {
-          "to_if_held_down" : [ {
-            "key_code" : "close_bracket"
-          } ],
           "from" : {
             "key_code" : "0",
             "modifiers" : {
@@ -897,9 +899,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "close_bracket"
-          }, {
-            "key_code" : "vk_none"
+            "key_code" : "6"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -951,7 +951,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "hyphen"
+            "key_code" : "8"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
