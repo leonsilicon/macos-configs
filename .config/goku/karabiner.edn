@@ -126,7 +126,7 @@
 			[:##p :l :macbook-keyboard]
 			[:##open_bracket :slash :macbook-keyboard]
 			[:!Sclose_bracket :!S6 :macbook-keyboard]
-			[:##close_bracket :!S2 :macbook-keyboard]
+			[:##close_bracket :equal_sign :macbook-keyboard]
 
 			;; home row
 			[:##a :a :macbook-keyboard]
