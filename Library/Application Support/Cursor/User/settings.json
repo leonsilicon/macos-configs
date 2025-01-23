@@ -155,7 +155,7 @@
         "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
     },
     "[json]": {
-        "editor.defaultFormatter": "dprint.dprint"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "rust-analyzer.lru.capacity": 2048,
     "editor.inlineSuggest.enabled": true,
