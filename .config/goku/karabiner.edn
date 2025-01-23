@@ -107,11 +107,11 @@
 
 			[:!Shyphen :8 :macbook-keyboard]
 			[:hyphen :!S1 :macbook-keyboard]
-			[:##hyphen :close_bracket :macbook-keyboard]
+			[:##hyphen :open_bracket :macbook-keyboard]
 
 			[:!Sequal_sign :!S3 :macbook-keyboard]
 			[:equal_sign :grave_accent_and_tilde :macbook-keyboard]
-			[:##equal_sign :open_bracket :macbook-keyboard]
+			[:##equal_sign :close_bracket :macbook-keyboard]
 
 			;; top row
 			[:##q :quote :macbook-keyboard]
