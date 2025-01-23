@@ -299,7 +299,7 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "Remap layout to Programmer Dvorak on MacBook Keyboard",
+        "description" : "Remap layout to Programmer Dvorak - Dvorak ⌘ on MacBook Keyboard",
         "manipulators" : [ {
           "to_if_held_down" : [ {
             "key_code" : "grave_accent_and_tilde",
@@ -458,7 +458,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "7"
+            "key_code" : "2"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -516,7 +516,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "5"
+            "key_code" : "3"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -574,7 +574,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "3"
+            "key_code" : "4"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -626,7 +626,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "1"
+            "key_code" : "5"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -682,7 +682,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "9"
+            "key_code" : "6"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -786,7 +786,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "2"
+            "key_code" : "8"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -816,7 +816,8 @@
           "type" : "basic"
         }, {
           "to_if_held_down" : [ {
-            "key_code" : "equal_sign"
+            "key_code" : "equal_sign",
+            "modifiers" : [ "left_shift" ]
           } ],
           "from" : {
             "key_code" : "9"
@@ -843,7 +844,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "4"
+            "key_code" : "9"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -899,7 +900,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "6"
+            "key_code" : "0"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -951,7 +952,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "8"
+            "key_code" : "close_bracket"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -985,7 +986,7 @@
             "key_code" : "equal_sign"
           },
           "to" : [ {
-            "key_code" : "equal_sign"
+            "key_code" : "grave_accent_and_tilde"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -1003,7 +1004,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "grave_accent_and_tilde"
+            "key_code" : "open_bracket"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
