@@ -75,6 +75,7 @@
 			[:!F##f :right_arrow :magic-keyboard]
 		]}
 
+        ;; We remap our keyboard layout using Karabiner instead of using the macOS keyboard layout because the macOS keyboard layout doesn't work well with app shortcuts (e.g. the Notion app uses the native keyboard letter instead of the mapped letter)
 		{:des "Remap layout to Dvorak" :rules [
 			;; numbers row
 			[:##hyphen :close_bracket :apple-keyboard]
