@@ -377,7 +377,10 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "right_arrow"
+            "key_code" : "right_arrow",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
           },
           "to" : [ {
             "apple_vendor_top_case_key_code" : "keyboard_fn"
@@ -392,7 +395,10 @@
           "type" : "basic"
         }, {
           "from" : {
-            "key_code" : "right_arrow"
+            "key_code" : "right_arrow",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
           },
           "to" : [ {
             "apple_vendor_top_case_key_code" : "keyboard_fn"

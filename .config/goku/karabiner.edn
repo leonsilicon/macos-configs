@@ -49,7 +49,10 @@
 
 			;; right arrow -> fn
 			{
-				:from {:key_code :right_arrow}
+				:from {
+                    :key_code :right_arrow
+                    :modifiers {:optional [:any]}
+                }
 				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
 				:conditions [{
 					:identifiers [{:vendor_id 0 :product_id 0}]
@@ -58,7 +61,10 @@
 				:type :basic
 			}
 			{
-				:from {:key_code :right_arrow}
+				:from {
+                    :key_code :right_arrow
+                    :modifiers {:optional [:any]}
+                }
 				:to [{:apple_vendor_top_case_key_code :keyboard_fn}]
 				:conditions [{
 					:identifiers [{:vendor_id 76 :product_id 801}]
