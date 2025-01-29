@@ -5,7 +5,6 @@
 			{:vendor_id 0 :product_id 0}
 			{:vendor_id 76 :product_id 801}
 		]
-		:magic-keyboard [{:vendor_id 76 :product_id 801}]
 		:moonlander [{:vendor_id 12951 :product_id 6505}]
 	}
 	:main, [
@@ -69,10 +68,10 @@
 
 		{:des "Arrow keys on MacBook keyboard" :rules [
 			;; fn + esdf -> arrow keys
-			[:!F##e :up_arrow :magic-keyboard]
-			[:!F##s :left_arrow :magic-keyboard]
-			[:!F##d :down_arrow :magic-keyboard]
-			[:!F##f :right_arrow :magic-keyboard]
+			[:!F##e :up_arrow :apple-keyboard]
+			[:!F##s :left_arrow :apple-keyboard]
+			[:!F##d :down_arrow :apple-keyboard]
+			[:!F##f :right_arrow :apple-keyboard]
 		]}
 
         ;; We remap our keyboard layout using Karabiner instead of using the macOS keyboard layout because the macOS keyboard layout doesn't work well with app shortcuts (e.g. the Notion app uses the native keyboard letter instead of the mapped letter)
