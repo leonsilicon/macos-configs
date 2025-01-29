@@ -48,7 +48,7 @@
         "vscode-kubernetes.minikube-path.mac": "/Users/leondreamed/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dprint.dprint"
     },
     "vsicons.dontShowNewVersionMessage": true,
     "cSpell.userWords": [
@@ -155,7 +155,7 @@
         "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dprint.dprint"
     },
     "rust-analyzer.lru.capacity": 2048,
     "editor.inlineSuggest.enabled": true,
@@ -163,7 +163,7 @@
         "editor.defaultFormatter": "hashicorp.terraform"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dprint.dprint"
     },
     "explorer.confirmDelete": false,
     "redhat.telemetry.enabled": false,
@@ -350,7 +350,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dprint.dprint"
     },
     "svelte.ask-to-enable-ts-plugin": false,
     "typescript.preferences.preferTypeOnlyAutoImports": true,

@@ -360,7 +360,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "close_bracket"
+            "key_code" : "open_bracket"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
@@ -381,7 +381,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "open_bracket"
+            "key_code" : "close_bracket"
           } ],
           "conditions" : [ {
             "identifiers" : [ {
