@@ -34,11 +34,11 @@ cmd + ctrl + alt + shift - l : /opt/homebrew/bin/yabai -m window --resize top:0:
 # super + shift + h: resize window bottom
 cmd + ctrl + alt + shift - h : /opt/homebrew/bin/yabai -m window --resize bottom:0:50; /opt/homebrew/bin/yabai -m window --resize top:0:50
 
-# super + f12: toggle window fullscreen
-super - f12 : /opt/homebrew/bin/yabai -m window --toggle native-fullscreen
+# super + f: toggle window fullscreen
+cmd + ctrl + alt - f : /opt/homebrew/bin/yabai -m window --toggle native-fullscreen
 
 # super + q: close focused window
-cmd + ctrl + alt - x : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window
+cmd + ctrl + alt - q : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp close-focused-window
 
 # super + ]: focus next display
 cmd + ctrl + alt - 0x1B : /Users/leonsilicon/.bun/bin/bun /Users/leonsilicon/.bun/bin/ymsp focus-next-display
