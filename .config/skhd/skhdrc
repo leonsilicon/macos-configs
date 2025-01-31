@@ -61,8 +61,8 @@ cmd + ctrl + alt - w : open -a /Applications/Warp.app
 # super + shift + w: open Warp Terminal in a new window
 cmd + ctrl + alt + shift - w : open -na /Applications/Warp.app
 
-# super + b: open Arc Browser
-cmd + ctrl + alt - b : open /Applications/Arc.app
+# super + b: open Browser (Zen)
+cmd + ctrl + alt - b : open /Applications/Zen.app
 
 # super + t: Toggl Track scratchpad
 cmd + ctrl + alt - t : yabai -m window --toggle toggltrack || open -a 'Toggl Track'

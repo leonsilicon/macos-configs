@@ -3610,5 +3610,9 @@
     {
         "key": "alt+c",
         "command": "aichat.focuschatpaneaction"
+    },
+    {
+        "key": "shift+cmd+p",
+        "command": "prettier.forceFormatDocument"
     }
 ]
