@@ -224,6 +224,27 @@
           "type" : "basic"
         }, {
           "from" : {
+            "key_code" : "escape",
+            "modifiers" : {
+              "optional" : [ "any" ]
+            }
+          },
+          "to" : [ {
+            "key_code" : "vk_none"
+          } ],
+          "conditions" : [ {
+            "identifiers" : [ {
+              "vendor_id" : 0,
+              "product_id" : 0
+            }, {
+              "vendor_id" : 76,
+              "product_id" : 801
+            } ],
+            "type" : "device_if"
+          } ],
+          "type" : "basic"
+        }, {
+          "from" : {
             "key_code" : "right_arrow",
             "modifiers" : {
               "optional" : [ "any" ]

@@ -62,7 +62,7 @@ cmd + ctrl + alt - w : open -a /Applications/Warp.app
 cmd + ctrl + alt + shift - w : open -na /Applications/Warp.app
 
 # super + b: open Browser (Zen)
-cmd + ctrl + alt - b : open /Applications/Zen.app
+cmd + ctrl + alt - b : open /Applications/Zen\ Browser.app
 
 # super + t: Toggl Track scratchpad
 cmd + ctrl + alt - t : yabai -m window --toggle toggltrack || open -a 'Toggl Track'

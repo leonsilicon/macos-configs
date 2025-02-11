@@ -39,6 +39,9 @@
 			;; caps lock -> escape
 			[:##caps_lock :escape :apple-keyboard]
 
+			;; escape -> caps lock
+			[:##escape :vk_none :apple-keyboard]
+
 			;; right arrow -> fn
 			{
 				:from {
