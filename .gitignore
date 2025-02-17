@@ -16,8 +16,8 @@
 !.config/just/*
 
 # Hammerspoon
-!.config/.hammerspoon
-!.config/.hammerspoon/*
+!.hammerspoon
+!.hammerspoon/*
 
 # Qutebrowser
 !.qutebrowser
