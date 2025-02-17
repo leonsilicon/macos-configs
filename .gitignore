@@ -15,6 +15,10 @@
 !.config/just
 !.config/just/*
 
+# Hammerspoon
+!.config/hammerspoon
+!.config/hammerspoon/*
+
 # Qutebrowser
 !.qutebrowser
 !.qutebrowser/autoconfig.yml

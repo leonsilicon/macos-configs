@@ -8,3 +8,6 @@ http-server:
 super-f1:
 		@{{justfile_directory()}}/commands/super-f1.ts
 
+monolith:
+    chromium --headless --window-size=1920,1080 --run-all-compositor-stages-before-draw --virtual-time-budget=9000 --incognito --dump-dom https://github.com | monolith - -I -b https://github.com -o github.html
+

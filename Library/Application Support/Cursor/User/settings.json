@@ -374,5 +374,6 @@
         "database-client.autoSync": true,
         "gitlens.plusFeatures.enabled": false,
         "git.enableSmartCommit": true,
-        "git.confirmSync": false
+        "git.confirmSync": false,
+        "terminal.integrated.fontSize": 18
 }
