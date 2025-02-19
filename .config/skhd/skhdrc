@@ -1,2 +1,11 @@
 cmd + ctrl + alt - f1 : /Users/leonsilicon/.config/just/commands/super-f1.ts
 
+# we use skhd instead of the built-in hammerspoon hotkeys API because skhd seems to have higher priority (based on testing with super+L, which may be used by another application)
+cmd + ctrl + alt - h : hs -c "focusWindowWest()"
+cmd + ctrl + alt - j : hs -c "focusWindowSouth()"
+cmd + ctrl + alt - k : hs -c "focusWindowNorth()"
+cmd + ctrl + alt - l : hs -c "focusWindowEast()"
+cmd + ctrl + alt + shift - h : hs -c "swapWindowWest()"
+cmd + ctrl + alt + shift - j : hs -c "swapWindowSouth()"
+cmd + ctrl + alt + shift - k : hs -c "swapWindowNorth()"
+cmd + ctrl + alt + shift - l : hs -c "swapWindowEast()"
