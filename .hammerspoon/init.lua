@@ -1,4 +1,6 @@
+require("hs.ipc")
 hs.window.animationDuration = 0
+super = { "cmd", "alt", "ctrl" }
 
 local function getVisibleWindows()
     return hs.fnutils.filter(hs.window.allWindows(), function(window)
@@ -145,37 +147,37 @@ local function focusOrSwapWindow(direction, swap)
     end
 end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "h", function()
+function focusWindowWest()
     focusOrSwapWindow("west", false)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "h", function()
+function swapWindowWest()
     focusOrSwapWindow("west", true)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "l", function()
+function focusWindowEast()
     focusOrSwapWindow("east", false)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "l", function()
+function swapWindowEast()
     focusOrSwapWindow("east", true)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "k", function()
+function focusWindowNorth()
     focusOrSwapWindow("north", false)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "k", function()
+function swapWindowNorth()
     focusOrSwapWindow("north", true)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "j", function()
+function focusWindowSouth()
     focusOrSwapWindow("south", false)
-end)
+end
 
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "j", function()
+function swapWindowSouth()
     focusOrSwapWindow("south", true)
-end)
+end
 
 -- Grid layout: 1 2 3
 --              4 5 6
@@ -250,21 +252,21 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "0", function()
     end
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "x", function()
+hs.hotkey.bind(super, "x", function()
     local win = hs.window.focusedWindow()
     if win then
         win:close()
     end
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "m", function()
+hs.hotkey.bind(super, "m", function()
     local win = hs.window.focusedWindow()
     if win then
         win:minimize()
     end
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "b", function()
+hs.hotkey.bind(super, "b", function()
     hs.application.launchOrFocus("Google Chrome Beta")
 end)
 
