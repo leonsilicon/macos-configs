@@ -20,11 +20,9 @@ local function getVisibleWindows()
             and app:name() ~= "Bartender 5"
     end)
 end
-
 local function getClosestWindowInDirection(currentWindow, direction)
     local visibleWindows = getVisibleWindows()
     local currentFrame = currentWindow:frame()
-    local currentWindowName = currentWindow:application():name()
     local currentPoint = { x = currentFrame.x, y = currentFrame.y }
     local closestWindow = nil
     local minDistance = math.huge
@@ -40,33 +38,21 @@ local function getClosestWindowInDirection(currentWindow, direction)
                 if candidatePoint.x < currentPoint.x then
                     valid = true
                     distance = currentPoint.x - candidatePoint.x
-                elseif candidatePoint.x == currentPoint.x and window:application():name() < currentWindowName then
-                    valid = true
-                    distance = 0
                 end
             elseif direction == "east" then
                 if candidatePoint.x > currentPoint.x then
                     valid = true
                     distance = candidatePoint.x - currentPoint.x
-                elseif candidatePoint.x == currentPoint.x and window:application():name() > currentWindowName then
-                    valid = true
-                    distance = 0
                 end
             elseif direction == "north" then
                 if candidatePoint.y < currentPoint.y then
                     valid = true
                     distance = currentPoint.y - candidatePoint.y
-                elseif candidatePoint.y == currentPoint.y and window:application():name() < currentWindowName then
-                    valid = true
-                    distance = 0
                 end
             elseif direction == "south" then
                 if candidatePoint.y > currentPoint.y then
                     valid = true
                     distance = candidatePoint.y - currentPoint.y
-                elseif candidatePoint.y == currentPoint.y and window:application():name() > currentWindowName then
-                    valid = true
-                    distance = 0
                 end
             end
 
@@ -75,9 +61,10 @@ local function getClosestWindowInDirection(currentWindow, direction)
                     minDistance = distance
                     closestWindow = window
                 elseif distance == minDistance then
-                    if (direction == "west" or direction == "north") and window:application():name() < currentWindowName then
+                    local currentClosestFrame = closestWindow:frame()
+                    if (direction == "west" or direction == "east") and frame.w < currentClosestFrame.w then
                         closestWindow = window
-                    elseif (direction == "east" or direction == "south") and window:application():name() > currentWindowName then
+                    elseif (direction == "north" or direction == "south") and frame.h < currentClosestFrame.h then
                         closestWindow = window
                     end
                 end
