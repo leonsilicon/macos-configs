@@ -27,6 +27,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -48,6 +51,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -69,6 +75,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -90,6 +99,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -111,6 +123,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -132,6 +147,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -153,6 +171,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -175,6 +196,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -197,6 +221,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -218,6 +245,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -239,6 +269,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -300,6 +333,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -322,6 +358,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -344,6 +383,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -366,6 +408,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -390,6 +435,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -411,6 +459,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -432,6 +483,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -453,6 +507,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -474,6 +531,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -495,6 +555,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -516,6 +579,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -537,6 +603,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -558,6 +627,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -579,6 +651,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -600,6 +675,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -621,6 +699,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -642,6 +723,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -663,6 +747,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -684,6 +771,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -705,6 +795,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -726,6 +819,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -747,6 +843,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -768,6 +867,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -789,6 +891,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -810,6 +915,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -831,6 +939,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -852,6 +963,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -873,6 +987,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -894,6 +1011,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -915,6 +1035,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -936,6 +1059,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -957,6 +1083,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -978,6 +1107,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -999,6 +1131,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -1020,6 +1155,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -1041,6 +1179,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -1062,6 +1203,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -1083,6 +1227,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],
@@ -1104,6 +1251,9 @@
             }, {
               "vendor_id" : 76,
               "product_id" : 801
+            }, {
+              "vendor_id" : 1452,
+              "product_id" : 34304
             } ],
             "type" : "device_if"
           } ],

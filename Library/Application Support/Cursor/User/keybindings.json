@@ -3608,11 +3608,25 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "alt+c",
-        "command": "aichat.focuschatpaneaction"
-    },
-    {
         "key": "shift+cmd+p",
         "command": "prettier.forceFormatDocument"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "-workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "-workbench.panel.chatEditing",
+        "when": "workbench.panel.chat.view.edits.active"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "composer.openAsPane"
+    },
+    {
+        "key": "alt+c",
+        "command": "workbench.panel.composerViewPane2.view.focus"
     }
 ]

@@ -4,6 +4,7 @@
 		:apple-keyboard [
 			{:vendor_id 0 :product_id 0}
 			{:vendor_id 76 :product_id 801}
+			{:vendor_id 1452 :product_id 34304}
 		]
 		:moonlander [{:vendor_id 12951 :product_id 6505}]
 	}
