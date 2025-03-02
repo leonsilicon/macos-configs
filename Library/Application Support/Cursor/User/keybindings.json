@@ -3628,5 +3628,9 @@
     {
         "key": "alt+c",
         "command": "workbench.panel.composerViewPane2.view.focus"
+    },
+    {
+        "key": "alt+c",
+        "command": "composer.newcomposeraction"
     }
 ]
