@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Turn off tiling by default for all apps
-yabai -m rule --add app=".*" manage=off
-
 yabai -m rule --add app="^Wispr Flow$" managed=off
 
 yabai -m config layout bsp
