@@ -169,27 +169,36 @@
     "redhat.telemetry.enabled": false,
     "typescript.tsserver.log": "off",
     "editor.tokenColorCustomizations": {
-        "[*Light*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#000"
-                    }
-                }
-            ]
+      "textMateRules": [
+        {
+          "name": "envKeys",
+          "scope": "string.quoted.single.ini,constant.numeric.ini,string.quoted.double.ini",
+          "settings": {
+            "foreground": "#19354900"
+          }
         },
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#fff"
-                    }
-                }
-            ]
+        {
+          "name": "envKeys",
+          "scope": "string.quoted.single.ini,constant.numeric.ini,string.quoted.double.ini",
+          "settings": {
+            "foreground": "#19354900"
+          }
         },
-        "textMateRules": []
+        {
+          "name": "envKeys",
+          "scope": "string.quoted.single.ini,constant.numeric.ini,string.quoted.double.ini",
+          "settings": {
+            "foreground": "#19354900"
+          }
+        },
+        {
+          "name": "envKeys",
+          "scope": "string.quoted.single.ini,constant.numeric.ini,string.quoted.double.ini",
+          "settings": {
+            "foreground": "#19354900"
+          }
+        }
+      ]
     },
     "files.associations": {
         "dockerfile.ts": "typescript",

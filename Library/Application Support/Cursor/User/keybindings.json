@@ -559,11 +559,7 @@
 		"key": "alt+h",
 		"command": "workbench.action.navigateLeft"
 	},
-	{
-		"key": "alt+right",
-		"command": "workbench.action.navigateRight"
-	},
-	{
+  {
 		"key": "alt+j",
 		"command": "workbench.action.navigateDown"
 	},
@@ -3632,5 +3628,25 @@
     {
         "key": "alt+c",
         "command": "composer.newcomposeraction"
+    },
+    {
+      "key": "ctrl+cmd+r",
+      "command": "editor.foldAllMarkerRegions",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "cmd+r cmd+8",
+      "command": "-editor.foldAllMarkerRegions",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+cmd+r",
+      "command": "editor.unfoldAllMarkerRegions",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "cmd+r cmd+9",
+      "command": "-editor.unfoldAllMarkerRegions",
+      "when": "editorTextFocus && foldingEnabled"
     }
 ]
