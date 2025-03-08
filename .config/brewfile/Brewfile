@@ -1,358 +1,74 @@
+# We install bun immediately because some of our scripts depend on it
+system "curl -fsSL https://bun.sh/install | bash"
 
-# tap repositories and their packages
+# Initialize an array to store setapp apps
+@setapp_apps = []
 
-tap 'homebrew/core'
-brew 'abseil'
-brew 'aom'
-brew 'aribb24'
-brew 'autoconf'
-brew 'automake'
-brew 'awscli'
-brew 'babl'
-brew 'bash'
-brew 'bat'
-brew 'bdw-gc'
-brew 'berkeley-db'
-brew 'bison'
-brew 'brotli'
-brew 'c-ares'
-brew 'ca-certificates'
-brew 'cairo'
-brew 'cffi'
-brew 'cjson'
-brew 'cmake'
-brew 'cmocka'
-brew 'cocoapods'
-brew 'coreutils'
-brew 'dav1d'
-brew 'deno'
-brew 'docbook'
-brew 'docbook-xsl'
-brew 'docker'
-brew 'docutils'
-brew 'dog'
-brew 'dust'
-brew 'exa'
-brew 'exiftool'
-brew 'ffmpeg'
-brew 'ffmpeg@4'
-brew 'flac'
-brew 'fontconfig'
-brew 'freetype'
-brew 'frei0r'
-brew 'fribidi'
-brew 'gcc'
-brew 'gd'
-brew 'gdbm'
-brew 'gdk-pixbuf'
-brew 'gettext'
-brew 'gh'
-brew 'ghostscript'
-brew 'giflib'
-brew 'git'
-brew 'git-filter-repo'
-brew 'git-lfs'
-brew 'git-quick-stats'
-brew 'git-subrepo'
-brew 'glib'
-brew 'gmp'
-brew 'gnu-getopt'
-brew 'gnu-sed'
-brew 'gnupg'
-brew 'gnutls'
-brew 'gobject-introspection'
-brew 'graphite2'
-brew 'graphviz'
-brew 'gts'
-brew 'guile'
-brew 'harfbuzz'
-brew 'helm'
-brew 'highway'
-brew 'icu4c'
-brew 'imagemagick'
-brew 'imath'
-brew 'isl'
-brew 'jasper'
-brew 'jbig2dec'
-brew 'jemalloc'
-brew 'joker'
-brew 'jpeg'
-brew 'jpeg-turbo'
-brew 'jpeg-xl'
-brew 'jq'
-brew 'krb5'
-brew 'kubernetes-cli'
-brew 'lame'
-brew 'leptonica'
-brew 'libarchive'
-brew 'libass'
-brew 'libassuan'
-brew 'libavif'
-brew 'libb2'
-brew 'libbluray'
-brew 'libde265'
-brew 'libev'
-brew 'libevent'
-brew 'libffi'
-brew 'libgcrypt'
-brew 'libgit2'
-brew 'libgpg-error'
-brew 'libheif'
-brew 'libidn'
-brew 'libidn2'
-brew 'libksba'
-brew 'liblqr'
-brew 'libmpc'
-brew 'libnghttp2'
-brew 'libogg'
-brew 'libomp'
-brew 'libpng'
-brew 'libpthread-stubs'
-brew 'libraw'
-brew 'librist'
-brew 'librsvg'
-brew 'libsamplerate'
-brew 'libsndfile'
-brew 'libsodium'
-brew 'libsoxr'
-brew 'libssh2'
-brew 'libtasn1'
-brew 'libtermkey'
-brew 'libtiff'
-brew 'libtool'
-brew 'libunibreak'
-brew 'libunistring'
-brew 'libusb'
-brew 'libuv'
-brew 'libvidstab'
-brew 'libvmaf'
-brew 'libvorbis'
-brew 'libvpx'
-brew 'libvterm'
-brew 'libx11'
-brew 'libxau'
-brew 'libxcb'
-brew 'libxdmcp'
-brew 'libxext'
-brew 'libxrender'
-brew 'libyaml'
-brew 'little-cms2'
-brew 'lua'
-brew 'luajit'
-brew 'luajit-openresty'
-brew 'luarocks'
-brew 'luv'
-brew 'lz4'
-brew 'lzo'
-brew 'm4'
-brew 'macos-term-size'
-brew 'mas'
-brew 'mbedtls'
-brew 'meson'
-brew 'minikube'
-brew 'mint'
-brew 'mitmproxy'
-brew 'mongodb-atlas-cli'
-brew 'mongosh'
-brew 'mpdecimal'
-brew 'mpfr'
-brew 'mpg123'
-brew 'mpv'
-brew 'msgpack'
-brew 'mujs'
-brew 'nasm'
-brew 'ncurses'
-brew 'neofetch'
-brew 'neovim'
-brew 'netpbm'
-brew 'nettle'
-brew 'nghttp2'
-brew 'ninja'
-brew 'node@16'
-brew 'npth'
-brew 'nspr'
-brew 'nss'
-brew 'nvm'
-brew 'oniguruma'
-brew 'opencore-amr'
-brew 'openexr'
-brew 'openjdk'
-brew 'openjdk@11'
-brew 'openjpeg'
-brew 'openldap'
-brew 'openssl@1.1'
-brew 'openssl@3'
-brew 'opus'
-brew 'p11-kit'
-brew 'p7zip'
-brew 'pango'
-brew 'pcre'
-brew 'pcre2'
-brew 'perl'
-brew 'pinentry'
-brew 'pipenv'
-brew 'pixman'
-brew 'pkg-config'
-brew 'pngquant'
-brew 'protobuf'
-brew 'pycparser'
-brew 'pyenv'
-brew 'python-certifi'
-brew 'python-tk@3.9'
-brew 'python@3.10'
-brew 'python@3.11'
-brew 'python@3.9'
-brew 'rav1e'
-brew 'readline'
-brew 'reattach-to-user-namespace'
-brew 'redis'
-brew 'ripgrep'
-brew 'rm-improved'
-brew 'rubberband'
-brew 'ruby'
-brew 'rust'
-brew 'screenresolution'
-brew 'sdl2'
-brew 'shared-mime-info'
-brew 'six'
-brew 'sk'
-brew 'smartmontools'
-brew 'snappy'
-brew 'speex'
-brew 'sqlite'
-brew 'srt'
-brew 'starship'
-brew 'svt-av1'
-brew 'tcl-tk'
-brew 'tesseract'
-brew 'theora'
-brew 'tmux'
-brew 'tokei'
-brew 'tree-sitter'
-brew 'uchardet'
-brew 'unbound'
-brew 'unibilium'
-brew 'utf8proc'
-brew 'util-macros'
-brew 'vala'
-brew 'vapoursynth'
-brew 'watchexec'
-brew 'webp'
-brew 'wget'
-brew 'wireguard-go'
-brew 'wireguard-tools'
-brew 'x264'
-brew 'x265'
-brew 'xmlto'
-brew 'xorgproto'
-brew 'xtrans'
-brew 'xvid'
-brew 'xz'
-brew 'yarn'
-brew 'youtube-dl'
-brew 'yt-dlp'
-brew 'zeromq'
-brew 'zimg'
-brew 'zlib'
-brew 'zoxide'
-brew 'zstd'
+def setapp(app, id:)
+  @setapp_apps << { id: id, name: app }
+end
 
-tap 'homebrew/cask'
-cask '1password'
-cask 'activitywatch'
-cask 'alacritty'
-cask 'alfred'
-cask 'android-platform-tools'
-cask 'android-studio'
-cask 'anki'
-cask 'audacity'
-cask 'authy'
-cask 'balenaetcher'
-cask 'basictex'
-cask 'bitwarden'
-cask 'brave-browser'
-cask 'cold-turkey-blocker'
-cask 'daisydisk'
-cask 'discord'
-cask 'docker'
-cask 'espanso'
-cask 'exifcleaner'
-cask 'fanny'
-cask 'firefox'
-cask 'freedom'
-cask 'gimp'
-cask 'github'
-cask 'google-chrome'
-cask 'google-drive'
-cask 'hackintool'
-cask 'inkscape'
-cask 'karabiner-elements'
-cask 'keycastr'
-cask 'kindle'
-cask 'libreoffice'
-cask 'loom'
-cask 'microsoft-auto-update'
-cask 'microsoft-excel'
-cask 'microsoft-word'
-cask 'monitorcontrol'
-cask 'ngrok'
-cask 'notion'
-cask 'obs'
-cask 'obs-virtualcam'
-cask 'obsidian'
-cask 'qutebrowser'
-cask 'raycast'
-cask 'rescuetime'
-cask 'send-anywhere'
-cask 'shortcat'
-cask 'slack'
-cask 'spotify'
-cask 'time-out'
-cask 'ukelele'
-cask 'unclutter'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'whatsapp'
-cask 'zoom'
+tap "koekeishiya/formulae"
+tap "leonsilicon/formulae"
+tap "yqrashawn/goku"
+brew "go"
+brew "just"
+brew "mas"
+brew "mkcert"
+brew "neovim"
+brew "thefuck"
+brew "uv"
+brew "zoxide"
+brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/yabai"
+cask "leonsilicon/formulae/brainfm"
+brew "yqrashawn/goku/goku"
+cask "1password"
+cask "android-platform-tools"
+cask "android-studio"
+cask "colorsnapper"
+cask "cursor"
+cask "daisydisk"
+cask "firefox"
+cask "git"
+cask "google-chrome"
+cask "google-chrome@beta"
+cask "karabiner-elements"
+cask "orbstack"
+cask "shortcat"
+cask "warp"
+vscode "dprint.dprint"
+vscode "wakatime.vscode-wakatime"
+mas "Xcode", id: 497799835
 
-tap 'homebrew/bundle'
+# Productivity
+brew "leonsilicon/formulae/setapp-cli"
+cask "cold-turkey-blocker"
+cask "dropbox"
+cask "lunar"
+cask "notion"
+cask "raycast"
+cask "setapp"
+setapp "Bartender", id: 153
+setapp "CleanShot X", id: 321
+setapp "Clop", id: 612
+setapp "Lungo", id: 270
+setapp "Movist Pro", id: 344
+setapp "Paste", id: 98
+setapp "Permute", id: 219
+setapp "PixelSnap", id: 358
+setapp "Proxyman", id: 346
+mas "Toggl Track: Hours & Time Log", id: 1291898086
 
-tap 'homebrew/services'
+# Content Creation
+cask "affinity-designer"
+cask "affinity-photo"
+cask "affinity-publisher"
+cask "fxfactory"
+cask "minstaller"
+cask "screen-studio"
+mas "Final Cut Pro", id: 424389933
 
-tap 'candid82/brew'
-
-tap 'colindean/fonts-nonfree'
-cask 'font-microsoft-office'
-
-tap 'dopplerhq/cli'
-
-tap 'espanso/espanso'
-
-tap 'jsontypedef/jsontypedef'
-brew 'jtd-codegen'
-
-tap 'koekeishiya/formulae'
-brew 'yabai'
-
-tap 'mongodb/brew'
-brew 'mongodb-community'
-brew 'mongodb-database-tools'
-
-tap 'peterldowns/tap'
-brew 'localias'
-
-tap 'rcmdnk/file'
-brew 'brew-file'
-
-tap 'yqrashawn/goku'
-brew 'goku'
-
-# App Store applications
-mas 'GarageBand (10.4.7)', id: 682658836
-mas 'Gifski (2.22.3)', id: 1351639930
-mas 'iMovie (10.3.5)', id: 408981434
-mas 'Keynote (12.2.1)', id: 409183694
-mas 'Klack (1.2.1)', id: 6446206067
-mas 'Numbers (12.2.1)', id: 409203825
-mas 'Pages (12.2.1)', id: 409201541
-mas 'WireGuard (1.0.16)', id: 1451685025
+# Install all setapp apps at the end
+ids = @setapp_apps.map { |app| app[:id] }.join(" ")
+system("bunx setapp install #{ids}") unless ids.empty?
